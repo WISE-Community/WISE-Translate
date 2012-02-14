@@ -39,10 +39,9 @@ View.prototype.retrieveAllLocales = function() {
      function showTranslation() {
        var translationFormattedJSONString = FormatJSON(View.prototype.i18n[currentLanguage]);       
        var message = "<h1>Translated text</h1><p>Follow these steps next:</p>" +
-         "<ol><li>Copy the entire text below and save it inside view/i18n/i18n_"+currentLanguage+".json file.</li>"+
-             "<li>Copy the entire text below and go to https://github.com/YOUR_GITHUB_USERNAME/WISE-Translate/ . Click on \"Edit This File \", and paste the text into the editor, and click on the \"Commit Changes\" button.</li>"+
-             "<li>Go back to https://github.com/YOUR_GITHUB_USERNAME/WISE-Translate and click on the \"Pull Request\" button (near the top-right corner of the page) to let the WISE-Translate project admin know about your commit.</li>"+
-             "<li>Pat yourself on the back for a job well-done! Thanks!</li></ul><br/>";
+         "<ol><li>Copy the entire text below and save it inside WISE-Translate/vle/view/i18n/i18n_"+currentLanguage+".json file.</li>"+
+             "<li>Open up the GitHub application. Your changes should show up as uncommited changes. Commit your changes to the repository.</li>"+
+             "<li>Pat yourself on the back for a job well-done! Thanks for helping out!</li></ul><br/>";
        myWindow=window.open('Translation','','width=800,height=600');
        myWindow.document.write(message+"<textarea cols='75' rows='30'>"+translationFormattedJSONString+"</textarea>");
        myWindow.focus();
@@ -58,7 +57,7 @@ View.prototype.retrieveAllLocales = function() {
 
      function buildTable() {
          var translationTable = 
-				"<div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations&nbsp;&nbsp;&nbsp;" +
+				"<p><b>Remember to save your work before closing this window by clicking on the \"Show Translation File\".</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations&nbsp;&nbsp;&nbsp;" +
 				"<input id='showTranslationInput' type='button' onClick='showTranslation()' value='Show Translation File'></input></div>" +
 				"<table border='1'>";
          // build the header row
@@ -128,9 +127,7 @@ View.prototype.retrieveAllLocales = function() {
 </head>
 <body>
 <h1>WISE Translate: VLE</h1>
-<p><b>Remember to save your work before closing this window by clicking on the "Show Translation File".</b><br/>
-Thank you for being part of the WISE Translation Community!<br/>
-Please post bug reports and questions to the <a target="_blank" href="https://groups.google.com/forum/?pli=1#!forum/wise4-dev">WISE4-dev Googlegroup</a>.</p>
+<p>Thank you for being part of the WISE Translation Community! Please post bug reports and questions to the <a target="_blank" href="https://groups.google.com/forum/?pli=1#!forum/wise4-dev">WISE4-dev Googlegroup</a>.</p>
 <div id="defaultLocale">Default Locale: </div>
 <div id="currentLanguage">Currently Translating: 
 <select id="currentLanguageSelect">
