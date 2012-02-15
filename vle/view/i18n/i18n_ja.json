@@ -366,5 +366,9 @@
     "mywork_button_title": {
         "value": "マイワークを見る",
         "description": "Text for mouse hover title on the My Work button"
+    },
+    "toggle_nav_button_title": {
+        "value": "全画面表示モードに入る",
+        "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
     }
 }
