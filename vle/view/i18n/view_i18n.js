@@ -34,9 +34,9 @@ View.prototype.getStringWithParams = function(key,params) {
 
 View.prototype.i18n.defaultLocale = "en_US";
 
-//"ja","zh_TW",
+//"en_US"=english (US), "ja"=japanese, "zh_TW"=traditional chinese, "ko"=korean
 View.prototype.i18n.supportedLocales = [
-                                        "en_US","ja","zh_TW"
+                                        "en_US","zh_TW","zh_CN","he","it","ja","ko"
                                         ];
 
 /**

@@ -24,15 +24,19 @@ View.prototype.retrieveAllLocales = function() {
 
      // given local (e.g. "ja"), returns language (e.g. "Japanese")
      function localeToLanguage(locale) {
-       if (locale == "ja") {
-         return "Japanese";
-       } else if (locale == "zh_TW") {
-         return "Traditional Chinese";
+       if (locale == "zh_TW") {
+         return "Chinese - Traditional";
        } else if (locale == "zh_CN") {
-         return "Simplified Chinese";
+         return "Chinese - Simplified";
+       } else if (locale == "he") {
+         return "Hebrew";
+       } else if (locale == "it") {
+         return "Italian";
+       } else if (locale == "ja") {
+         return "Japanese";
        } else if (locale == "ko") {
          return "Korean";
-       }
+       } 
      }
  
      // opens up the translated json file in a new window
@@ -47,11 +51,12 @@ View.prototype.retrieveAllLocales = function() {
        myWindow.focus();
      }
 
+     // show/hide rows that have already been translated
      function onlyShowMissingTranslation() {
        if($("#onlyShowMissingTranslationInput:checked").length == 1) {
-         $("tr textarea:not(:empty)").parents(".translationRow").hide();
+         $("tr textarea").each(function() {if ($(this).val() != "") { $(this).parents(".translationRow").hide()}});
        } else {
-         $("tr textarea:not(:empty)").parents(".translationRow").show();
+         $("tr textarea").each(function() {if ($(this).val() != "") { $(this).parents(".translationRow").show()}});
        }
      }
 
