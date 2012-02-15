@@ -38,9 +38,9 @@ View.prototype.retrieveAllLocales = function() {
      // opens up the translated json file in a new window
      function showTranslation() {
        var translationFormattedJSONString = FormatJSON(View.prototype.i18n[currentLanguage]);       
-       var message = "<h1>Translated text</h1><p>Follow these steps next:</p>" +
+       var message = "<h1>Translated text for Locale: "+currentLanguage+"</h1><p>Follow these steps next:</p>" +
          "<ol><li>Copy the entire text below and save it inside WISE-Translate/vle/view/i18n/i18n_"+currentLanguage+".json file.</li>"+
-             "<li>Open up the GitHub application. Your changes should show up as uncommited changes. Commit your changes to the repository.</li>"+
+             "<li>Open up the GitHub application. Your changes should show up as uncommited changes. Commit and then sync your changes to the repository.</li>"+
              "<li>Pat yourself on the back for a job well-done! Thanks for helping out!</li></ul><br/>";
        myWindow=window.open('Translation','','width=800,height=600');
        myWindow.document.write(message+"<textarea cols='75' rows='30'>"+translationFormattedJSONString+"</textarea>");

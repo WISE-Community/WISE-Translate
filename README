@@ -3,11 +3,9 @@ Welcome to the WISE-Translate project!
 This is a community project for translating the WISE interface and WISE projects.
 
 Workflow:
-1. Translator (T) creates account on GitHub.
-2. T downloads WISE Translation Kit (WTK).
-3. T clones (if new) or pulls (if updating) latest WISE Translation project into his/her own repository.
-4. T opens up WTK, loads in initial files, uses WTK to translate. Translations are saved in the browser using HTML5 localstorage.
-5. When finished with the translation, T clicks on "Export translation File" button, which brings up a dialog with the contents of translated file.
-6. T copies&pastes the contents of the translated file and pastes it back into his repository (using "edit this file" in GitHub).
-7. T makes pull request.
-8. WISE-Translate admin will get the pull request and update the latest copy of translated file in the WISE-Translate project.
+1. Translator (T) creates account on GitHub and becomes a member of the WISE-Community (https://github.com/WISE-Community). To become a member, T can email wise4-dev@googlegroups.com with T's GitHub username.
+2. T clones WISE-Translation Project (WTP), at https://github.com/WISE-Community/WISE-Translate.  If T has a mac and is not familiar with command-line git, T can get the GitHub Client App for Mac (http://mac.github.com/).
+3. T opens up WTP (WISE-Translation/index.html) using the browser and uses the web interface to translate (see additional instructions in WTP).
+4. When finished with the translation, T clicks on the "Show Translation File" button, which brings up a dialog with the contents of translated file (see additional instructions in WTP).
+5. T copies&pastes the contents of the translated file and pastes&saves it in his checkout copy of the file (see additional instructions in WTP).
+6. T commits and pushes the changes back to the WISE-Translation GitHub project (using git command line or a git client application)
