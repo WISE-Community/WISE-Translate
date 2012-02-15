@@ -2,6 +2,9 @@ Welcome to the WISE-Translate project!
 
 This is a community project for translating the WISE interface and WISE projects.
 
+Before you begin:
+Please use Firefox. Currently this does not work on Chrome and Safari.
+
 Workflow:
 1. Translator (T) creates account on GitHub and becomes a member of the WISE-Community (https://github.com/WISE-Community). To become a member, T can email wise4-dev@googlegroups.com with T's GitHub username.
 2. T clones WISE-Translation Project (WTP), at https://github.com/WISE-Community/WISE-Translate.  If T has a mac and is not familiar with command-line git, T can get the GitHub Client App for Mac (http://mac.github.com/).
@@ -10,4 +13,5 @@ Workflow:
 5. T copies&pastes the contents of the translated file and pastes&saves it in his checkout copy of the file (see additional instructions in WTP).
 6. T commits and pushes the changes back to the WISE-Translation GitHub project (using git command line or a git client application)
 
-Watch the screencast "How to Translate WISE VLE" http://www.screencast.com/t/Bmwsmz4Vs
+Watch the screencast "How to Translate the WISE VLE" http://www.screencast.com/t/Bmwsmz4Vs
+
