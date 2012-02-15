@@ -9,3 +9,5 @@ Workflow:
 4. When finished with the translation, T clicks on the "Show Translation File" button, which brings up a dialog with the contents of translated file (see additional instructions in WTP).
 5. T copies&pastes the contents of the translated file and pastes&saves it in his checkout copy of the file (see additional instructions in WTP).
 6. T commits and pushes the changes back to the WISE-Translation GitHub project (using git command line or a git client application)
+
+Watch the screencast "How to Translate WISE VLE" http://www.screencast.com/t/Bmwsmz4Vs
