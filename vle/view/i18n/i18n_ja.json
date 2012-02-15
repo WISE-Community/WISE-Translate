@@ -372,7 +372,7 @@
         "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
     },
     "flagged_button_title": {
-        "value": "ワークをレビューする",
+        "value": "重要なワークをレビュー",
         "description": "Text for mouse hover title on the Flagged button"
     }
 }
