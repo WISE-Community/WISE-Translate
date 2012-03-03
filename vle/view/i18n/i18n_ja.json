@@ -1,10 +1,10 @@
 {
     "file_button_text": {
-        "value": "ファイル1",
+        "value": "ファイル",
         "description": "Text on the File Manager button"
     },
     "ideas_button_text": {
-        "value": "アイデア1",
+        "value": "アイデア",
         "description": "Text on the Idea Manager button"
     },
     "addidea_button_text": {
