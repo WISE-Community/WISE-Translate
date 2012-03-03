@@ -378,5 +378,9 @@
     "gohome_button_title": {
         "value": "ホームに戻る",
         "description": "Text for mouse hover title on the Home button"
+    },
+    "toggle_nav_button_text_off": {
+        "value": "メニューを表示",
+        "description": "Text on the Toggle Navigation button when navigation UI is off (hidden)"
     }
 }

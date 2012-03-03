@@ -32,13 +32,23 @@
      // opens up the translated json file in a new window
      function save() {
          isDirty = false;  // assume that user does the right thing and saves changes.
+         $("#saveButton").attr("disabled","disabled");   // disable multiple saving
+         $("#loadingGif").show();   // show the spinning wheel.
          var translationFormattedJSONString = FormatJSON(View.prototype.i18n[currentLanguage]);
          $.ajax({
            url:"post.php",
            type:"POST",
            data:{locale:currentLanguage,jsonStr:translationFormattedJSONString},
-           success:function(data, textStatus, jq) {alert('Work successfully saved');},
-           error:function() {alert('error saving data');}
+           success:function(data, textStatus, jq) {
+             if (data != "FAIL") {
+               alert('Work successfully saved');
+               $("#saveButton").removeAttr("disabled");
+               $("#loadingGif").hide();   // hide the spinning wheel.
+             } else {
+               alert('Error saving data. Please stop further work and contact the administrator.');
+             }
+           },
+           error:function() {alert('Error saving data. Please stop further work and contact the administrator.');}
          });
 /*
          var message = "<h1>Translated text for Locale: "+localeToLanguage(currentLanguage)+" ("+currentLanguage+")</h1><p>Follow these steps next:</p>" +
@@ -64,7 +74,7 @@
      function buildTable() {
          var translationTable = 
 	"<p><b>Remember to save your work before closing this window by clicking on the \"Save\" button.</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations&nbsp;&nbsp;&nbsp;" +
-	"<input id='showTranslationInput' type='button' onClick='save()' value='Save'></input></div>" +
+	"<input id='saveButton' type='button' onClick='save()' value='Save'></input><span id='loadingGif' style='display:none'><img src='../wait30.gif'></img></div>" +
 	"<table border='1'>";
         
           // build the header row
