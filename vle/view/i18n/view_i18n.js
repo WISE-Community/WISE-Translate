@@ -36,7 +36,7 @@ View.prototype.i18n.defaultLocale = "en_US";
 
 //"en_US"=english (US), "ja"=japanese, "zh_TW"=traditional chinese, "ko"=korean
 View.prototype.i18n.supportedLocales = [
-                                        "en_US","zh_TW","zh_CN","he","it","ja","ko"
+                                        "en_US","zh_TW","zh_CN","nl","he","it","ja","ko"
                                         ];
 
 /**

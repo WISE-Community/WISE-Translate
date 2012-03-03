@@ -1,0 +1,10 @@
+{
+    "file_button_text": {
+        "value": "",
+        "description": "Text on the File Manager button"
+    },
+    "ideas_button_text": {
+        "value": "",
+        "description": "Text on the Idea Manager button"
+    }
+}
