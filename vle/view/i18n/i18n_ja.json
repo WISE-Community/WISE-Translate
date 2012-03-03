@@ -374,5 +374,9 @@
     "flagged_button_title": {
         "value": "重要なワークをレビュー",
         "description": "Text for mouse hover title on the Flagged button"
+    },
+    "gohome_button_title": {
+        "value": "ホームに戻る",
+        "description": "Text for mouse hover title on the Home button"
     }
 }
