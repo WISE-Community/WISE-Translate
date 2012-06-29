@@ -148,15 +148,15 @@
         "description": "GradingTool: Text in the Export Idea Baskets button"
     },
     "grading_button_export_explanation_builder_work": {
-        "value": "Export Explanation Builder Work",
+        "value": "エクスプラネーションビルダーをエクスポート",
         "description": "GradingTool: Text in the Export Explanation Builder Work button"
     },
     "grading_button_export_custom_work": {
-        "value": "Export Custom Student Work",
+        "value": "回答特別エクスポート",
         "description": "GradingTool: Text in the Export Custom Student Work button"
     },
     "grading_button_export_student_names": {
-        "value": "Export Student Names",
+        "value": "名簿をエクスポート",
         "description": "GradingTool: Text in the Export Student Names button"
     },
     "grading_button_export_latest_student_work_description": {
@@ -164,19 +164,19 @@
         "description": "GradingTool: Description next the Export Student Names button"
     },
     "grading_button_export_all_student_work_description": {
-        "value": "(Export all the student work revisions as well as their navigation data)",
+        "value": "（全回答及びナビゲーションデータをエクスポート）",
         "description": "GradingTool: Description next the Export All Student Work button"
     },
     "grading_button_export_idea_baskets_description": {
-        "value": "(Export all the idea basket revisions)",
+        "value": "（アイデアバスケットをエクスポート）",
         "description": "GradingTool: Description next the Export Idea Baskets button"
     },
     "grading_button_export_explanation_builder_work_description": {
-        "value": "(Export all the explanation builder work revisions)",
+        "value": "（エクスプラネーションビルダーをエクスポート）",
         "description": "GradingTool: Description next the Export Explanation Builder Work button"
     },
     "grading_button_export_custom_work_description": {
-        "value": "(Export all work or latest work for specific steps that you choose)",
+        "value": "（最新回答、又は全回答をステップ別にエクスポート）",
         "description": "GradingTool: Description next the Export Custom Student Work button"
     },
     "grading_button_export_student_names_description": {
@@ -184,7 +184,7 @@
         "description": "GradingTool: Description next the Export Student Names button"
     },
     "grading_button_explanation": {
-        "value": "Explanation",
+        "value": "説明",
         "description": "GradingTool: Text in the Explanation button"
     },
     "grading_button_check_for_new_student_work": {
@@ -303,10 +303,10 @@
         "value": "フラグ",
         "description": "Flag, for flagging student's work using the flaggingtool"
     },
-    "flag_as_inappropriate":{
-		"value":"Flag as inappropriate",
-		"description":"\"Flag as inappropriate\" text, for flagging inappropriate student's work using the flaggingtool"
-	},	
+    "flag_as_inappropriate": {
+        "value": "Flag as inappropriate",
+        "description": "'Flagasinappropriate' text, for flagging inappropriate student's work using the flaggingtool"
+    },
     "timestamp": {
         "value": "更新日時",
         "description": "timestamp"
@@ -375,24 +375,140 @@
         "value": "全画面表示モードに入る",
         "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
     },
-	"authoring_new_hint": {
-		"value":"新しいヒント",
-		"description":"Text to display for 'new hint' in the Authoring Tool."
-	},
-	"authoring_hint_forceShow": {
-		"value":"デスプレイモード",
-		"description":"Text to display for \"Force Show: \" drop down lable for step hints"
-	},
-	"authoring_hint_option_never": {
-		"value":"無し",
-		"description":"The text \"Never\" to display in \"force show:\" drop down for step hints."
-	},		
-	"authoring_hint_option_firstTimeOnly": {
-		"value":"最初のみ",
-		"description":"The text \"First Time Only\" to display in \"force show:\" drop down for step hints."
-	},	
-	"authoring_hint_option_always": {
-		"value":"常時",
-		"description":"The text \"Always\" to display in \"force show:\" drop down for step hints."
-	}				
+    "authoring_new_hint": {
+        "value": "新しいヒント",
+        "description": "Text to display for 'new hint' in the Authoring Tool."
+    },
+    "authoring_hint_forceShow": {
+        "value": "デスプレイモード",
+        "description": "Text to display for 'ForceShow: ' drop down lable for step hints"
+    },
+    "authoring_hint_option_never": {
+        "value": "無し",
+        "description": "The text 'Never' to display in 'forceshow: ' drop down for step hints."
+    },
+    "authoring_hint_option_firstTimeOnly": {
+        "value": "最初のみ",
+        "description": "The text 'FirstTimeOnly' to display in 'forceshow: ' drop down for step hints."
+    },
+    "authoring_hint_option_always": {
+        "value": "常時",
+        "description": "The text 'Always' to display in 'forceshow: ' drop down for step hints."
+    },
+    "flagged_button_title": {
+        "value": "ワークをレビューする",
+        "description": "Text for mouse hover title on the Flagged button"
+    },
+    "toggle_nav_button_text_off": {
+        "value": "メニューを表示",
+        "description": "Text on the Toggle Navigation button when navigation UI is off (hidden)"
+    },
+    "toggle_nav_button_title_off": {
+        "value": "ナビゲーションを表示",
+        "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
+    },
+    "signout_button_title": {
+        "value": "保存＋ログアウト",
+        "description": "Text for mouse hover title on the Log out button"
+    },
+    "previous_step_text": {
+        "value": "＜前",
+        "description": "Text on button in the project vle that will show the previous step in the project"
+    },
+    "previous_step_title": {
+        "value": "前のステップ",
+        "description": "Text for mouse hover title on button in the project vle that will show the previous step in the project"
+    },
+    "next_step_text": {
+        "value": "次＞",
+        "description": "Text on button in the project vle that will show the next step in the project"
+    },
+    "next_step_title": {
+        "value": "次のステップ",
+        "description": "Text for mouse hover title on button in the project vle that will show the next step in the project"
+    },
+    "gohome_button_title": {
+        "value": "保存＋ホームページへ行く",
+        "description": "Text for mouse hover title on the Home button"
+    },
+    "hint_button_title": {
+        "value": "ステップヒントを表示",
+        "description": "Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
+    },
+    "hint_num_separator": {
+        "value": "の",
+        "description": "Text to be shown between current Hint number and total (e.g. 1 'of' 2)"
+    },
+    "hint_plural": {
+        "value": "ヒント",
+        "description": "Default Text label for 'hints' (plural)"
+    },
+    "node_annotations_title": {
+        "value": "ステップフィードバック",
+        "description": "Title of the step feedback dialog window"
+    },
+    "node_annotations_button_text": {
+        "value": "フィードバック",
+        "description": "Text that shows up next to the Hint button"
+    },
+    "node_annotations_button_title": {
+        "value": "フィードバックを表示",
+        "description": "Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
+    },
+    "idea": {
+        "value": "アイデア",
+        "description": "The default text for an 'idea' in the Idea Manager tool."
+    },
+    "idea_plural": {
+        "value": "アイデア",
+        "description": "The default text for 'ideas' in the Idea Manager tool."
+    },
+    "explanation_builder": {
+        "value": "エクスプラネーションビルダー",
+        "description": "The default text for the 'Explanation Builder' tool."
+    },
+    "grading_button_special_export": {
+        "value": "特別エクスポート",
+        "description": "GradingTool: Text in the Special Export button"
+    },
+    "welcome": {
+        "value": "ようこそ",
+        "description": "Text for 'Welcome'"
+    },
+    "welcome_users_default": {
+        "value": "ようこそ、ゲストさん！",
+        "description": "Text to display in VLE for user name in preview mode"
+    },
+    "note_title": {
+        "value": "ノート",
+        "description": "Text to display in the title bar of a note dialog window"
+    },
+    "authoring_hint_dialog_title": {
+        "value": "ステップヒントを追加／更新",
+        "description": "Text to display as the title of the edit step hints dialog window."
+    },
+    "authoring_hint_new": {
+        "value": "新しいヒント",
+        "description": "Default text for a new step hint."
+    },
+    "authoring_hint_modal": {
+        "value": "モーダルダイアロッグ",
+        "description": "Text to display for the label of the 'ModalDialog' checkbox in the step hint authoring panel"
+    },
+    "authoring_hint_isMustViewAllPartsBeforeClosing": {
+        "value": "全てのヒントを見てから閉じる",
+        "description": "Text to display for the label of the 'MustViewAllPartsBeforeClosing' checkbox in the step hint authoring panel"
+    },
+    "authoring_hint_options_label": {
+        "value": "オプション",
+        "description": "The label for the 'Options' settings in the step hint authoring panel"
+    },
+    "authoring_hint_add": {
+        "value": "新しいヒントを追加",
+        "description": "The label for the 'add new hint' button in the step hint authoring panel"
+    },
+    "authoring_hint_delete": {
+        "value": "ヒントを削除",
+        "description": "The label for the 'delete current hint' button in the step hint authoring panel"
+    }
 }
