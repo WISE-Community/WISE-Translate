@@ -303,6 +303,10 @@
         "value": "フラグ",
         "description": "Flag, for flagging student's work using the flaggingtool"
     },
+    "flag_as_inappropriate":{
+		"value":"Flag as inappropriate",
+		"description":"\"Flag as inappropriate\" text, for flagging inappropriate student's work using the flaggingtool"
+	},	
     "timestamp": {
         "value": "更新日時",
         "description": "timestamp"
@@ -371,16 +375,24 @@
         "value": "全画面表示モードに入る",
         "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
     },
-    "flagged_button_title": {
-        "value": "重要なワークをレビュー",
-        "description": "Text for mouse hover title on the Flagged button"
-    },
-    "gohome_button_title": {
-        "value": "ホームに戻る",
-        "description": "Text for mouse hover title on the Home button"
-    },
-    "toggle_nav_button_text_off": {
-        "value": "メニューを表示",
-        "description": "Text on the Toggle Navigation button when navigation UI is off (hidden)"
-    }
+	"authoring_new_hint": {
+		"value":"新しいヒント",
+		"description":"Text to display for 'new hint' in the Authoring Tool."
+	},
+	"authoring_hint_forceShow": {
+		"value":"デスプレイモード",
+		"description":"Text to display for \"Force Show: \" drop down lable for step hints"
+	},
+	"authoring_hint_option_never": {
+		"value":"無し",
+		"description":"The text \"Never\" to display in \"force show:\" drop down for step hints."
+	},		
+	"authoring_hint_option_firstTimeOnly": {
+		"value":"最初のみ",
+		"description":"The text \"First Time Only\" to display in \"force show:\" drop down for step hints."
+	},	
+	"authoring_hint_option_always": {
+		"value":"常時",
+		"description":"The text \"Always\" to display in \"force show:\" drop down for step hints."
+	}				
 }
