@@ -1,9 +1,9 @@
 <?php
 include_once("../defs.php");
-if (isset($_POST["locale"]) && isset($_POST["jsonStr"])) {
+if (isset($_POST["locale"]) && isset($_POST["projectType"]) && $_POST["projectType"] == "vle" && isset($_POST["postStr"]) ) {
   // saves to file on the server
   $filePath = $i18n_dir."i18n_".$_POST["locale"].".json";
-  $jsonString = stripslashes($_POST["jsonStr"]);
+  $jsonString = stripslashes($_POST["postStr"]);
   $result = file_put_contents($filePath,$jsonString);
   if ($result === FALSE) {
     echo "FAIL";

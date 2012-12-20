@@ -13,7 +13,7 @@ function getTranslationString(obj) {
 function buildTable() {
 	var translationTable = 
 	"<p><b>Remember to save your work before closing this window by clicking on the \"Save\" button.</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations <span id='numMissingTranslations'></span>&nbsp;&nbsp;&nbsp;" +
-	"<input id='saveButton' type='button' onClick='save()' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
+	"<input id='saveButton' type='button' onClick='save(\"vle\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
 	"<table border='1'>";
 
 	// build the header row

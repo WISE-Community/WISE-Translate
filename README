@@ -2,16 +2,22 @@ Welcome to the WISE-Translate project!
 
 This is a community project for translating the WISE interface and WISE projects.
 
-Before you begin:
-Please use Firefox. Currently this does not work on Chrome and Safari.
+TRANSLATION OPTION 1
 
-Workflow:
-1. Translator (T) creates account on GitHub and becomes a member of the WISE-Community (https://github.com/WISE-Community). To become a member, T can email wise4-dev@googlegroups.com with T's GitHub username.
-2. T clones WISE-Translation Project (WTP), at https://github.com/WISE-Community/WISE-Translate.  If T has a mac and is not familiar with command-line git, T can get the GitHub Client App for Mac (http://mac.github.com/).
-3. T opens up WTP (WISE-Translation/index.html) using the browser and uses the web interface to translate (see additional instructions in WTP).
-4. When finished with the translation, T clicks on the "Show Translation File" button, which brings up a dialog with the contents of translated file (see additional instructions in WTP).
-5. T copies&pastes the contents of the translated file and pastes&saves it in his checkout copy of the file (see additional instructions in WTP).
-6. T commits and pushes the changes back to the WISE-Translation GitHub project (using git command line or a git client application)
+Please go to WISE4.org/translate to start translating! Get the username/password to translate from WISE staff (telsportal at gmail dot com).
 
-Watch the screencast "How to Translate the WISE VLE" http://www.screencast.com/t/Bmwsmz4Vs
+As you start to translate, the　updated translation file text will appear in a textbox when you hit "save". Copy and save the contents for backup.
+When you are finished, send the final text to WISE staff and they will add it to the core build.
 
+Let the WISE staff know (telsportal at gmail dot com) when you are done with translation and they will add it to the core build.
+
+TRANSLATION OPTION 2
+
+Checkout out this project, host it yourself (locally or on a server), and go to http://your_server/WISE-Translate/index.html. You could 
+simply put it on your local filesystem and access it via file://path_to_WISE-Translate/index.html, but YOU MUST USE FIREFOX if you 
+decide to do so.
+
+As you start to translate, the　updated translation file text will appear in a textbox when you hit "save". Copy and save the contents into 
+the appropriate file in vle/bundle/i18n_XX.json or portal/bundle/ui-html_XX.properties, where XX is the locale that you're translating.
+
+Let the WISE staff know (telsportal at gmail dot com) when you are done with the translation file and they will add it to the core build.

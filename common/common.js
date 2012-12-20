@@ -56,32 +56,21 @@ function updateMissingTranslationsCount() {
 * Tries to save translation string (json string or properties string) to server.
 * If unsuccessful, displays the string in textarea.
 */ 
-function save() {
+function save(projectType) {
 	isDirty = false;  // assume that user does the right thing and saves changes.
 	$("#saveButton").attr("disabled","disabled");   // disable multiple saving
 	$("#loadingGif").show();   // show the spinning wheel.
 	var translationString = getTranslationString(View.prototype.i18n[currentLanguage]);
+	dump(translationString);   // dump the translation file to the textarea so user can make backup.
+	$("#saveButton").removeAttr("disabled");
+	$("#loadingGif").hide();   // hide the spinning wheel.	
 	$.ajax({
 		url:"../common/post.php",
 		type:"POST",
-		data:{locale:currentLanguage,jsonStr:translationString},
+		data:{locale:currentLanguage,postStr:translationString,projectType:projectType},
 		success:function(data, textStatus, jq) {
-			if (data == "SUCESS") {
-				alert('Work successfully saved');
-				$("#saveButton").removeAttr("disabled");
-				$("#loadingGif").hide();   // hide the spinning wheel.
-			} else {
-				alert('Error saving data. Please stop further work and contact the administrator. Copy the text that appears at the top of this page and save it locally for backup.');
-				dump(translationString);
-				$("#saveButton").removeAttr("disabled");
-				$("#loadingGif").hide();   // hide the spinning wheel.
-			}
 		},
 		error:function() {
-			alert('Error saving data. Please stop further work and contact the administrator. Copy the text that appears at the top of this page and save it locally for backup.');
-			dump(translationString);
-			$("#saveButton").removeAttr("disabled");
-			$("#loadingGif").hide();   // hide the spinning wheel.
 		}
 	});
 };
