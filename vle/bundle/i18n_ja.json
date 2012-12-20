@@ -320,8 +320,8 @@
         "description": "the text 'open premade comments' that will open the premadecomments window when clicked"
     },
     "not_available": {
-        "value": "not available (ja)",
-        "description": "the text 'not available'--what's not availble?"
+        "value": "ご利用できません",
+        "description": "the text 'not available'"
     },
     "grading_no_work_warning": {
         "value": "回答が未提出の為、採点・コメント・フラグはまだ出来ません",
