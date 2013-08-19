@@ -534,5 +534,13 @@
     "grading_button_special_export_description": {
         "value": "(Zip File に生徒の回答をエクスポートする）",
         "description": "GradingTool: Description next the Special Export button"
+    },
+    "student_aggregate_view_intro_text": {
+        "value": "{0}のサマリービュー",
+        "description": "Text above where the aggregate view would be displayed"
+    },
+    "student_aggregate_view_preview_mode_default_text": {
+        "value": "このステップの統合ビューはクラスルームランをセットアップした後に表示されます。",
+        "description": "Default text to display for aggregate view when in preview mode."
     }
 }
