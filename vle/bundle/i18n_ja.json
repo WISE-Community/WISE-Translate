@@ -1,7 +1,7 @@
 {
     "file_button_text": {
         "value": "ファイル",
-        "description": "Text on the File Manager button"
+        "description": "Text on the File Manager button for Student VLE"
     },
     "ideas_button_text": {
         "value": "アイデア",
@@ -510,5 +510,29 @@
     "authoring_hint_delete": {
         "value": "ヒントを削除",
         "description": "The label for the 'delete current hint' button in the step hint authoring panel"
+    },
+    "display_chat_room": {
+        "value": "チャットルームをスタート",
+        "description": "Text on the Chat Room button for Student VLE"
+    },
+    "stepTerm": {
+        "value": "ステップ",
+        "description": "Default term for a 'step' in a WISE project"
+    },
+    "insertImage": {
+        "value": "イメージを入れる",
+        "description": "Text 'Insert Image', to use for file upload"
+    },
+    "chat_room": {
+        "value": "チャットルーム",
+        "description": "The text 'Chat Room' in the Chat Room popup"
+    },
+    "workgroupId": {
+        "value": "ワークグループID",
+        "description": "Workgroup Id"
+    },
+    "grading_button_special_export_description": {
+        "value": "(Zip File に生徒の回答をエクスポートする）",
+        "description": "GradingTool: Description next the Special Export button"
     }
 }

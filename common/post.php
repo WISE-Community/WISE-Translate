@@ -1,21 +1,41 @@
 <?php
-include_once("../defs.php");
-if (isset($_POST["locale"]) && isset($_POST["projectType"]) && $_POST["projectType"] == "vle" && isset($_POST["postStr"]) ) {
+session_start();
+include_once("defs.php");
+if (empty($_SESSION["username"]) || empty($_SESSION["userEmail"])) {
+  echo "FAIL";
+  exit;
+}
+
+if (isset($_POST["locale"]) && isset($_POST["projectType"]) && isset($_POST["postStr"]) ) {
   // saves to file on the server
-  $filePath = $i18n_dir."i18n_".$_POST["locale"].".json";
-  $jsonString = stripslashes($_POST["postStr"]);
-  $result = file_put_contents($filePath,$jsonString);
+  if ($_POST["projectType"] == "vle") {
+    $filePath = $vle_bundle_dir."i18n_".$_POST["locale"].".json";
+    $contentString = $_POST["postStr"];
+  } else if ($_POST["projectType"] == "portal") {
+    $filePath = $portal_bundle_dir."ui-html_".$_POST["locale"].".properties";
+    $contentString = $_POST["postStr"];
+  }
+  $result = file_put_contents($filePath,$contentString);
+  if (!isset($adminEmail)) {
+    $adminEmail = "telsportal@gmail.com";	
+  }
+  $today = date("F j, Y, g:i a");
+  $emailContentString = "By: ".$_SESSION["username"]." Email: ".$_SESSION["userEmail"].$contentString;
   if ($result === FALSE) {
+    mail($adminEmail, "[WISE TRANSLATION SAVE FAIL] ".$_POST["projectType"]." translation locale: ".$_POST["locale"], $emailContentString);
+    mail($_SESSION["userEmail"], "[WISE TRANSLATION SAVE FAIL] ".$today, "WISE Staff has been notified ".$contentString);
     echo "FAIL";
     exit;
-  } else {
-    // run exec to commit changes to github...ran into permission problems. can't do this, apparently.
-    // so send email each time
-    if (!isset($adminEmail)) {
-	  $adminEmail = "telsportal@gmail.com";	
-    }
-	mail($adminEmail,"VLE translation locale: ".$_POST["locale"], $jsonString);
+  } else {     
+    // send email each time
+    mail($adminEmail, "[WISE TRANSLATION SAVE SUCCESS] ".$_POST["projectType"].", ".$_POST["locale"], $emailContentString);
+    mail($_SESSION["userEmail"], "Keep for backup: WISE translation ".$today, $contentString);
     exit;
   }
+} else if (isset($_POST["locale"]) && isset($_POST["projectType"]) && isset($_POST["notifyComplete"])) {
+  if (!isset($adminEmail)) { 
+    $adminEmail = "telsportal@gmail.com";
+  }
+  mail($adminEmail, "Translation Complete for locale: ".$_POST["locale"]." project: ".$_POST["projectType"], "By: ".$_SESSION["username"]." Email: ".$_SESSION["userEmail"]);
 }
 ?>

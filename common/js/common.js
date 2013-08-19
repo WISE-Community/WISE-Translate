@@ -10,7 +10,8 @@ var localeToHumanReadableLanguageMap = {
 	"he":"Hebrew",
 	"it":"Italian",
 	"ja":"Japanese",
-	"ko":"Korean"
+	"ko":"Korean",
+        "es":"Spanish"
 };
 
 // given locale (e.g. "ja"), returns human readable language (e.g. "Japanese")
@@ -30,6 +31,7 @@ String.prototype.endsWith = function(suffix) {
 function dump(translationString) {
 	$("#dumpTextarea").html(translationString);
 	$("#dumpDiv").show();
+	$("#dumpDiv").dialog({ autoOpen: true, title:"save successful", modal: true, width: 1000, height: 800, position: {my:"center", at:"center", of:"#saveButton"} });
 };
 
 // toggle show/hide rows that have already been translated
@@ -49,13 +51,48 @@ function updateMissingTranslationsCount() {
 			numMissingTranslations += 1;
 		}
 	});
-	$("#numMissingTranslations").html("("+numMissingTranslations+")");
+	var numTotalTranslations = $("tr textarea").length;	
+	var numCompletedTranslations = numTotalTranslations - numMissingTranslations;
+	var completionPercentage = Math.round(numCompletedTranslations/numTotalTranslations*100);
+	var cheerfulText = "";
+	if (numTotalTranslations == numCompletedTranslations) {
+	    cheerfulText = "Congratulations. You're done!";
+        } else if (completionPercentage <= 25) {
+	    cheerfulText = "Take it one step at a time! A journey of a thousand miles begins with a single step.";
+	} else if (completionPercentage <= 50) {
+	    cheerfulText = "Life is a journey, not a destination. Enjoy the journey of translation!";
+	} else if (completionPercentage <= 75) {
+	    cheerfulText = "You're more than halfway there!";
+	} else if (completionPercentage <= 90) {
+	    cheerfulText = "You're almost there!";
+	} else {
+	    cheerfulText = "You're soooo close to the finish line!";
+	}
+	$("#numMissingTranslations").html("("+numMissingTranslations+" translations remaining. "+completionPercentage+"% complete. "+cheerfulText+")");
 };
 
 /**
-* Tries to save translation string (json string or properties string) to server.
-* If unsuccessful, displays the string in textarea.
-*/ 
+ * Notifies the WISE Staff that the user has completed translating the projectType
+ * projectType: {"vle", "portal"}
+ */
+function notifyComplete(projectType) {
+	$.ajax({
+		url:"../common/post.php",
+		type:"POST",
+		    data:{locale:currentLanguage,notifyComplete:true,projectType:projectType},
+		success:function(data, textStatus, jq) {
+		    alert("Thanks, WISE Staff has been notified. We will review your changes in the coming days. If you have questions, please email us at telsportal at gmail dot com.");
+		},
+		error:function() {
+		}
+	});
+};
+
+/**
+ * Tries to save translation string (json string or properties string) to server.
+ * Displays the string inside a textarea in a jQuery dialog
+ * projectType: {"vle", "portal"}
+ */ 
 function save(projectType) {
 	isDirty = false;  // assume that user does the right thing and saves changes.
 	$("#saveButton").attr("disabled","disabled");   // disable multiple saving
@@ -211,3 +248,6 @@ window.onbeforeunload = function() {
 	}
 };
 
+function addSlashes( str ) {
+    return str.replace(/\"/g, "\\\"");
+};

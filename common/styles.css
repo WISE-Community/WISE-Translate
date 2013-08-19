@@ -1,4 +1,9 @@
-td {
-   width:250px;
-   word-wrap:break-word;
+#translationTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cell_key {
+  overflow:hidden;
+  width:200px;
 }

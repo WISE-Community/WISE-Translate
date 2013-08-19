@@ -1,19 +1,23 @@
 {
 	"file_button_text":{
 		"value":"Files",
-		"description":"Text on the File Manager button"
+		"description":"Text on the File Manager button for Student VLE"
 	},
 	"ideas_button_text":{
 		"value":"Ideas",
-		"description":"Text on the Idea Manager button"
+		"description":"Text on the Idea Manager button for Student VLE"
 	},
 	"addidea_button_text":{
 		"value":"Add Idea",
-		"description":"Text on the Add Idea button"
+		"description":"Text on Add Idea buttons for Student VLE"
 	},
 	"mywork_button_text":{
 		"value":"My Work",
-		"description":"Text on the My Work button"
+		"description":"Text on the My Work button for Student VLE"
+	},
+	"display_chat_room":{
+		"value":"Open Chat Room",
+		"description":"Text on the Chat Room button for Student VLE"
 	},
 	"mywork_button_title":{
 		"value":"Review My Work",
@@ -78,22 +82,30 @@
 	"gohome_button_title":{
 		"value":"Save & Exit to Student Home",
 		"description":"Text for mouse hover title on the Home button"
-	},		
+	},
+	"hint_title":{
+		"value":"Hints",
+		"description":"Title of the hint dialog window and the text that shows up next to the Hint button"
+	},
 	"hint_button_text":{
 		"value":"Hints",
 		"description":"Text that shows up next to the Hint button"
 	},
 	"hint_button_title":{
-		"value":"View Hints",
-		"description":"Text for mouse hover title on the Hint button"
+		"value":"View hints for this step",
+		"description":"Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
 	},
-	"hint_title":{
-		"value":"Step Hints",
-		"description":"Title that shows up in the hint window"
+	"hint_num_separator":{
+		"value":"of",
+		"description":"Text to be shown between current Hint number and total (e.g. 1 'of' 2)"
 	},
 	"hint_hint":{
-		"value":"Hint",
-		"description":"will be shown as Hint (1 of 2)"
+		"value":"hint",
+		"description":"Default Text label for 'hint'"
+	},
+	"hint_plural":{
+		"value":"hints",
+		"description":"Default Text label for 'hints' (plural)"
 	},
 	"hint_next":{
 		"value":"Next",
@@ -102,6 +114,18 @@
 	"hint_prev":{
 		"value":"Prev",
 		"description":"previous hint"
+	},
+	"node_annotations_title":{
+		"value":"Step Feedback",
+		"description":"Title of the step feedback dialog window"
+	},
+	"node_annotations_button_text":{
+		"value":"Feedback",
+		"description":"Text that shows up next to the Hint button"
+	},
+	"node_annotations_button_title":{
+		"value":"View feedback for this step",
+		"description":"Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
 	},
 	"navigation_expand_all":{
 		"value":"Show All",
@@ -147,6 +171,14 @@
 		"value":"Maximum space exceeded! Maximum allowed is {0}, total on server is {1}. Please delete some files.",
 		"description":"Text on a button in Student Asset Manager to delete a selected file"
 	},
+	"student_aggregate_view_intro_text":{
+		"value":"Summary View for step {0}",
+		"description":"Text above where the aggregate view would be displayed"
+	},
+	"student_aggregate_view_preview_mode_default_text": {
+		"value":"Aggregate view for this step will appear when you set up a run with real students.",
+		"description":"Default text to display for aggregate view when in preview mode."
+	},
 	"cancel":{
 		"value":"Cancel",
 		"description":"Text 'cancel'"
@@ -159,18 +191,42 @@
 		"value":"Done",
 		"description":"Text 'done', to mean completed"
 	},
+	"stepTerm":{
+		"value":"Step",
+		"description":"Default term for a 'step' in a WISE project"
+	},
+	"insertImage":{
+		"value":"Insert Image",
+		"description":"Text 'Insert Image', to use for file upload"
+	},
+	"idea":{
+		"value":"idea",
+		"description":"The default text for an 'idea' in the Idea Manager tool."
+	},
+	"idea_plural":{
+		"value":"ideas",
+		"description":"The default text for 'ideas' in the Idea Manager tool."
+	},
 	"idea_basket":{
 		"value":"Idea Basket",
 		"description":"The text 'Idea Basket' in the Idea Manager"
 	},	
 	"idea_basket_add_an_idea":{
-		"value":"Add an Idea",
-		"description":"The text 'Add an Idea' in the Idea Manager"
+		"value":"Add Idea",
+		"description":"The text 'Add Idea' in the Idea Manager"
 	},
 	"idea_basket_retrieval_error":{
 		"value":"Error: Could not open Idea Basket, refresh the VLE to try to load it again",
 		"description":"Error message displayed when retrieving idea basket fails"
 	},
+	"explanation_builder":{
+		"value":"Explanation Builder",
+		"description":"The default text for the 'Explanation Builder' tool."
+	},
+	"chat_room":{
+		"value":"Chat Room",
+		"description":"The text 'Chat Room' in the Chat Room popup"
+	},	
 	"grading_button_grade_by_step":{
 		"value":"Grade By Step",
 		"description":"GradingTool: Text in the grade-by-step button"
@@ -207,6 +263,10 @@
 		"value":"Export Student Names",
 		"description":"GradingTool: Text in the Export Student Names button"
 	},
+	"grading_button_special_export":{
+		"value":"Special Export",
+		"description":"GradingTool: Text in the Special Export button"
+	},
 	"grading_button_export_latest_student_work_description":{
 		"value":"(Export the latest student revision)",
 		"description":"GradingTool: Description next the Export Student Names button"
@@ -230,6 +290,10 @@
 	"grading_button_export_student_names_description":{
 		"value":"(Export the student names along with their period, workgroup id, wise id, and login)",
 		"description":"GradingTool: Description next the Export Student Names button"
+	},
+	"grading_button_special_export_description":{
+		"value":"(Export the work for special steps as a zip file)",
+		"description":"GradingTool: Description next the Special Export button"
 	},
 	"grading_button_explanation":{
 		"value":"Explanation",
@@ -293,11 +357,11 @@
 	},	
 	"grading_hide_show_question":{
 		"value":"Hide/Show the Question",
-		"description":"'hide/show question' link that toggles the question's visibility in the gradingtool"
+		"description":"'hide/show question' link that toggles the question's visibility in the grading tool"
 	},
 	"grading_previous_step":{
 		"value":"< Previous",
-		"description":"'Previous Step' button in the gradingtool that will show the previous step in the project"
+		"description":"'Previous Step' button in the grading tool that will show the previous step in the project"
 	},
 	"grading_previous_step_not_exist":{
 		"value":"Previous Step does not exist: this is the first gradable step",
@@ -305,11 +369,11 @@
 	},
 	"grading_change_step":{
 		"value":"Change Step",
-		"description":"'Change Step' button in the gradingtool that will show the select step page"
+		"description":"'Change Step' button in the grading tool that will show the select step page"
 	},
 	"grading_next_step":{
 		"value":"Next >",
-		"description":"'Next Step' button in the gradingtool that will show the next step in the project"
+		"description":"'Next Step' button in the grading tool that will show the next step in the project"
 	},	
 	"grading_next_step_not_exist":{
 		"value":"Next Step does not exist: this is the last gradable step",
@@ -318,6 +382,10 @@
 	"period":{
 		"value":"Period",
 		"description":"Period"
+	},	
+	"workgroupId":{
+		"value":"Workgroup Id",
+		"description":"Workgroup Id"
 	},	
 	"team":{
 		"value":"Student Team",
@@ -349,8 +417,12 @@
 	},
 	"flag":{
 		"value":"Flag",
-		"description":"Flag, for flagging student's work using the flaggingtool"
+		"description":"Flag, for flagging student's work using the flagging tool"
 	},
+	"flag_as_inappropriate":{
+		"value":"Flag as inappropriate",
+		"description":"\"Flag as inappropriate\" text, for flagging inappropriate student's work using the flagging tool"
+	},	
 	"timestamp":{
 		"value":"Timestamp",
 		"description":"timestamp"
@@ -361,7 +433,7 @@
 	},		
 	"grading_open_premade_comments":{
 		"value":"Open Premade Comments",
-		"description":"the text 'open premade comments' that will open the premadecomments window when clicked"
+		"description":"the text 'open premade comments' that will open the premade comments window when clicked"
 	},		
 	"not_available":{
 		"value":"not available",
@@ -395,6 +467,10 @@
 		"value":"Enlarge Student Work",
 		"description":"text to show next to the 'Enlarge Student Work Text' checkbox in the grading tool"
 	},
+	"grading_only_show_new_student_work":{
+		"value":"Only Show New Work",
+		"description":"text to show next to the 'Only Show New Work' checkbox in the grading tool"
+	},
 	"grading_show_all_revisions":{
 		"value":"Show All Revisions",
 		"description":"text to show next to the 'Show All Revisions' checkbox in the grading tool"
@@ -422,6 +498,97 @@
 	"note_title" : {
 		"value":"Reflection Note",
 		"description":"Text to display in the title bar of a note dialog window"
+	},
+	"authoring_confirm_switch_authoring_mode": {
+		"value":"You are about to switch authoring mode but have not saved your changes. If you continue, your changes will be lost. Do you wish to continue?",
+		"description":"Message displayed in the Authoring Tool to authors when trying to switch between simple/advanced modes but their changes have not been saved."		
+	},
+	"authoring_hint_dialog_title": {
+		"value":"Add/Edit Hints for this Step",
+		"description":"Text to display as the title of the edit step hints dialog window."
+	},
+	"authoring_hint_new": {
+		"value":"New Hint",
+		"description":"Default text for a new step hint."
+	},
+	"authoring_hint_forceShow": {
+		"value":"Force Show:",
+		"description":"Text to display for the label of the \"Force Show: \" drop down in the step hint authoring panel"
+	},
+	"authoring_hint_option_never": {
+		"value":"Never",
+		"description":"The text \"Never\" to display in \"force show:\" drop down in the step hint authoring panel"
+	},		
+	"authoring_hint_option_firstTimeOnly": {
+		"value":"First Time Only",
+		"description":"The text \"First Time Only\" to display in \"force show:\" drop down in the step hint authoring panel"
+	},
+	"authoring_hint_option_always": {
+		"value":"Always",
+		"description":"The text \"Always\" to display in \"force show:\" drop down in the step hint authoring panel"
+	},
+	"authoring_hint_modal": {
+		"value":"Modal Dialog",
+		"description":"Text to display for the label of the \"Modal Dialog\" checkbox in the step hint authoring panel"
+	},
+	"authoring_hint_isMustViewAllPartsBeforeClosing": {
+		"value":"Must View All Parts Before Closing",
+		"description":"Text to display for the label of the \"Must View All Parts Before Closing\" checkbox in the step hint authoring panel"
+	},
+	"authoring_hint_options_label": {
+		"value":"Options",
+		"description":"The label for the 'Options' settings in the step hint authoring panel"
+	},
+	"authoring_hint_terminology_label": {
+		"value":"Labels/Terminology",
+		"description":"The label for the 'Labels/Terminology' settings in the step hint authoring panel"
+	},
+	"authoring_hint_terminology_instructions": {
+		"value":"Optional: Customize the display name for \"hint(s)\" in this step.",
+		"description":"The instructions for the 'Labels/Terminology' settings in the step hint authoring panel"
+	},
+	"authoring_hint_term_label": {
+		"value":"Term for \"hint\": ",
+		"description":"The label for the 'hint' term input field in the step hint authoring panel"
+	},
+	"authoring_hint_term_plural_label": {
+		"value":"Term for \"hints\" (plural): ",
+		"description":"The label for the 'hints' term input field in the step hint authoring panel"
+	},
+	"authoring_hint_add": {
+		"value":"Add New Hint",
+		"description":"The label for the 'add new hint' button in the step hint authoring panel"
+	},
+	"authoring_hint_delete": {
+		"value":"Delete Current Hint",
+		"description":"The label for the 'delete current hint' button in the step hint authoring panel"
+	},
+	"authoring_imsettings_attribute_help": {
+		"value":"Help content will go here",
+		"description":""
+	},
+	"authoring_imsettings_terminology_help": {
+		"value":"Help content will go here",
+		"description":""
+	},
+	"authoring_imsettings_text_required": {
+		"value":"The <span style='font-weight:bold;'>text</span> attribute is the basic component of each idea and cannot be deleted.",
+		"description":"The help text in the Idea Manager settings for the lock icon on the 'text' idea attribute."
+	},
+	"project_error_has_no_steps": {
+		"value":"Error: This project does not have any steps.",
+		"description":"The error text to be displayed when the project has no steps in it"
+	},
+	"preview_project_constraint_enabled_message": {
+		"value":"Student navigation constraints are currently enabled. To preview project without any constraints,",
+		"description":"The message shown in preview project mode when student navigation constraints are enabled."
+	},
+	"preview_project_constraint_disabled_message": {
+		"value":"Student navigation constraints are currently disabled. To preview project with all constraints,",
+		"description":"The message shown in preview project mode when student navigation constraints are enabled."
+	},
+	"common_click_here": {
+		"value":"click here",
+		"description":"the common text 'click here'"
 	}
-
 }
