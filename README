@@ -21,3 +21,12 @@ As you start to translate, the　updated translation file text will appear in a 
 the appropriate file in vle/bundle/i18n_XX.json or portal/bundle/ui-html_XX.properties, where XX is the locale that you're translating.
 
 Let the WISE staff know (telsportal at gmail dot com) when you are done with the translation file and they will add it to the core build.
+
+HOW TO ADD NEW STEPS TO BE TRANSLATED
+1. Copy /translate/newstep folder to /translate/[stepname]
+2. Edit /translate/[stepname]/index.php. Inside the file, set var projectType = "[stepname]";  [stepname] must match [stepname] above.
+3. Copy i18n_*.json files to /translate/[stepname]/i18n/ folder.
+4. Edit /translate/index.php. Add the following block inside the "stepDiv":
+
+<h3><a href="[stepname]">Step Name here</a></h3>
+<p>Step Description Here</p>
