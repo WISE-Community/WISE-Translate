@@ -1,10 +1,6 @@
-//"en_US"=english (US), "ja"=japanese, "zh_TW"=traditional chinese, "ko"=korean
-View.prototype.i18n.supportedLocales = [
-                                        "en_US","zh_TW","zh_CN","nl","es","he","it","ja","ko"
-                                        ];
 
 // returns the string representation of what should be saved in the translation file
-// for VLE, this is a JSONString. for Portal, this would be a properties string
+// for VLE and step types, this is a JSONString. for Portal, this would be a properties string
 function getTranslationString(obj) {
 	for (key in obj) {
 	  obj[key].description = addSlashes(obj[key].description);
@@ -17,11 +13,11 @@ function getTranslationString(obj) {
 function buildTable() {
 	var translationTable = 
 	"<div id='dumpDiv' style='display:none'>"+
-	"<b>Please copy and save the following into a file for backup.</b><br/><br/>You can close this window and keep working, or if you are done,<br/><button onclick='notifyComplete(\"vle\")'>Click here to notify the WISE Staff.</button>"+
+	"<b>Please copy and save the following into a file for backup.</b><br/><br/>You can close this window and keep working, or if you are done,<br/><button onclick='notifyComplete(\""+projectType+"\")'>Click here to notify the WISE Staff.</button>"+
 	"<textarea rows='50' cols='150' id='dumpTextarea'></textarea>"+
 	"</div>"+
 	"<p><b>Remember to save your work before closing this window by clicking on the \"Save\" button.</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations <span id='numMissingTranslations'></span>&nbsp;&nbsp;&nbsp;" +
-	"<input id='saveButton' type='button' onClick='save(\"vle\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
+	"<input id='saveButton' type='button' onClick='save(\""+projectType+"\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
 	"<table border='1' id='translationTable'>";
 
 	// build the header row
@@ -66,7 +62,7 @@ function buildTable() {
  * Synchronously retrieves specified locale json mapping file
  */
 View.prototype.retrieveLocale = function(locale) {
-	var localePath = "bundle/i18n_" + locale + ".json";
+	var localePath = "i18n/i18n_" + locale + ".json";
 	$.ajax({"url":localePath,
 		    async:false,
 		    dataType:"json",

@@ -238,6 +238,8 @@ $(document).ready(function() {
 		currentLanguage = $(this).find(":selected").val()
 		buildTable();
 	});
+
+	$("#heading").append(" ").append(projectType);
 });
 
 window.onbeforeunload = function() {

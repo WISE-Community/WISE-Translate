@@ -8,12 +8,13 @@ if (empty($_SESSION["username"]) || empty($_SESSION["userEmail"])) {
 
 if (isset($_POST["locale"]) && isset($_POST["projectType"]) && isset($_POST["postStr"]) ) {
   // saves to file on the server
-  if ($_POST["projectType"] == "vle") {
-    $filePath = $vle_bundle_dir."i18n_".$_POST["locale"].".json";
+  
+  if ($_POST["projectType"] == "portal") {
+    $filePath = $translate_dir."/".$_POST["projectType"]."/i18n/"."ui-html_".$_POST["locale"].".properties";
     $contentString = $_POST["postStr"];
-  } else if ($_POST["projectType"] == "portal") {
-    $filePath = $portal_bundle_dir."ui-html_".$_POST["locale"].".properties";
-    $contentString = $_POST["postStr"];
+  } else  {
+	    $filePath = $translate_dir."/".$_POST["projectType"]."/i18n/"."i18n_".$_POST["locale"].".json";
+	    $contentString = $_POST["postStr"];
   }
   $result = file_put_contents($filePath,$contentString);
   if (!isset($adminEmail)) {

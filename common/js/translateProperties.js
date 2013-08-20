@@ -1,7 +1,3 @@
-//"en_US"=english (US), "ja"=japanese, "zh_TW"=traditional chinese, "ko"=korean
-View.prototype.i18n.supportedLocales = [
-                                        "en_US","zh_TW","zh_CN","nl","es","he","it","ja","ko"
-                                        ];
 
 // returns the string representation of what should be saved in the properties translation file
 function getTranslationString(obj) {
@@ -130,7 +126,7 @@ View.prototype.parseData = function(data) {
  * Synchronously retrieves specified locale properties mapping file
  */
 View.prototype.retrieveLocale = function(locale) {
-	var localePath = "bundle/ui-html_" + locale + ".properties";
+	var localePath = "i18n/ui-html_" + locale + ".properties";
 	$.ajax({"url":localePath,
 		    async:false,
 		    dataType:"text",

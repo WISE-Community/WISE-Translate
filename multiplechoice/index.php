@@ -16,17 +16,17 @@ if (!isset($_SESSION["username"]) || !isset($_SESSION["userEmail"])) {
 
    <script type="text/javascript" src="../common/js/translateJSON.js"></script>
 <script type="text/javascript">
+var projectType = "multiplechoice";
 //"en_US"=english (US), "ja"=japanese, "zh_TW"=traditional chinese, "ko"=korean
-var projectType = "vle";
 View.prototype.i18n.supportedLocales = [
-                                        "en_US","zh_TW","zh_CN","nl","es","he","it","ja","ko"
+                                        "en_US","zh_TW","zh_CN","es","ja"
                                         ];
 
 </script>
 </head>
 <body>
 
-<h1 id="heading">WISE Translate: </h1>
+<h1 id='heading'>WISE Translate:</h1>
 <p>Send bug reports and questions to the WISE staff (telsportal at gmail dot com).</p>
 <div id="defaultLocale">Default Locale: </div>
 <div id="currentLanguage">Currently Translating: 
