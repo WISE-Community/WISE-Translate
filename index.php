@@ -23,7 +23,7 @@ p {margin: 2 0 0 10;}
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
 
 <h2>Translate Steps</h2>
-<div style="margin-left:50px">
+<div id="stepDiv" style="margin-left:50px">
 <h3><a href="assessmentlist">Assessment List (Questionnaire)</a></h3>
 <p>Students answer a collection of questions that require text or multiple choice answers</p>
 
