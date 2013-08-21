@@ -3,8 +3,8 @@
 // for VLE and step types, this is a JSONString. for Portal, this would be a properties string
 function getTranslationString(obj) {
 	for (key in obj) {
-	  obj[key].description = addSlashes(obj[key].description);
-	  obj[key].value = addSlashes(obj[key].value);
+	    obj[key].description = addSlashes(obj[key].description);
+	    obj[key].value = addSlashes(obj[key].value);
         }
         return FormatJSON(obj);
 }

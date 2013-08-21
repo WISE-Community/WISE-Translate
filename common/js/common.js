@@ -251,5 +251,8 @@ window.onbeforeunload = function() {
 };
 
 function addSlashes( str ) {
+    if (str == null) {
+	return "";
+    }
     return str.replace(/\"/g, "\\\"");
 };
