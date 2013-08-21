@@ -33,11 +33,26 @@ p {margin: 2 0 0 10;}
 <h3><a href="explanationbuilder">Explanation Builder</a></h3>
 <p>Students use ideas from their Idea Basket to generate a response</p>
 
+<h3><a href="fillin">Fill In</a></h3>
+<p>Students fill in the missing text blanks in a body of text</p>
+
+<h3><a href="flash">Flash</a></h3>
+<p>Embed Flash content in a WISE step.</p>
+
 <h3><a href="grapher">Grapher</a></h3>
 <p>This is a lightweight version of the grapher step that allows graphing of multiple series, and connects to the cargraph step.</p>
 
+<h3><a href="matchsequence">Match & Sequence</a></h3>
+<p>Students drag and drop choices into boxes</p>
+
+<h3><a href="mw">Molecular Workbench</a></h3>
+<p>Students work on a Molecular Workbench applet</p>
+
 <h3><a href="multiplechoice">Multiple Choice</a></h3>
 <p>Students answer a multiple choice question</p>
+
+<h3><a href="netlogo">NetLogo</a></h3>
+<p>Students work on a NetLogo activity</p>
 
 <h3><a href="openresponse">Open Response</a></h3>
 <p>Students write text to answer a question or explain their thoughts</p>
