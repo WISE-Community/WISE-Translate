@@ -58,5 +58,9 @@
     "autograded_score": {
         "value": "Auto-calificación: {0}",
         "description": "Auto graded score that gets displayed in the teacher grading tool."
+    },
+    "click_ok_to_save": {
+        "value": "Clic 'OK' para grabar y sellar este paso. El trabajo se guardará y no se podrán realizar más cambios. Si quieren seguir trabajando en este paso hagan clic en 'Cancelar'.",
+        "description": "The text to notify the student to click 'OK' to save and lock the step"
     }
 }
