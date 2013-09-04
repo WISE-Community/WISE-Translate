@@ -1,7 +1,7 @@
 
 // returns the string representation of what should be saved in the translation file
 // for VLE and step types, this is a JSONString. for Portal, this would be a properties string
-function getTranslationString(obj) {
+function getTranslationString_JSON(obj) {
 	for (key in obj) {
 	    obj[key].description = addSlashes(obj[key].description);
 	    obj[key].value = addSlashes(obj[key].value);
@@ -10,14 +10,14 @@ function getTranslationString(obj) {
 }
 
 // build and show the translation table for the currentLanguage
-function buildTable() {
+function buildTable_JSON() {
 	var translationTable = 
 	"<div id='dumpDiv' style='display:none'>"+
 	"<b>Please copy and save the following into a file for backup.</b><br/><br/>You can close this window and keep working, or if you are done,<br/><button onclick='notifyComplete(\""+projectType+"\")'>Click here to notify the WISE Staff.</button>"+
 	"<textarea rows='50' cols='150' id='dumpTextarea'></textarea>"+
 	"</div>"+
 	"<p><b>Remember to save your work before closing this window by clicking on the \"Save\" button.</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations <span id='numMissingTranslations'></span>&nbsp;&nbsp;&nbsp;" +
-	"<input id='saveButton' type='button' onClick='save(\""+projectType+"\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
+	"<input id='saveButton' type='button' onClick='save(\""+projectType+"\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='common/wait30.gif'></img></div>" +
 	"<table border='1' id='translationTable'>";
 
 	// build the header row
@@ -61,8 +61,8 @@ function buildTable() {
 /**
  * Synchronously retrieves specified locale json mapping file
  */
-View.prototype.retrieveLocale = function(locale) {
-	var localePath = "i18n/i18n_" + locale + ".json";
+View.prototype.retrieveLocale_JSON = function(locale,projectType) {
+	var localePath = projectType + "/i18n/i18n_" + locale + ".json";
 	$.ajax({"url":localePath,
 		    async:false,
 		    dataType:"json",
@@ -73,3 +73,33 @@ View.prototype.retrieveLocale = function(locale) {
 	});	
 };
 
+
+/*
+
+$(document).ready(function() {  
+	// add supported locales to selectable drop-down list
+	for (var i=0; i<View.prototype.i18n.supportedLocales.length; i++) { 
+		var supportedLocale = View.prototype.i18n.supportedLocales[i];
+		if (supportedLocale != "en_US") {
+			$("#currentLanguageSelect").append("<option id='"+supportedLocale+"' value='"+supportedLocale+"'>"+localeToHumanReadableLanguage(supportedLocale)+" ("+supportedLocale+") "+"</option");
+		}
+	}
+
+	// print default and supported locales
+	$("#defaultLocale").append(View.prototype.i18n.defaultLocale + " (" + localeToHumanReadableLanguage(View.prototype.i18n.defaultLocale) + ")");
+	// fetch translation files for all supported locales and set them to View.prototype.i18n[locale] array
+	for (var i=0; i < View.prototype.i18n.supportedLocales.length; i++) {
+		var locale = View.prototype.i18n.supportedLocales[i];
+		View.prototype.i18n[locale] = {};
+		View.prototype.retrieveLocale(locale);
+	};
+
+	$("#currentLanguageSelect").change(function() {
+		// user changed currentLanguage, so we need to build and display the table
+		currentLanguage = $(this).find(":selected").val()
+		buildTable();
+	});
+
+	$("#heading").append(" ").append(projectType);
+});
+*/

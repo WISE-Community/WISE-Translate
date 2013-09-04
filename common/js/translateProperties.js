@@ -1,6 +1,6 @@
 
 // returns the string representation of what should be saved in the properties translation file
-function getTranslationString(obj) {
+function getTranslationString_Properties(obj) {
 	var soFar = "";
 	for (key in obj) {
 	    if (key.endsWith(".description")) { 
@@ -18,14 +18,14 @@ function getTranslationString(obj) {
 	return soFar;
 }
 // build and show the translation table for the currentLanguage
-function buildTable() {
+function buildTable_Properties() {
 	var translationTable = 
 	"<div id='dumpDiv' style='display:none'>"+
 	"<b>Please copy and save the following into a file for backup.</b><br/><br/>You can close this window and keep working, or if you are done,<br/><button onclick='notifyComplete(\"portal\")'>Click here to notify the WISE Staff.</button>"+
 	"<textarea rows='50' cols='150' id='dumpTextarea'></textarea>"+
 	"</div>"+
 	"<p><b>Remember to save your work before closing this window by clicking on the \"Save\" button.</b></p><div style='display:block; margin:10px 0px'><input id='onlyShowMissingTranslationInput' onClick='onlyShowMissingTranslation()' type='checkbox'></input>Only Show Missing Translations <span id='numMissingTranslations'></span>&nbsp;&nbsp;&nbsp;" +
-	"<input id='saveButton' type='button' onClick='save(\"portal\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='../common/wait30.gif'></img></div>" +
+	"<input id='saveButton' type='button' onClick='save(\"portal\")' value='Save'></input><span id='loadingGif' style='display:none'><img src='common/wait30.gif'></img></div>" +
 	"<table border='1' id='translationTable'>";
 
 	// build the header row
@@ -69,7 +69,7 @@ function buildTable() {
 }
 
 /** Parse .properties files */
-View.prototype.parseData = function(data) {
+View.prototype.parseData_Properties = function(data) {
 	mode="map";
 	var map = {};
    var parsed = '';
@@ -125,16 +125,58 @@ View.prototype.parseData = function(data) {
 /**
  * Synchronously retrieves specified locale properties mapping file
  */
-View.prototype.retrieveLocale = function(locale) {
-	var localePath = "i18n/ui-html_" + locale + ".properties";
+View.prototype.retrieveLocale_Properties = function(locale,projectType) {
+	var localePath = projectType + "/i18n/ui-html_" + locale + ".properties";
 	$.ajax({"url":localePath,
 		    async:false,
 		    dataType:"text",
 		    success:function(obj){ 
 			console.log('retrieved it:' + locale);
-			objMap = View.prototype.parseData(obj)
+			objMap = View.prototype.parseData_Properties(obj)
 				View.prototype.i18n[locale] = objMap;
 			},
 			error:function(){}
 	});	
 };
+
+/*
+$(document).ready(function() {
+
+  View.prototype.i18n[View.prototype.i18n.defaultLocale] = {};
+  View.prototype.retrieveLocale(View.prototype.i18n.defaultLocale);
+
+  View.prototype.i18n[currentLanguage] = {};
+  View.prototype.retrieveLocale(currentLanguage);
+
+  buildTable();
+  $("#heading").append(" ").append(projectType);
+});
+*/
+/*
+$(document).ready(function() {  
+	// add supported locales to selectable drop-down list
+	for (var i=0; i<View.prototype.i18n.supportedLocales.length; i++) { 
+		var supportedLocale = View.prototype.i18n.supportedLocales[i];
+		if (supportedLocale != "en_US") {
+			$("#currentLanguageSelect").append("<option id='"+supportedLocale+"' value='"+supportedLocale+"'>"+localeToHumanReadableLanguage(supportedLocale)+" ("+supportedLocale+") "+"</option");
+		}
+	}
+
+	// print default and supported locales
+	$("#defaultLocale").append(View.prototype.i18n.defaultLocale + " (" + localeToHumanReadableLanguage(View.prototype.i18n.defaultLocale) + ")");
+	// fetch translation files for all supported locales and set them to View.prototype.i18n[locale] array
+	for (var i=0; i < View.prototype.i18n.supportedLocales.length; i++) {
+		var locale = View.prototype.i18n.supportedLocales[i];
+		View.prototype.i18n[locale] = {};
+		View.prototype.retrieveLocale(locale);
+	};
+
+	$("#currentLanguageSelect").change(function() {
+		// user changed currentLanguage, so we need to build and display the table
+		currentLanguage = $(this).find(":selected").val()
+		buildTable();
+	});
+
+	$("#heading").append(" ").append(projectType);
+});
+*/

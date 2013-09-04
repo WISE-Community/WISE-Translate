@@ -77,7 +77,7 @@ function updateMissingTranslationsCount() {
  */
 function notifyComplete(projectType) {
 	$.ajax({
-		url:"../common/post.php",
+		url:"common/post.php",
 		type:"POST",
 		    data:{locale:currentLanguage,notifyComplete:true,projectType:projectType},
 		success:function(data, textStatus, jq) {
@@ -97,12 +97,12 @@ function save(projectType) {
 	isDirty = false;  // assume that user does the right thing and saves changes.
 	$("#saveButton").attr("disabled","disabled");   // disable multiple saving
 	$("#loadingGif").show();   // show the spinning wheel.
-	var translationString = getTranslationString(View.prototype.i18n[currentLanguage]);
+	var translationString = getTranslationString(View.prototype.i18n[currentLanguage],projectType);
 	dump(translationString);   // dump the translation file to the textarea so user can make backup.
 	$("#saveButton").removeAttr("disabled");
 	$("#loadingGif").hide();   // hide the spinning wheel.	
 	$.ajax({
-		url:"../common/post.php",
+		url:"common/post.php",
 		type:"POST",
 		data:{locale:currentLanguage,postStr:translationString,projectType:projectType},
 		success:function(data, textStatus, jq) {
@@ -119,6 +119,12 @@ function save(projectType) {
 View.prototype.i18n = {
 		locales:[]
 };
+
+View.prototype.i18n.defaultLocale = "en_US";
+
+View.prototype.i18n.supportedLocales = [
+                                        "en_US","zh_TW","zh_CN","nl","es","ja"
+                                        ];
 
 /**
  * Returns translated value of the given key.
@@ -146,7 +152,6 @@ View.prototype.getStringWithParams = function(key,params) {
 	return this.i18n.getStringWithParams(key,this.config.getConfigParam("locale"),params);		
 };
 
-View.prototype.i18n.defaultLocale = "en_US";
 
 /**
  * key is the key used to lookup the value in the key-value pair mpaaing
@@ -215,32 +220,41 @@ View.prototype.retrieveLocales = function() {
 	};
 };
 
-$(document).ready(function() {  
-	// add supported locales to selectable drop-down list
-	for (var i=0; i<View.prototype.i18n.supportedLocales.length; i++) { 
-		var supportedLocale = View.prototype.i18n.supportedLocales[i];
-		if (supportedLocale != "en_US") {
-			$("#currentLanguageSelect").append("<option id='"+supportedLocale+"' value='"+supportedLocale+"'>"+localeToHumanReadableLanguage(supportedLocale)+" ("+supportedLocale+") "+"</option");
-		}
-	}
+function getFileType(projectType) {
+    if (projectType == "portal") {
+	return "Properties";
+    } else {
+	return "JSON";
+    };
+};
 
-	// print default and supported locales
-	$("#defaultLocale").append(View.prototype.i18n.defaultLocale + " (" + localeToHumanReadableLanguage(View.prototype.i18n.defaultLocale) + ")");
-	// fetch translation files for all supported locales and set them to View.prototype.i18n[locale] array
-	for (var i=0; i < View.prototype.i18n.supportedLocales.length; i++) {
-		var locale = View.prototype.i18n.supportedLocales[i];
-		View.prototype.i18n[locale] = {};
-		View.prototype.retrieveLocale(locale);
-	};
+function buildTable(projectType) {
+    if ("Properties" == getFileType(projectType)) {
+	buildTable_Properties();
+    } else {
+	buildTable_JSON();
+    };
+};
 
-	$("#currentLanguageSelect").change(function() {
-		// user changed currentLanguage, so we need to build and display the table
-		currentLanguage = $(this).find(":selected").val()
-		buildTable();
-	});
+function getTranslationString(obj,projectType) {
+    if ("Properties" == getFileType(projectType)) {
+	return getTranslationString_Properties(obj);
+    } else {
+	return getTranslationString_JSON(obj);
+    };
+};
 
-	$("#heading").append(" ").append(projectType);
-});
+/**
+ * Synchronously retrieves specified locale properties mapping file
+ */
+View.prototype.retrieveLocale = function(locale,projectType) {
+    if ("Properties" == getFileType(projectType)) {
+	this.retrieveLocale_Properties(locale,projectType);
+    } else {
+	this.retrieveLocale_JSON(locale,projectType);
+    }
+};
+
 
 window.onbeforeunload = function() {
 	// before user navigates away from the page or refreshes it, check to see if user needs to save changes or not
