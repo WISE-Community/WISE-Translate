@@ -81,6 +81,9 @@ $(".stats").each(function() {
 <h3><a href="translate.php?projectType=brainstorm">Brainstorm <span class='stats' projectType='brainstorm'></span></a></h3>
 <p>Students post their answer for everyone in the class to read and discuss</p>
 
+<h3><a href="translate.php?projectType=draw">Draw Step <span class='stats' projectType='draw'></span></a></h3>
+<p>	Students draw using basic drawing tools, take snapshots and create flipbook animations</p>
+
 <h3><a href="translate.php?projectType=explanationbuilder">Explanation Builder <span class='stats' projectType='explanationbuilder'></span></a></h3>
 <p>Students use ideas from their Idea Basket to generate a response</p>
 
