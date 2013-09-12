@@ -582,5 +582,21 @@
     "authoring_imsettings_text_required": {
         "value": "??????",
         "description": "The help text in the Idea Manager settings for the lock icon on the 'text' idea attribute."
+    },
+    "ideaBasket_ideaTableHeader": {
+        "value": "Jouw {0}",
+        "description": "Header text for the ideas table in the Idea Basket"
+    },
+    "ideaBasket_trashLabel": {
+        "value": "Prullenbak",
+        "description": "Label the for deleted ideas table in the Idea Basket"
+    },
+    "ideaBasket_deletedEmpty": {
+        "value": "De prullenbak is leeg",
+        "description": "Text to display when the Idea Basket trash is empty"
+    },
+    "ideaBasket_deleteHeader": {
+        "value": "Delete",
+        "description": "Header text for the delete idea column in the Idea Basket"
     }
 }
