@@ -54,11 +54,12 @@ $(".stats").each(function() {
 <h1>Welcome to the WISE4 Translation Project! (English-><span id='userLocale'></span>)</h1>
 <p>Items that need translation will be highlighted in yellow. If you need help, please contact WISE staff (telsportal at gmail dot com)</p>
 
+<h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
+<p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
+
 <h3><a href="translate.php?projectType=portal">Translate the Portal <span class='stats' projectType='portal'></span></a></h3>
 <p>The WISE Portal is the user and classroom management system. This includes user registration and project and run management.</p>
 
-<h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
-<p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
 
 <h2>Translate Themes</h2>
 <div id="themeDiv" style="margin-left:50px">
