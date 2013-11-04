@@ -7,6 +7,10 @@
         "value": "問",
         "description": "The text 'question' in the step header, right above where the prompt/question is shown"
     },
+    "save": {
+        "value": "保存する",
+        "description": "The text 'Save' on the button shown at the bottom of the questionnaire"
+    },    
     "submit": {
         "value": "提出する",
         "description": "The text 'Submit the Questionnaire' on the button shown at the bottom of the questionnaire"

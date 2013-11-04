@@ -11,7 +11,8 @@ var localeToHumanReadableLanguageMap = {
 	"it":"Italian",
 	"ja":"Japanese",
 	"ko":"Korean",
-        "es":"Spanish"
+    "es":"Spanish",
+    "tr":"Turkish"
 };
 
 // given locale (e.g. "ja"), returns human readable language (e.g. "Japanese")

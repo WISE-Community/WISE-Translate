@@ -7,6 +7,10 @@
 		"value":"Question",
 		"description":"The text 'question' in the step header, right above where the prompt/question is shown"
 	},
+	"save": {
+		"value":"Save",
+		"description":"The text 'Save' on the button to save the questionnaire"
+	},
 	"submit": {
 		"value":"Submit the Questionnaire",
 		"description":"The text 'Submit the Questionnaire' on the button shown at the bottom of the questionnaire"
