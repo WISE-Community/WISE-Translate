@@ -15,7 +15,7 @@
 $(document).ready(function() {
 
 var supportedLocales = [
-  "en_US","zh_TW","zh_CN","nl","es","he","it","ja","ko"
+  "en_US","zh_TW","zh_CN","nl","he","it","ja","ko","es","tr"
 ];
 
 // add supported locales to selectable drop-down list
