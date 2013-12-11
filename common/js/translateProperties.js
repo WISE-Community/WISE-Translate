@@ -126,7 +126,7 @@ View.prototype.parseData_Properties = function(data) {
  * Synchronously retrieves specified locale properties mapping file
  */
 View.prototype.retrieveLocale_Properties = function(locale,projectType) {
-	var localePath = projectType + "/i18n/ui-html_" + locale + ".properties";
+	var localePath = projectType + "/i18n/i18n_" + locale + ".properties";
 	$.ajax({"url":localePath,
 		    async:false,
 		    dataType:"text",

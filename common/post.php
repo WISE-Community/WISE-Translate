@@ -10,7 +10,7 @@ if (isset($_POST["locale"]) && isset($_POST["projectType"]) && isset($_POST["pos
   // saves to file on the server
   
   if ($_POST["projectType"] == "portal") {
-    $filePath = $translate_dir."/".$_POST["projectType"]."/i18n/"."ui-html_".$_POST["locale"].".properties";
+    $filePath = $translate_dir."/".$_POST["projectType"]."/i18n/"."i18n_".$_POST["locale"].".properties";
     $contentString = $_POST["postStr"];
   } else  {
 	    $filePath = $translate_dir."/".$_POST["projectType"]."/i18n/"."i18n_".$_POST["locale"].".json";

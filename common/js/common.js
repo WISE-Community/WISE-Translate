@@ -27,7 +27,7 @@ String.prototype.endsWith = function(suffix) {
 };
 
 /**
-* Display the contents of the ui-html_XX.properties or i18n_XX.json file in a textarea
+* Display the contents of the i18n_XX.properties or i18n_XX.json file in a textarea
 */
 function dump(translationString) {
 	$("#dumpTextarea").html(translationString);

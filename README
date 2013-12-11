@@ -18,7 +18,7 @@ simply put it on your local filesystem and access it via file://path_to_WISE-Tra
 decide to do so.
 
 As you start to translate, the　updated translation file text will appear in a textbox when you hit "save". Copy and save the contents into 
-the appropriate file in vle/bundle/i18n_XX.json or portal/bundle/ui-html_XX.properties, where XX is the locale that you're translating.
+the appropriate file in vle/i18n/i18n_XX.json or portal/i18n/i18n_XX.properties, where XX is the locale that you're translating.
 
 Let the WISE staff know (telsportal at gmail dot com) when you are done with the translation file and they will add it to the core build.
 
