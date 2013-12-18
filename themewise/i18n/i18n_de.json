@@ -1,0 +1,6 @@
+{
+    "toggle_nav_button_text": {
+        "value": "full screen in german! ",
+        "description": "Text on the Toggle Navigation button when navigation UI is on (visible)"
+    }
+}

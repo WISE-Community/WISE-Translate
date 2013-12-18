@@ -7,6 +7,7 @@ var localeToHumanReadableLanguageMap = {
 	"zh_TW":"Chinese - Traditional",
 	"zh_CN":"Chinese - Simplified",
 	"nl":"Dutch",
+	"de":"German",
 	"he":"Hebrew",
 	"it":"Italian",
 	"ja":"Japanese",
