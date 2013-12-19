@@ -35,7 +35,7 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<span style="float:right"><a href="index.php">Go back to project select page</a> | <a href="logout.php">Logout</a></span>
+<span style="float:right; margin-right:10px"><a href="index.php">Go back to project select page</a> | <a href="logout.php">Logout</a></span>
 <h1 id='heading'>WISE Translate: </h1>
 <p>Send bug reports and questions to telsportal at gmail dot com.</p>
 <div id="translationTableDiv">

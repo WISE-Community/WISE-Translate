@@ -50,10 +50,13 @@ $(".stats").each(function() {
 </script>
 </head>
 <body>
-<span style="float:right"><a href="logout.php">Logout</a></span>
+<span style="float:right; margin-right:10px"><a href="logout.php">Logout</a></span>
 <h1>Welcome to the WISE4 Translation Project! (English-><span id='userLocale'></span>)</h1>
-<p>Items that need translation will be highlighted in yellow. If you need help, please contact WISE staff (telsportal at gmail dot com).</p>
-<p>We recommend that you translate in this order: VLE->Themes->Steps->Portal.</p>
+<ul>
+<li>Items that need translation will be highlighted in yellow.</li>
+<li>We recommend that you translate in this order: VLE->Themes->Steps->Portal.</li>
+<li>If you need help, please check out and post to the <a href="http://discuss.wise4.org/t/wise-in-other-languages" target=_blank>WISE-Translation Discussion Forum</a> or email WISE staff (telsportal at gmail dot com).</li>
+</ul>
 
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>

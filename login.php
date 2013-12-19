@@ -28,15 +28,43 @@ for (var i=0; i<supportedLocales.length; i++) {
 
 });
 </script>
+<style type="text/css">
+#loginDiv {
+    width: 400px;
+    height: 300px;
+    background-color: #FFF9EF;
+    padding:20px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    border:2px solid;
+    border-radius:25px;
+}
+
+table {
+ margin-left:5px;
+}
+
+td { 
+    padding: 2px;
+}
+</style>
 </head>
 <body>
-<h2>Log In</h2>
+<div id="loginDiv">
+<h2>Log in to WISE Translation</h2>
 
-<p> Please type in your name, email address, and the language that you want to translate to. We ask for your email so that we can contact you when we receive the translations.</p>
+<p> Please type in your name, email address, and choose the language that you want to translate to.<br/><br/>We ask for your email so that we can contact you when we receive the translations.</p>
 <form action="login.php" method="POST">
   <table>
-    <tr><td>Name:</td><td><input type="text" name="username"></input></td></tr>
-    <tr><td>Email:</td><td><input type="text" name="userEmail"></input></td></tr>
+    <tr><td>Name:</td><td><input type="text" name="username" size="40"></input></td></tr>
+    <tr><td>Email:</td><td><input type="text" name="userEmail" size="40"></input></td></tr>
     <tr><td>Language:</td>
         <td>
             <select id="userLocaleSelect" name="userLocale">
@@ -44,8 +72,12 @@ for (var i=0; i<supportedLocales.length; i++) {
             </select>
         </td>
     </tr>
-    <tr><td colspan="2"><input type="submit" value="Log in"></input></td></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr><td></td><td><input type="submit" value="Log in"></input></td></tr>
   </table>
 </form>
+</div>
 </body>
 </html>
