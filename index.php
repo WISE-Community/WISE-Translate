@@ -32,8 +32,31 @@ $(".stats").each(function() {
   View.prototype.i18n[currentLanguage] = {};
   View.prototype.retrieveLocale(currentLanguage,projectType);
 
-  var numCompleted = Object.keys(View.prototype.i18n[currentLanguage]).length;
-  var numTotal = Object.keys(View.prototype.i18n[View.prototype.i18n.defaultLocale]).length;
+  // get actual number of completions. Check if value is actually set
+  var defaultLanguageKeys = Object.keys(View.prototype.i18n[View.prototype.i18n.defaultLocale]);
+  var numTotal = defaultLanguageKeys.length;
+
+  var numCompleted = 0;
+  if (projectType != "portal") {
+     for (var i=0; i<defaultLanguageKeys.length;i++) {
+     	 var defaultLanguageKey = defaultLanguageKeys[i];
+     	 // make sure that there is an actual translated value in the current language
+     	 if (typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
+            typeof View.prototype.i18n[currentLanguage][defaultLanguageKey]["value"] != "undefined" &&
+            View.prototype.i18n[currentLanguage][defaultLanguageKey]["value"].trim() != "") {
+      	    numCompleted++;
+     	 }
+     }
+  } else {
+     for (var i=0; i<defaultLanguageKeys.length;i++) {
+     	 var defaultLanguageKey = defaultLanguageKeys[i];
+     	 // make sure that there is an actual translated value in the current language
+     	 if (typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
+            View.prototype.i18n[currentLanguage][defaultLanguageKey].trim() != "") {
+      	    numCompleted++;
+     	 }
+     }
+  }
 
   if (numCompleted < numTotal) {
     $(this).parent("a").css("background-color","yellow");
