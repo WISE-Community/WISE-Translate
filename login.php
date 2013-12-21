@@ -68,7 +68,7 @@ td {
     <tr><td>Language:</td>
         <td>
             <select id="userLocaleSelect" name="userLocale">
-	        <option>Choose a language...</option>
+	        <option value="">Choose a language...</option>
             </select>
         </td>
     </tr>
