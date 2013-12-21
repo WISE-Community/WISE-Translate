@@ -114,5 +114,9 @@
     "you_have_completed_this_step": {
         "value": "Este paso fue completado exitosamente.",
         "description": "The text that notifies the user that they have completed this step"
+    },
+    "grading_item_part_number": {
+        "value": "Parte {0}:",
+        "description": "'Part X:' to show in the grading view for each item part"
     }
 }
