@@ -26,6 +26,16 @@ for (var i=0; i<supportedLocales.length; i++) {
     }
 };
 
+// add option for new languages
+$("#userLocaleSelect").append("<option id='otherLanguage'>Other...</option>");
+
+$("#userLocaleSelect").change(function() {
+  var idSelected = $(this).find("option:selected").attr("id");
+  if (idSelected == "otherLanguage") {
+    alert('Please email telsportal at gmail dot com with your name and the language you\'d like to translate to.\n\nWe will add the language and let you know so you can start translating. Thanks!');
+  }
+});
+
 });
 </script>
 <style type="text/css">
