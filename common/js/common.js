@@ -70,7 +70,10 @@ function updateMissingTranslationsCount() {
 	} else {
 	    cheerfulText = "You're soooo close to the finish line!";
 	}
-	$("#numMissingTranslations").html("("+numMissingTranslations+" translations remaining. "+completionPercentage+"% complete. "+cheerfulText+")");
+	var progressSpan = "<span id='progress' style='width:150px; border: 2px solid gray; position: absolute; height:18px;padding:0px'>"
+	    + "<span id='bar' style='position:absolute;height:18px;background-color:#76FF3A;width:"+completionPercentage+"%'></span>"
+            + "<span id='percent' style='position:absolute; left:40%; font-weight:bold;'>"+completionPercentage+"%</span></span>";
+	$("#numMissingTranslations").html("| " +progressSpan + " <span style='margin-left:170px;'>" +numMissingTranslations+" translations remaining. "+cheerfulText+"</span>");
 };
 
 /**
