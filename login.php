@@ -9,14 +9,11 @@
 ?>
 <html>
 <head>
+<script type="text/javascript" src="common/defs.js"></script>
 <script type="text/javascript" src="common/js/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="common/js/common.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-
-var supportedLocales = [
-  "en_US","zh_TW","zh_CN","nl","de","he","it","ja","ko","es","tr"
-];
 
 // add supported locales to selectable drop-down list
 for (var i=0; i<supportedLocales.length; i++) { 
