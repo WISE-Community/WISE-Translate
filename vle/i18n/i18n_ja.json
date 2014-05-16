@@ -558,5 +558,13 @@
     "authoring_imsettings_terminology_help": {
         "value": "ヘルプはここに表示されます。",
         "description": ""
+    },
+    "show_previous_work_message": {
+        "value": "{0} ステップの答え: {1}",
+        "description": "The message that shows the step number and title and the work from a previous step."
+    },
+    "node_annotations_instructions": {
+        "value": "{0} をクリックするとフィードバックを表示することができます",
+        "description": "The message at the bottom of the feedback popup to tell the student they can always bring the popup back up"
     }
 }
