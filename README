@@ -11,8 +11,19 @@ When you are finished, send the final text to WISE staff and they will add it to
 
 Let the WISE staff know (telsportal at gmail dot com) when you are done with translation and they will add it to the core build.
 
-Translation Mappings
-VLE => vle/view/i18n/
-Portal => WEB-INF/classes/i18n/
-Themes => vle/themes/[starmap,wise,etc]/i18n/
-Steps => vle/node/[assessmentlist,branching,etc]/i18n/
+Translation File Mappings (where files should go
+VLE 
+=> to an exploded running WISE instance on a server: TOMCAT_HOME/wise/vle/view/i18n/
+=> to source: WISE_CHECKOUT_DIR/src/main/webapp/vle/view/i18n/
+
+Portal 
+=> to an exploded running WISE instance on a server: TOMCAT_HOME/wise/WEB-INF/classes/i18n/
+=> to source: WISE_CHECKOUT_DIR/src/main/resources/i18n/
+
+Themes
+=> to an exploded running WISE instance on a server: TOMCAT_HOME/wise/vle/themes/[starmap,wise,etc]/i18n/
+=> to source: WISE_CHECKOUT_DIR/src/main/webapp/vle/themes/[starmap,wise,etc]/i18n/
+
+Steps 
+=> to an exploded running WISE instance on a server: TOMCAT_HOME/wise/vle/node/[assessmentlist,branching,etc]/i18n/
+=> to source: WISE_CHECKOUT_DIR/src/main/webapp/vle/node/[assessmentlist,branching,etc]/i18n/
