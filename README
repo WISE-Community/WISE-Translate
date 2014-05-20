@@ -2,7 +2,7 @@ Welcome to the WISE-Translate project!
 
 This is a community project for translating the WISE interface and WISE projects.
 
-TRANSLATION OPTION 1 (best way to go)
+How to Translate
 
 Please go to WISE4.org/translate to start translating! Get the username/password to translate from WISE staff (telsportal at gmail dot com).
 
@@ -11,21 +11,8 @@ When you are finished, send the final text to WISE staff and they will add it to
 
 Let the WISE staff know (telsportal at gmail dot com) when you are done with translation and they will add it to the core build.
 
-TRANSLATION OPTION 2
-
-Checkout out this project, host it yourself (locally or on a server), and go to http://your_server/WISE-Translate/index.html. You could 
-simply put it on your local filesystem and access it via file://path_to_WISE-Translate/index.html, but YOU MUST USE FIREFOX if you 
-decide to do so.
-
-As you start to translate, the　updated translation file text will appear in a textbox when you hit "save". Copy and save the contents into 
-the appropriate file in vle/i18n/i18n_XX.json or portal/i18n/i18n_XX.properties, where XX is the locale that you're translating.
-
-Let the WISE staff know (telsportal at gmail dot com) when you are done with the translation file and they will add it to the core build.
-
-HOW TO ADD NEW STEPS TO BE TRANSLATED
-1. Copy /translate/newstep folder to /translate/[stepname]
-2. Copy i18n_*.json files to /translate/[stepname]/i18n/ folder.
-4. Edit /translate/index.php. Add the following block inside the "stepDiv":
-
-<h3><a href="translate.php?projectType=[stepname]">Step Name Here <span class='stats' projectType='[stepname]'></span></a></h3>
-<p>Step Description Here</p>
+Translation Mappings
+VLE => vle/view/i18n/
+Portal => WEB-INF/classes/i18n/
+Themes => vle/themes/[starmap,wise,etc]/i18n/
+Steps => vle/node/[assessmentlist,branching,etc]/i18n/
