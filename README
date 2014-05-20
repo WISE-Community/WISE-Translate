@@ -11,7 +11,7 @@ When you are finished, send the final text to WISE staff and they will add it to
 
 Let the WISE staff know (telsportal at gmail dot com) when you are done with translation and they will add it to the core build.
 
-Translation File Mappings (where files should go
+Translation File Mappings (where files should go)
 VLE 
 => to an exploded running WISE instance on a server: TOMCAT_HOME/wise/vle/view/i18n/
 => to source: WISE_CHECKOUT_DIR/src/main/webapp/vle/view/i18n/
