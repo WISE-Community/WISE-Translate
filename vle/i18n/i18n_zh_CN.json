@@ -24,7 +24,7 @@
         "description": "Text for mouse hover title on the My Work button"
     },
     "flagged_button_text": {
-        "value": "标记",
+        "value": "已标记",
         "description": "Text on the Flagged button"
     },
     "flagged_button_title": {
@@ -32,7 +32,7 @@
         "description": "Text for mouse hover title on the Flagged button"
     },
     "journal_button_text": {
-        "value": "笔记",
+        "value": "日记",
         "description": "Text on the Journal button"
     },
     "toggle_nav_button_text": {
@@ -1006,5 +1006,25 @@
     "constraint_message_xMustHaveStatusY": {
         "value": "开始这个步骤之前你必须已经将下列步骤从 '{0}' 设置为 '{1}' ：",
         "description": "The message shown to students telling them that the steps shown below must have 'statusType' set to 'statusValue' before they can work on the selected step"
+    },
+    "error_msg_with_reason": {
+        "value": "发生错误。请与WISE工作人员联系。原因：{0}",
+        "description": "An error message a reason"
+    },
+    "mywork_preview_mode": {
+        "value": "预览模式下无法显示［我的作业］。在教学中正式使用时，这里将显示你的工作和成绩。",
+        "description": "Text to display when user clicks on review work button in preview mode"
+    },
+    "flagged_preview_mode": {
+        "value": "预览模式下无法显示已标记的作业。在教学中正式使用时，这里将显示教师已经标记的的工作。",
+        "description": "Text to display when user clicks on flagged work button in preview mode"
+    },
+    "student_assets_preview_mode": {
+        "value": "预览模式下无法显示［学生的宝物］。在教学中正式使用时，学生可以在这里上载宝物（如图片），并在回答中使用他们的宝物。",
+        "description": "Message to show users when they click on student assets button in preview mode"
+    },
+    "grading_button_teacher_run_notes": {
+        "value": "我的笔记",
+        "description": "GradingTool: Text in the My Notes button to bring up teacher run notes"
     }
 }
