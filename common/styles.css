@@ -1,6 +1,13 @@
 #translationTable {
   table-layout: fixed;
+  border-collapse:collapse;
   width: 100%;
+  font-size:1.1em;
+}
+
+#translationTable, td, th
+{
+border:1px solid black;
 }
 
 .cell_key {
