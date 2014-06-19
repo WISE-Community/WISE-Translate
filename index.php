@@ -35,7 +35,6 @@ $(".stats").each(function() {
   // get actual number of completions. Check if value is actually set
   var defaultLanguageKeys = Object.keys(View.prototype.i18n[View.prototype.i18n.defaultLocale]);
   var numTotal = defaultLanguageKeys.length;  
-
   var numCompleted = 0;
   if (projectType != "portal") {
      // this is a non-portal project, which uses JSON file format
@@ -52,6 +51,7 @@ $(".stats").each(function() {
      // this is the portal project, which uses Properties (key=value) file format
      // re-calculate number of total translatable keys
      numTotal = 0;
+     numCompleted = 0;
      for (var k=0; k<defaultLanguageKeys.length; k++) {
        if (!defaultLanguageKeys[k].endsWith(".description")) {
          numTotal++;
@@ -60,9 +60,9 @@ $(".stats").each(function() {
      for (var i=0; i<defaultLanguageKeys.length;i++) {
      	 var defaultLanguageKey = defaultLanguageKeys[i];
      	 // make sure that there is an actual translated value in the current language
-     	 if (typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
-            View.prototype.i18n[currentLanguage][defaultLanguageKey].trim() != "" &&
-	    !View.prototype.i18n[currentLanguage][defaultLanguageKey].endsWith(".description")) {
+     	 if (!defaultLanguageKey.endsWith(".description") &&
+             typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
+             View.prototype.i18n[currentLanguage][defaultLanguageKey].trim() != "") {
       	       numCompleted++;
      	 }
      }
