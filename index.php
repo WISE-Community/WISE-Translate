@@ -94,10 +94,6 @@ $(".stats").each(function() {
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
 
-<h3><a href="translate.php?projectType=portal">Translate the Portal <span class='stats' projectType='portal'></span></a></h3>
-<p>The WISE Portal is the user and classroom management system. This includes user registration and project and run management.</p>
-
-
 <h2>Translate Themes</h2>
 <div id="themeDiv" style="margin-left:50px">
 	<h3><a href="translate.php?projectType=themewise">WISE Default Theme<span class='stats' projectType='themewise'></span></a></h3>
@@ -158,6 +154,10 @@ $(".stats").each(function() {
 <h3><a href="translate.php?projectType=table">Table <span class='stats' projectType='table'></span></a></h3>
 <p>Students fill out a table</p>
 </div>
+
+<h3><a href="translate.php?projectType=portal">Translate the Portal <span class='stats' projectType='portal'></span></a></h3>
+<p>The WISE Portal is the user and classroom management system. This includes user registration and project and run management.</p>
+
 
 </body>
 </html>
