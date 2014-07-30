@@ -13,6 +13,29 @@
 <script type="text/javascript" src="common/js/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="common/js/common.js"></script>
 <script type="text/javascript">
+function validateForm() {
+  // validate username
+  if ($("#username").val().length < 5) {
+    alert("Please enter your name. Must be at least 5 characters");
+    return false;
+  }
+
+  // validate email
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(!re.test($("#userEmail").val())) {
+    alert("Invalid email address");
+    return false;
+  }
+
+  // validate user locale
+  if ($("#userLocaleSelect").val() == "") {
+    alert("Please select a language");
+    return false;
+  }
+  
+  return true;
+};
+
 $(document).ready(function() {
 
 // add supported locales to selectable drop-down list
@@ -68,10 +91,10 @@ td {
 <h2>Log in to WISE Translation</h2>
 
 <p> Please type in your name, email address, and choose the language that you want to translate to.<br/><br/>We ask for your email so that we can contact you when we receive the translations.</p>
-<form action="login.php" method="POST">
+<form action="login.php" method="POST" onsubmit="return validateForm();">
   <table>
-    <tr><td>Name:</td><td><input type="text" name="username" size="40"></input></td></tr>
-    <tr><td>Email:</td><td><input type="text" name="userEmail" size="40"></input></td></tr>
+    <tr><td>Name:</td><td><input type="text" id="username" name="username" size="40"></input></td></tr>
+    <tr><td>Email:</td><td><input type="text" id="userEmail" name="userEmail" size="40"></input></td></tr>
     <tr><td>Language:</td>
         <td>
             <select id="userLocaleSelect" name="userLocale">
