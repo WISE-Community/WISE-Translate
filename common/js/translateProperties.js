@@ -39,7 +39,7 @@ function buildTable_Properties() {
 			if (!key.endsWith(".description")) {
 				var value = View.prototype.i18n[View.prototype.i18n.defaultLocale][key];
 				var description = View.prototype.i18n[View.prototype.i18n.defaultLocale][key+".description"];
-				translationTable += "<tr class='translationRow'>\n<td class='cell_key'>"+key+"</td>\n<td>"+description+"</td>\n<td>"+value+"</td>\n";
+				translationTable += "<tr class='translationRow'>\n<td class='cell_key'>"+key+"</td>\n<td>"+description+"</td>\n<td><script type=\"text/plain\" style=\"display:block\">"+value+"</script></td>\n";
 				if (View.prototype.i18n[currentLanguage][key]) {
 					translationTable += "<td class='cell_currentLanguage'><textarea style='height:100%;width:100%' id='"+key+"'>"+View.prototype.i18n[currentLanguage][key]+"</textarea></td>\n";
 				} else {
