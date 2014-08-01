@@ -4,8 +4,7 @@
         "description": "The title for a brainstorm step"
     },
     "instructions": {
-        "value": "아래에 있는 주제를 읽고 빈 칸에 자신의 생각을 자유롭게 적어보세요.
-자신의 작업을 저장하고 다른 학생의 생각을 보려면 {0}을 클릭하시오.",
+        "value": "아래에 있는 주제를 읽고 빈 칸에 자신의 생각을 자유롭게 적어보세요.자신의 작업을 저장하고 다른 학생의 생각을 보려면 {0}을 클릭하시오.",
         "description": "The instructions for the brainstorm step"
     },
     "my_response": {
