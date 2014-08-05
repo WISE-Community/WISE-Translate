@@ -56,7 +56,7 @@ function updateMissingTranslationsCount() {
 	});
 	var numTotalTranslations = $("tr textarea").length;	
 	var numCompletedTranslations = numTotalTranslations - numMissingTranslations;
-	var completionPercentage = Math.round(numCompletedTranslations/numTotalTranslations*100);
+	var completionPercentage = Math.floor(numCompletedTranslations/numTotalTranslations*100);
 	var cheerfulText = "";
 	if (numTotalTranslations == numCompletedTranslations) {
 	    cheerfulText = "Congratulations. You're done!";
