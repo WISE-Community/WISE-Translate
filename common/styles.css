@@ -11,6 +11,6 @@ border:1px solid black;
 }
 
 .cell_key {
-  overflow:hidden;
+  word-wrap:break-word;
   width:200px;
 }
