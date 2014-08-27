@@ -401,7 +401,7 @@
     },
     "flag_as_inappropriate": {
         "value": "Marcar como inapropiado",
-        "description": "\\"Flag as inappropriate\\" text, for flagging inappropriate student's work using the flagging tool"
+        "description": "\"Flag as inappropriate\" text, for flagging inappropriate student's work using the flagging tool"
     },
     "timestamp": {
         "value": "Fecha y hora",
@@ -520,15 +520,15 @@
         "description": "The label for the 'Labels/Terminology' settings in the step hint authoring panel"
     },
     "authoring_hint_terminology_instructions": {
-        "value": "Opcional: Personalizar el nombre que se muestra para \\"pista(s)\\" en este Paso.",
+        "value": "Opcional: Personalizar el nombre que se muestra para \"pista(s)\" en este Paso.",
         "description": "The instructions for the 'Labels/Terminology' settings in the step hint authoring panel"
     },
     "authoring_hint_term_label": {
-        "value": "Término para \\"pista\\":",
+        "value": "Término para \"pista\":",
         "description": "The label for the 'hint' term input field in the step hint authoring panel"
     },
     "authoring_hint_term_plural_label": {
-        "value": "Término para \\"pistas\\" (plural):",
+        "value": "Término para \"pistas\" (plural):",
         "description": "The label for the 'hints' term input field in the step hint authoring panel"
     },
     "authoring_hint_add": {
@@ -604,7 +604,7 @@
         "description": "Title/tooltip for sortable rows in a table"
     },
     "ideaBasket_empty": {
-        "value": "Su {0} está vacía. Clic en \\"{1}\\" para empezar a agregar {2}.",
+        "value": "Su {0} está vacía. Clic en \"{1}\" para empezar a agregar {2}.",
         "description": "Text to display when idea basket is empty"
     },
     "ideaBasket_deletedTableHeader": {
@@ -884,7 +884,7 @@
         "description": "The text to display the comments in the feedback popup"
     },
     "you_can_always_view": {
-        "value": "También pueden verse los comentarios haciendo clic en el ícono \\"Comentarios\\" en la esquina superior derecha.",
+        "value": "También pueden verse los comentarios haciendo clic en el ícono \"Comentarios\" en la esquina superior derecha.",
         "description": "The message at the bottom of the feedback popup to tell the student they can always bring the popup back up"
     },
     "you_must_view_all": {
@@ -932,7 +932,7 @@
         "description": "The message shown to students telling them that the steps shown below must have 'statusType' set to 'statusValue' before they can work on the current step"
     },
     "node_annotations_instructions": {
-        "value": "Pueden acceder a la retroalimentación en cualquier momento cliqueando en el ícono de \\"{0}\\".",
+        "value": "Pueden acceder a la retroalimentación en cualquier momento cliqueando en el ícono de \"{0}\".",
         "description": "The message at the bottom of the feedback popup to tell the student they can always bring the popup back up"
     },
     "stepTermPlural": {
@@ -1004,7 +1004,7 @@
         "description": "The message shown to students telling them that the steps shown below must have 'statusType' set to 'statusValue' before they can work on the selected step"
     },
     "show_previous_work_message": {
-        "value": "Tu trabajo en el \\"Paso {0}\\" fue {1}",
+        "value": "Tu trabajo en el \"Paso {0}\" fue {1}",
         "description": "The message that shows the step number and title and the work from a previous step."
     },
     "idea_basket_private": {
@@ -1240,19 +1240,11 @@
         "description": "Label text for the total step completion display in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable": {
-        "value": "El progreso del paso no está disponible porque:
-
-    Ningún estudiante ejecutó el proyecto; o
-    El proyecto comenzó a ejecutarse antes de que se haya implementado el monitoreo de progreso",
+        "value": "El progreso del paso no está disponible porque:Ningún estudiante ejecutó el proyecto; o El proyecto comenzó a ejecutarse antes de que se haya implementado el monitoreo de progreso",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can't be graded in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable_gradable": {
-        "value": "El progreso del paso no está disponible porque:
-
-    Ningún estudiante ejecutó el proyecto; o
-    El proyecto comenzó a ejecutarse antes de que se haya implementado el monitoreo de progreso
-
-Igual se puede ver el trabajo de los estudiantes seleccionado el título del paso",
+        "value": "El progreso del paso no está disponible porque:Ningún estudiante ejecutó el proyecto; o El proyecto comenzó a ejecutarse antes de que se haya implementado el monitoreo de progreso Igual se puede ver el trabajo de los estudiantes seleccionado el título del paso",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can be graded in the classroom monitor"
     },
     "classroomMonitor_stepProgress_viewStepWork": {
