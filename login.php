@@ -5,6 +5,7 @@
     $_SESSION["userEmail"] = $_POST["userEmail"];
     $_SESSION["userLocale"] = $_POST["userLocale"];
     header("Location: index.php");
+  } else {
   }
 ?>
 <html>
@@ -52,7 +53,7 @@ $("#userLocaleSelect").append("<option id='otherLanguage'>Other...</option>");
 $("#userLocaleSelect").change(function() {
   var idSelected = $(this).find("option:selected").attr("id");
   if (idSelected == "otherLanguage") {
-    alert('Please email telsportal at gmail dot com with your name and the language you\'d like to translate to.\n\nWe will add the language and let you know so you can start translating. Thanks!');
+    alert('Please post to the WISE Discussion Forum with your name and the language you\'d like to translate to.\n\nWe will add the language and let you know so you can start translating. Thanks!');
   }
 });
 
@@ -61,7 +62,7 @@ $("#userLocaleSelect").change(function() {
 <style type="text/css">
 #loginDiv {
     width: 400px;
-    height: 300px;
+    height: 350px;
     background-color: #FFF9EF;
     padding:20px;
 
@@ -88,9 +89,9 @@ td {
 </head>
 <body>
 <div id="loginDiv">
-<h2>Log in to WISE Translation</h2>
+<h2 style="margin-top:0px">Log in to WISE Translation</h2>
 
-<p> Please type in your name, email address, and choose the language that you want to translate to.<br/><br/>We ask for your email so that we can contact you when we receive the translations.</p>
+  <p> Thanks for helping us translate WISE! You can use this site to translate the WISE student and teacher pages.<br/><br/>Please type in your name, email address, and choose the language that you want to translate to. If you don't see your language listed, or if you have any questions, please post to the <a href="https://wise-discuss.berkeley.edu/category/wise-in-other-languages">WISE Discussion Forum</a>.<br/><br/>We ask for your email so that we can contact you when we receive the translations and update WISE. We will never spam you.</p>
 <form action="login.php" method="POST" onsubmit="return validateForm();">
   <table>
     <tr><td>Name:</td><td><input type="text" id="username" name="username" size="40"></input></td></tr>
@@ -109,5 +110,18 @@ td {
   </table>
 </form>
 </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-789725-7']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
 </body>
 </html>

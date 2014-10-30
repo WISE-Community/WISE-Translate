@@ -84,7 +84,7 @@ $(".stats").each(function() {
 </head>
 <body>
 <span style="float:right; margin-right:10px"><a href="logout.php">Logout</a></span>
-<h1>Welcome to the WISE4 Translation Project! (English-><span id='userLocale'></span>)</h1>
+<h1>Welcome to the WISE Translation Project! (English-><span id='userLocale'></span>)</h1>
 <ul>
 <li>Items that need translation will be highlighted in yellow.</li>
 <li>We recommend that you translate in this order: VLE->Themes->Steps->Portal.</li>
