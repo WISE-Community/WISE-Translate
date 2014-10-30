@@ -1,1 +1,0 @@
-var supportedLocales = [ "en_US","zh_TW","zh_CN","nl","fr","de","he","it","ja","ko","es","th","tr"];
