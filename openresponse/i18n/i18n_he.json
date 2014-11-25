@@ -154,5 +154,105 @@
     "your_original_response": {
         "value": "תגובתך המקורית",
         "description": "The label to show the original answer the student submitted"
+    },
+    "show_hide_text": {
+        "value": "הצגת/הסתרת טקסט",
+        "description": "The label for the show/hide text button"
+    },
+    "students_work_from_first_peer_review_step": {
+        "value": "עבודתך משלב משוב העמיתים הראשון תוצג כאן.",
+        "description": "The place holder for where the student work from the first peer review step will display"
+    },
+    "has_given_you_the_following_feedback": {
+        "value": "נתנ/ה לך את המשוב הבא",
+        "description": "The label for the feedback that another group has given them"
+    },
+    "feedback_from_classmate_or_teacher": {
+        "value": "משוב מעמית, עמיתה או מורה יוצג כאן",
+        "description": "The place holder for where the feedback will display"
+    },
+    "to_start_this_step": {
+        "value": "כדי להתחיל את השלב הנוכחי, יש לשלוח קודם את שלב",
+        "description": "The message to display when the student hasn't submitted a response in a previous step in a peer review sequence"
+    },
+    "link": {
+        "value": "קישור",
+        "description": "The text to specify something is a link"
+    },
+    "your_teacher_has_not_yet": {
+        "value": "אין עדיין משוב מהמורה עבור תגובתך לשלב",
+        "description": "The message to display when the teacher has not given the student feedback yet in a teacher review sequence"
+    },
+    "yet": {
+        "value": "עדיין.",
+        "description": "The end of the message to display when the teacher has not given the student feedback yet in a teacher review sequence"
+    },
+    "please_return_later": {
+        "value": "יש לחזור לשלב זה מטוחר יותר.",
+        "description": "The message to tell the student to come back later"
+    },
+    "your_first_response": {
+        "value": "התגובה הראשונה שלך לשאלה",
+        "description": "The label for the first response the student submitted"
+    },
+    "teacher_feedback": {
+        "value": "משוב המורה",
+        "description": "The label for the teacher feedback"
+    },
+    "this_is_revision_x": {
+        "value": "זוהי גרסה #{0}",
+        "description": "Message to display to student which revision they're on"
+    },
+    "this_step_not_available_yet": {
+        "value": "שלב זה אינו זמין עדיין",
+        "description": "The message that tells the student that the step is not available yet"
+    },
+    "more_of_your_peers_need_to_submit": {
+        "value": "יש צורך בתגובות מעמיתים נוספים",
+        "description": "The message that says more of their classmates need to submit a response in order for this step to open"
+    },
+    "you_will_then_be_assigned": {
+        "value": "תתקבל תגובת עמית או עמיתה לצורך משוב",
+        "description": "The message that says they will be assigned to a response to review"
+    },
+    "please_return_in_a_few_minutes": {
+        "value": "יש לחזור לשלב זה בעוד מספר דקות",
+        "description": "The message to tell the student to come back to the step later"
+    },
+    "please_return_to_step": {
+        "value": "יש לחזור לשלב",
+        "description": "The beginning of the message that tells the student to return to step x in a few minutes"
+    },
+    "in_a_few_minutes": {
+        "value": "בעוד מספר דקות.",
+        "description": "The end of the message that tells the student to return to step x in a few minutes"
+    },
+    "your_response_in_step": {
+        "value": "תגובתך בשלב",
+        "description": "The beginning of the message that says their response in step x has not been reviewed yet"
+    },
+    "has_not_been_reviewed": {
+        "value": "עדיין לא קיבלה משוב מעמיתך.",
+        "description": "The end of the message that says their response in step x has not been reviewed yet"
+    },
+    "there_is_no_starter_sentence": {
+        "value": "לא הוגדרה תחילית משפט עבור שלב זה",
+        "description": "The message that says there is no starter sentence"
+    },
+    "responses_from_peers_not_available": {
+        "value": "עדיין לא התקבלה תגובה מעמיתך.",
+        "description": "The message that says responses from the classmates are not available yet"
+    },
+    "save_answer": {
+        "value": "שמירת תשובה",
+        "description": "The label for the save answer in the grading view"
+    },
+    "auto_score": {
+        "value": "חישוב ציון ע\"י המערכת",
+        "description": "The label for the auto score in the grading view"
+    },
+    "auto_feedback": {
+        "value": "משוב מהמערכת",
+        "description": "The label for the auto feedback in the grading view"
     }
 }
