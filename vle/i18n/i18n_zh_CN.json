@@ -1252,17 +1252,11 @@
         "description": "Label text for the total step completion display in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable": {
-        "value": "步骤完成数无法获取。可能是下列两种情况之一：
-1. 您的学生还未运行项目；或者，
-2. 这是一个在WISE启动步骤进度监视之前就已经开始了的运行。",
+        "value": "步骤完成数无法获取。可能是下列两种情况之一：1. 您的学生还未运行项目；或者，2. 这是一个在WISE启动步骤进度监视之前就已经开始了的运行。",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can't be graded in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable_gradable": {
-        "value": "步骤完成数无法获取。可能是下列两种情况之一：
-1. 您的学生还未运行项目；或者，
-2. 这是一个在WISE启动步骤进度监视之前就已经开始了的运行。
-
-您还是可以通过选择步骤标题查看学生的工作。",
+        "value": "步骤完成数无法获取。可能是下列两种情况之一：1. 您的学生还未运行项目；或者，2. 这是一个在WISE启动步骤进度监视之前就已经开始了的运行。您还是可以通过选择步骤标题查看学生的工作。",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can be graded in the classroom monitor"
     },
     "classroomMonitor_stepProgress_viewStepWork": {
