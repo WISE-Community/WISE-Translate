@@ -99,9 +99,6 @@ $(".stats").each(function() {
 	<h3><a href="translate.php?projectType=themewise">WISE Default Theme<span class='stats' projectType='themewise'></span></a></h3>
 	<p>WISE default theme</p>	
 
-	<h3><a href="translate.php?projectType=themewisealternate">WISE Alternate Theme<span class='stats' projectType='themewisealternate'></span></a></h3>
-	<p>WISE alternate theme</p>	
-
 	<h3><a href="translate.php?projectType=themestarmap">Starmap Theme<span class='stats' projectType='themestarmap'></span></a></h3>
 	<p>Starmap theme</p>	
 
