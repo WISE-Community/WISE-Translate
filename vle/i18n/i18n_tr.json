@@ -1,5 +1,5 @@
 {
-"file_button_text": {
+    "file_button_text": {
         "value": "Dosyalar",
         "description": "Text on the File Manager button for Student VLE"
     },
@@ -58,5 +58,13 @@
     "signout_button_title": {
         "value": "WISE'ı Sakla ve Çıkış Yap",
         "description": "Text for mouse hover title on the Log out button"
+    },
+    "hint_title": {
+        "value": "test",
+        "description": "Title of the hint dialog window and the text that shows up next to the Hint button"
+    },
+    "hint_button_text": {
+        "value": "tests",
+        "description": "Text that shows up next to the Hint button"
     }
 }

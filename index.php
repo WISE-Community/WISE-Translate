@@ -77,6 +77,9 @@ $(".stats").each(function() {
 
   $(this).append(" ["+ numCompleted + "/" + numTotal + "]");
 
+  // Also show a button to download the translation file
+  $(this).append(" <a href=\"download.php?projectType=" + projectType + "&locale=" + currentLanguage + "\"><img src=\"images/downloadicon.png\" style=\"margin-left:5px; width:18px; height:18px; vertical-align:middle\"></a>");
+
 });
 
 });
@@ -90,7 +93,6 @@ $(".stats").each(function() {
 <li>We recommend that you translate in this order: VLE->Themes->Steps->Portal.</li>
 <li>If you need help, please check out and post to the <a href="https://wise-discuss.berkeley.edu/t/wise-in-other-languages" target=_blank>WISE-Translation Discussion Forum</a> or email WISE staff (telsportal at gmail dot com).</li>
 </ul>
-
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
 

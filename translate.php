@@ -29,7 +29,7 @@ $(document).ready(function() {
   View.prototype.retrieveLocale(currentLanguage,projectType);
 
   buildTable(projectType);
-  $("#heading").append(" ").append(projectType);
+  $("#heading").append(" ").append(projectType).append(" <a href=\"download.php?projectType=" + projectType + "&locale=" + currentLanguage + "\"><img src=\"images/downloadicon.png\" style=\"margin-left:5px; width:18px; height:18px; vertical-align:middle\"></a>");
 });
 
 </script>
