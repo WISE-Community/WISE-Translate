@@ -570,5 +570,45 @@
     "error_msg_with_reason": {
         "value": "エラーが生じました。WISEスタッフに連絡してください。理由：{0}",
         "description": "An error message a reason"
+    },
+    "menu_signOut": {
+        "value": "サインアウト",
+        "description": "Text for link to sign out"
+    },
+    "on": {
+        "value": "オン",
+        "description": "Text for the word 'on' (uppercase)"
+    },
+    "off": {
+        "value": "オフ",
+        "description": "Text for the word 'off' (uppercase)"
+    },
+    "ON": {
+        "value": "オン",
+        "description": "Text for the word 'ON' (uppercase)"
+    },
+    "OFF": {
+        "value": "オフ",
+        "description": "Text for the word 'OFF' (uppercase)"
+    },
+    "stepTermPlural": {
+        "value": "ステップ",
+        "description": "Plural form of the default term for a 'Step' in a WISE project"
+    },
+    "ideaBasket_public_privateLabel": {
+        "value": "プライベート",
+        "description": "Label designating a private idea in the Idea Basket"
+    },
+    "new_text": {
+        "value": "新規",
+        "description": "The text 'New' used to label new feedback"
+    },
+    "choose_a_step": {
+        "value": "ステップを選ぶ",
+        "description": "The label that tells the student to choose a step to view flagged work for in the flagged work window"
+    },
+    "anonymous": {
+        "value": "匿名",
+        "description": "The label to specify that the team is anonymous"
     }
 }
