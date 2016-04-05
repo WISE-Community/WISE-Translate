@@ -90,9 +90,17 @@ $(".stats").each(function() {
 <h1>Welcome to the WISE Translation Project! (English-><span id='userLocale'></span>)</h1>
 <ul>
 <li>Items that need translation will be highlighted in yellow.</li>
-<li>We recommend that you translate in this order: VLE->Themes->Steps->Portal.</li>
+<li>We recommend that you translate in this order: WISE5 (Common->VLE->Classroom Monitor->Authoring Tool) -> WISE4 (VLE->Themes->Steps->Portal)</li>
 <li>If you need help, please check out and post to the <a href="https://wise-discuss.berkeley.edu/t/wise-in-other-languages" target=_blank>WISE-Translation Discussion Forum</a> or email WISE staff (telsportal at gmail dot com).</li>
 </ul>
+<h1>WISE5</h1>
+<p>There are much less text to translate in WISE5 compared to WISE4, so it shouldn't take you too long.</p>
+<br/>
+<p>
+Step 1. Go to <a href="http://github.com">GitHub website</a> and create an account.<br/>
+Step 2. Email telsportal at gmail dot com with your GitHub username. We will add you to the translation team and help you get started!
+</p>
+<h1>WISE4</h1>
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>
 
