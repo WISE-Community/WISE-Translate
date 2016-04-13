@@ -22,13 +22,27 @@ var projectType = "<?php echo $_GET["projectType"]; ?>";
 var currentLanguage = "<?php echo $_SESSION["userLocale"]; ?>";
 $(document).ready(function() {
 
-  View.prototype.i18n[View.prototype.i18n.defaultLocale] = {};
-  View.prototype.retrieveLocale(View.prototype.i18n.defaultLocale,projectType);
+  var wise5ProjectTypes = ["common5", "vle5", "authoringTool5", "classroomMonitor5"];
+  if (wise5ProjectTypes.indexOf(projectType) > -1) {
+    // this is a WISE5 project
+    View.prototype.i18n.defaultLocale = "en";  // in wise5 we don't use "en_US", simply "en"
+    View.prototype.i18n[View.prototype.i18n.defaultLocale] = {};
+    View.prototype.retrieveLocale(View.prototype.i18n.defaultLocale,projectType);
 
-  View.prototype.i18n[currentLanguage] = {};
-  View.prototype.retrieveLocale(currentLanguage,projectType);
+    View.prototype.i18n[currentLanguage] = {};
+    View.prototype.retrieveLocale(currentLanguage,projectType);
 
-  buildTable(projectType);
+    buildTable5();
+  } else {
+    View.prototype.i18n.defaultLocale = "en_US";
+    View.prototype.i18n[View.prototype.i18n.defaultLocale] = {};
+    View.prototype.retrieveLocale(View.prototype.i18n.defaultLocale,projectType);
+
+    View.prototype.i18n[currentLanguage] = {};
+    View.prototype.retrieveLocale(currentLanguage,projectType);
+
+    buildTable(projectType);
+  }
   $("#heading").append(" ").append(projectType).append(" <a href=\"download.php?projectType=" + projectType + "&locale=" + currentLanguage + "\"><img src=\"images/downloadicon.png\" style=\"margin-left:5px; width:18px; height:18px; vertical-align:middle\"></a>");
 });
 

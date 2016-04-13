@@ -6,14 +6,24 @@ if (!isset($_SESSION["username"]) || !isset($_SESSION["userEmail"]) || !isset($_
 }
 if (isset($_GET["locale"]) && isset($_GET["projectType"]) ) {
 
+  $locale = $_GET["locale"];
+  $projectType = $_GET["projectType"];
   $filePath = "";
-  $filename="";
-  if ($_GET["projectType"] == "portal") {
-      $filename = "i18n_".$_GET["locale"].".properties";
-      $filePath = $translate_dir."/".$_GET["projectType"]."/i18n/$filename";
+  $filename = "i18n_".$locale.".json";
+  if ($projectType == "common5") {
+      $filePath = $translate_dir."/wise5/common/$filename";
+  } else if ($projectType == "vle5") {
+      $filePath = $translate_dir."/wise5/vle/$filename";
+  } else if ($projectType == "authoringTool5") {
+      $filePath = $translate_dir."/wise5/authoringTool/$filename";
+  } else if ($projectType == "classroomMonitor5") {
+      $filePath = $translate_dir."/wise5/classroomMonitor/$filename";
+  } else if ($projectType == "portal") {
+      $filename = "i18n_".$locale.".properties";
+      $filePath = $translate_dir."/".$projectType."/i18n/$filename";
   } else {
-      $filename = "i18n_".$_GET["locale"].".json";
-      $filePath = $translate_dir."/".$_GET["projectType"]."/i18n/$filename";
+      $filename = "i18n_".$locale.".json";
+      $filePath = $translate_dir."/".$projectType."/i18n/$filename";
   }
   $result = file_get_contents($filePath);
   header('Content-Type: text/plain');

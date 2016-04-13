@@ -38,7 +38,7 @@ $(".stats").each(function() {
   var numCompleted = 0;
   if (projectType != "portal") {
      // this is a non-portal project, which uses JSON file format
-     for (var i=0; i<defaultLanguageKeys.length;i++) {
+     for (var i = 0; i < defaultLanguageKeys.length; i++) {
      	 var defaultLanguageKey = defaultLanguageKeys[i];
      	 // make sure that there is an actual translated value in the current language
      	 if (typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
@@ -52,12 +52,12 @@ $(".stats").each(function() {
      // re-calculate number of total translatable keys
      numTotal = 0;
      numCompleted = 0;
-     for (var k=0; k<defaultLanguageKeys.length; k++) {
+     for (var k = 0; k < defaultLanguageKeys.length; k++) {
        if (!defaultLanguageKeys[k].endsWith(".description")) {
          numTotal++;
        }
      }
-     for (var i=0; i<defaultLanguageKeys.length;i++) {
+     for (var i = 0; i < defaultLanguageKeys.length; i++) {
      	 var defaultLanguageKey = defaultLanguageKeys[i];
      	 // make sure that there is an actual translated value in the current language
      	 if (!defaultLanguageKey.endsWith(".description") &&
@@ -66,6 +66,44 @@ $(".stats").each(function() {
       	       numCompleted++;
      	 }
      }
+  }
+
+  if (numCompleted < numTotal) {
+    $(this).parent("a").css("background-color","yellow");
+  } else if (numCompleted > numTotal) {
+    // for some reason numCompleted > numTotal, show as completed so it won't confuse the translator.
+    numCompleted = numTotal;
+  }
+
+  $(this).append(" ["+ numCompleted + "/" + numTotal + "]");
+
+  // Also show a button to download the translation file
+  $(this).append(" <a href=\"download.php?projectType=" + projectType + "&locale=" + currentLanguage + "\"><img src=\"images/downloadicon.png\" style=\"margin-left:5px; width:18px; height:18px; vertical-align:middle\"></a>");
+
+});
+
+$(".stats5").each(function() {
+  var projectType = $(this).attr("projectType");
+
+  View.prototype.i18n["en"] = {};
+  View.prototype.retrieveLocale("en",projectType);
+
+  View.prototype.i18n[currentLanguage] = {};
+  View.prototype.retrieveLocale(currentLanguage,projectType);
+  // get actual number of completions. Check if value is actually set
+  var defaultLanguageKeys = Object.keys(View.prototype.i18n["en"]);
+  var numTotal = defaultLanguageKeys.length;  
+  var numCompleted = 0;
+
+  // this is a non-portal project, which uses JSON file format
+  for (var i = 0; i < defaultLanguageKeys.length; i++) {
+    var defaultLanguageKey = defaultLanguageKeys[i];
+    // make sure that there is an actual translated value in the current language
+    if (typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
+        typeof View.prototype.i18n[currentLanguage][defaultLanguageKey] != "undefined" &&
+         View.prototype.i18n[currentLanguage][defaultLanguageKey].trim() != "") {
+ 	  numCompleted++;							     
+    }
   }
 
   if (numCompleted < numTotal) {
@@ -94,12 +132,11 @@ $(".stats").each(function() {
 <li>If you need help, please check out and post to the <a href="https://wise-discuss.berkeley.edu/t/wise-in-other-languages" target=_blank>WISE-Translation Discussion Forum</a> or email WISE staff (telsportal at gmail dot com).</li>
 </ul>
 <h1>WISE5</h1>
-<p>There are much less text to translate in WISE5 compared to WISE4, so it shouldn't take you too long.</p>
-<br/>
-<p>
-Step 1. Go to <a href="http://github.com">GitHub website</a> and create an account.<br/>
-Step 2. Email telsportal at gmail dot com with your GitHub username. We will add you to the translation team and help you get started!
-</p>
+<h3><a href="translate.php?projectType=common5">Translate common elements <span class='stats5' projectType='common5'></span></a></h3>
+<h3><a href="translate.php?projectType=vle5">Translate the Virtual Learning Environment (VLE) <span class='stats5' projectType='vle5'></span></a></h3>
+<h3><a href="translate.php?projectType=authoringTool5">Translate the Authoring Tool <span class='stats5' projectType='authoringTool5'></span></a></h3>
+<h3><a href="translate.php?projectType=classroomMonitor5">Translate the Classroom Monitor <span class='stats5' projectType='classroomMonitor5'></span></a></h3>
+
 <h1>WISE4</h1>
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>

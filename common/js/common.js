@@ -244,7 +244,16 @@ function buildTable(projectType) {
 };
 
 function getTranslationString(obj,projectType) {
-    if ("Properties" == getFileType(projectType)) {
+    var wise5ProjectTypes = ["common5", "vle5", "authoringTool5", "classroomMonitor5"];
+    if (wise5ProjectTypes.indexOf(projectType) > -1) { 
+	// this is a WISE5 project
+	for (key in obj) {
+            if (typeof obj[key] === "object") {
+	      obj[key] = addSlashes(obj[key].value);
+	    }
+	}
+        return FormatJSON(obj);
+    } else if ("Properties" == getFileType(projectType)) {
 	return getTranslationString_Properties(obj);
     } else {
 	return getTranslationString_JSON(obj);
