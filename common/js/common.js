@@ -13,6 +13,7 @@ var localeToHumanReadableLanguageMap = {
 	"it":"Italian",
 	"ja":"Japanese",
 	"ko":"Korean",
+	"pt":"Portuguese",
         "es":"Spanish",
         "th":"Thai",
         "tr":"Turkish"
