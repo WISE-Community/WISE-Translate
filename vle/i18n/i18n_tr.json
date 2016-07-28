@@ -4,15 +4,15 @@
         "description": "Text on the File Manager button for Student VLE"
     },
     "ideas_button_text": {
-        "value": "Düşünceler",
+        "value": "Fikirler",
         "description": "Text on the Idea Manager button for Student VLE"
     },
     "addidea_button_text": {
-        "value": "Düşünce Ekle",
+        "value": "Fikir Ekle",
         "description": "Text on Add Idea buttons for Student VLE"
     },
     "mywork_button_text": {
-        "value": "Çalışmam",
+        "value": "Benim Çalışmam",
         "description": "Text on the My Work button for Student VLE"
     },
     "display_chat_room": {
@@ -24,11 +24,11 @@
         "description": "Text for mouse hover title on the My Work button"
     },
     "flagged_button_text": {
-        "value": "Etiket",
+        "value": "Bayraklı ",
         "description": "Text on the Flagged button"
     },
     "flagged_button_title": {
-        "value": "Öğretmen Etiketli Çalışmaları Gözden Geçir",
+        "value": "Öğretmenin Bayraklı Çalışmalarını Gözden Geçir",
         "description": "Text for mouse hover title on the Flagged button"
     },
     "journal_button_text": {
@@ -40,7 +40,7 @@
         "description": "Text on the Toggle Navigation button when navigation UI is on (visible)"
     },
     "toggle_nav_button_title": {
-        "value": "Tam Ekran Modu",
+        "value": "Tam Ekran Modu (Gezinme Menüsünü Gizle)",
         "description": "Text for mouse hover title on the Toggle Navigation button when navigation UI is on (visible)"
     },
     "toggle_nav_button_text_off": {
@@ -56,7 +56,7 @@
         "description": "Text on the Log out button"
     },
     "signout_button_title": {
-        "value": "WISE'ı Sakla ve Çıkış Yap",
+        "value": "Kaydet ve WISE'dan Çıkış Yap",
         "description": "Text for mouse hover title on the Log out button"
     },
     "hint_title": {
@@ -66,5 +66,1285 @@
     "hint_button_text": {
         "value": "tests",
         "description": "Text that shows up next to the Hint button"
+    },
+    "menu_teacherHome": {
+        "value": "Öğretmen Ana Sayfası",
+        "description": "Text for link teacher home page"
+    },
+    "menu_projectLibrary": {
+        "value": "Proje Kütüphanesi",
+        "description": "Text for link to project library"
+    },
+    "menu_signOut": {
+        "value": "Çıkış Yap",
+        "description": "Text for link to sign out"
+    },
+    "error_msg_with_reason": {
+        "value": "Bir hata meydana geldi. WISE yetkilisi ile iletişime geç. Sebep:  {0}",
+        "description": "An error message a reason"
+    },
+    "mywork_preview_mode": {
+        "value": "Benim Çalışmam önizleme modunda mevcut değil. Sınıf gösterim modu, senin çalışmanın ve notlarının gösterileceği yer.",
+        "description": "Text to display when user clicks on review work button in preview mode"
+    },
+    "flagged_preview_mode": {
+        "value": "Bayraklı önizleme modunda mevcut değil. Sınıf gösterim modu, öğretmenin işaretlediği öğelerin gösterileceği yer.",
+        "description": "Text to display when user clicks on flagged work button in preview mode"
+    },
+    "previous_step_text": {
+        "value": "< Önceki",
+        "description": "Text on button in the project vle that will show the previous step in the project"
+    },
+    "previous_step_title": {
+        "value": "Önceki Adım",
+        "description": "Text for mouse hover title on button in the project vle that will show the previous step in the project"
+    },
+    "next_step_text": {
+        "value": "Sonraki >",
+        "description": "Text on button in the project vle that will show the next step in the project"
+    },
+    "next_step_title": {
+        "value": "Sonraki Adım",
+        "description": "Text for mouse hover title on button in the project vle that will show the next step in the project"
+    },
+    "gohome_button_text": {
+        "value": "Ana sayfa",
+        "description": "Text on the Home button"
+    },
+    "gohome_button_title": {
+        "value": "Kaydet & Öğrenci Ana Sayfasına Git",
+        "description": "Text for mouse hover title on the Home button"
+    },
+    "hint_button_title": {
+        "value": "Bu adım için ipuçlarını göster",
+        "description": "Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
+    },
+    "hint_num_separator": {
+        "value": "üzerinden",
+        "description": "Text to be shown between current Hint number and total (e.g. 1 'of' 2)"
+    },
+    "hint_hint": {
+        "value": "ipucu",
+        "description": "Default Text label for 'hint'"
+    },
+    "hint_plural": {
+        "value": "ipuçları",
+        "description": "Default Text label for 'hints' (plural)"
+    },
+    "hint_next": {
+        "value": "Sonraki",
+        "description": "next hint"
+    },
+    "hint_prev": {
+        "value": "Önceki",
+        "description": "previous hint"
+    },
+    "node_annotations_title": {
+        "value": "Adım Geribildirimi",
+        "description": "Title of the step feedback dialog window"
+    },
+    "node_annotations_button_text": {
+        "value": "Geribildirim",
+        "description": "Text that shows up next to the Hint button"
+    },
+    "node_annotations_button_title": {
+        "value": "Bu adım için geribildirim göster",
+        "description": "Text for mouse hover title on the Hint button (will be followed by the hint_title, e.g. 'View Hints')"
+    },
+    "node_annotations_instructions": {
+        "value": "Bu geribildirimi görüntülemek için \\\\\"{0}\\\\\" ikonuna her zaman tıklayabilirsin.",
+        "description": "The message at the bottom of the feedback popup to tell the student they can always bring the popup back up"
+    },
+    "show_previous_work_message": {
+        "value": "Unutma, \\\\\"Adım {0}\\\\\"'daki çalışman {1} idi.",
+        "description": "The message that shows the step number and title and the work from a previous step."
+    },
+    "navigation_expand_all": {
+        "value": "Hepsini Göster",
+        "description": "Text on a button to show all navigation items"
+    },
+    "navigation_collapse_all": {
+        "value": "Hepsini Gizle",
+        "description": "Text on a button to hide all navigation items"
+    },
+    "student_assets_upload_new_file": {
+        "value": "Yeni Dosya Yükle",
+        "description": "Text 'Upload New File' in Student Asset Manager"
+    },
+    "student_assets_my_files": {
+        "value": "Benim Dosyalarım",
+        "description": "Text 'My Files' in Student Asset Manager"
+    },
+    "student_assets_remove_file_warning": {
+        "value": "Benim Dosyalarım",
+        "description": "Text in Student Asset Manager when student is not allowed to remove a file"
+    },
+    "student_assets_import_success_message": {
+        "value": "Dosya başarılı bir şekilde aktarıldı",
+        "description": "Text 'Successfully imported file' in Student Asset Manager"
+    },
+    "student_assets_import_failure_message": {
+        "value": "Aktarım başarısız oldu. Seçmiş olduğunuz dosyayı şu anki adım kabul etmiyor. Lütfen farklı bir dosya seçin.",
+        "description": "Text in Student Asset Manager when importing file failed"
+    },
+    "student_assets_add_selected_file": {
+        "value": "Adıma Seçilmiş Dosyayı Ekle",
+        "description": "Text on a button in Student Asset Manager to add the selected file to the current step"
+    },
+    "student_assets_delete_selected_file": {
+        "value": "Seçilmiş Dosyayı Sil",
+        "description": "Text on a button in Student Asset Manager to delete a selected file"
+    },
+    "student_assets_student_usage_message": {
+        "value": "{1}  depolama alanının {0}'ini kullanıyorsun.",
+        "description": "Text on a button in Student Asset Manager to delete a selected file"
+    },
+    "student_assets_student_usage_exceeded_message": {
+        "value": "Depolama sınırı aşıldı! Maksimum yüklenebilen miktar {0}, sunucuda ise toplamda {1}. Lütfen bazı dosyaları silin.",
+        "description": "Text on a button in Student Asset Manager to delete a selected file"
+    },
+    "student_assets_preview_mode": {
+        "value": "Öğrenci Değerleri önzileme modunda mevcut değil. Sınıf gösterim modu, öğrencilerin resim gibi değerleri yükleyebileceği ve bunları cevaplarında kullanabileceği yerdir.",
+        "description": "Message to show users when they click on student assets button in preview mode"
+    },
+    "student_aggregate_view_intro_text": {
+        "value": "Adım {0} için Özet Göster",
+        "description": "Text above where the aggregate view would be displayed"
+    },
+    "cancel": {
+        "value": "İptal Et",
+        "description": "Text 'Cancel'"
+    },
+    "ok": {
+        "value": "Tamam",
+        "description": "Text 'OK'"
+    },
+    "on": {
+        "value": "açık",
+        "description": "Text for the word 'on' (uppercase)"
+    },
+    "off": {
+        "value": "kapalı",
+        "description": "Text for the word 'off' (uppercase)"
+    },
+    "ON": {
+        "value": "AÇIK",
+        "description": "Text for the word 'ON' (uppercase)"
+    },
+    "OFF": {
+        "value": "KAPALI",
+        "description": "Text for the word 'OFF' (uppercase)"
+    },
+    "done": {
+        "value": "Bitti",
+        "description": "Text 'Done', to mean completed"
+    },
+    "stepTerm": {
+        "value": "Adım",
+        "description": "Default term for a 'Step' in a WISE project (singular)"
+    },
+    "stepTermPlural": {
+        "value": "Adımlar",
+        "description": "Plural form of the default term for a 'Step' in a WISE project"
+    },
+    "activityTerm": {
+        "value": "Etkinlik",
+        "description": "Default term for an 'Activity' in a WISE project (singular)"
+    },
+    "activityTermPlural": {
+        "value": "Etkinlikler",
+        "description": "Plural form of the default term for a 'Activity' in a WISE project"
+    },
+    "insertImage": {
+        "value": "Resim Ekle",
+        "description": "Text 'Insert Image', to use for file upload"
+    },
+    "idea": {
+        "value": "fikir",
+        "description": "The default text for an 'idea' in the Idea Manager tool."
+    },
+    "idea_plural": {
+        "value": "fikirler",
+        "description": "The default text for 'ideas' in the Idea Manager tool."
+    },
+    "idea_basket": {
+        "value": "Fikir Kutusu",
+        "description": "The text 'Idea Basket' in the Idea Manager"
+    },
+    "idea_basket_add_an_idea": {
+        "value": "Yeni Fikir +",
+        "description": "The text for buttons to add a new idea in the Idea Manager"
+    },
+    "idea_basket_private": {
+        "value": "Özel Fikir Kutusu",
+        "description": "The text for the private idea basket"
+    },
+    "idea_basket_public": {
+        "value": "Ortak Fikir Kutusu",
+        "description": "The text for the public idea basket"
+    },
+    "idea_basket_retrieval_error": {
+        "value": "Hata: Fikir Kutusu açılamadı, projeyi yeniden aç ve tekrar dene",
+        "description": "Error message displayed when retrieving idea basket fails"
+    },
+    "ideaBasket_clickToSort": {
+        "value": "Sıralamak için tıkla",
+        "description": "Title/tooltip for sortable rows in a table"
+    },
+    "ideaBasket_empty": {
+        "value": "Senin {0} boş. {2} eklemek için \\\\"{1}\\\\"'e tıkla",
+        "description": "Text to display when idea basket is empty"
+    },
+    "ideaBasket_deletedTableHeader": {
+        "value": "{0} silindi",
+        "description": "Header text for the deleted ideas table in the Idea Basket"
+    },
+    "ideaBasket_ideaTableHeader": {
+        "value": "Senin {0}",
+        "description": "Header text for the ideas table in the Idea Basket"
+    },
+    "ideaBasket_deletedEmpty": {
+        "value": "Geri dönüşüm kutusu boş.",
+        "description": "Text to display when the Idea Basket trash is empty"
+    },
+    "ideaBasket_trashLabel": {
+        "value": "Geri dönüşüm kutusu",
+        "description": "Label the for deleted ideas table in the Idea Basket"
+    },
+    "ideaBasket_deleteHeader": {
+        "value": "Sil",
+        "description": "Header text for the delete idea column in the Idea Basket"
+    },
+    "ideaBasket_restoreHeader": {
+        "value": "Yenile",
+        "description": "Header text for the restore idea column in the Idea Basket"
+    },
+    "ideaBasket_showDeleted": {
+        "value": "(Görmek için tıkla)",
+        "description": "Text for the link to show the contents of the Deleted Ideas table in the Idea Basket"
+    },
+    "ideaBasket_hideDeleted": {
+        "value": "(Gizlemek için tıkla)",
+        "description": "Text for the link to hide the contents of the Deleted Ideas table in the Idea Basket"
+    },
+    "ideaBasket_ideaTitle": {
+        "value": "Tıkla ve yeniden düzenlemek için sürükle, Değişiklik yapmak için çift tıkla",
+        "description": "Title/tooltip for an idea in the Idea Basket"
+    },
+    "ideaBasket_deletedIdeaTitle": {
+        "value": "Geri dönüşüm kutusundan {0}'ı almak + ikonuna tıkla",
+        "description": "Title/tooltip for a deleted idea in the Idea Basket"
+    },
+    "ideaBasket_editLinkText": {
+        "value": "Değiştir",
+        "description": "Text for link to edit an idea in the Idea Basket"
+    },
+    "ideaBasket_editLinkTitle": {
+        "value": "{0}'ı değiştir",
+        "description": "Title/tooltip for link to edit an idea in the Idea Basket"
+    },
+    "ideaBasket_deleteLinkTitle": {
+        "value": "{0}'ı sil",
+        "description": "Title/tooltip for link to delete an idea in the Idea Basket"
+    },
+    "ideaBasket_customAttributeLabel": {
+        "value": "Diğer",
+        "description": "Label text for a student-generated (custom) value for an idea attribute in the Idea Basket"
+    },
+    "ideaBasket_public_copyLinkText": {
+        "value": "Kopyala",
+        "description": "Text for link or button to copy an idea from the Public Idea Basket"
+    },
+    "ideaBasket_public_header": {
+        "value": "Ortak {0}",
+        "description": "Header text for the Public Idea Basket"
+    },
+    "ideaBasket_public_publicLabel": {
+        "value": "Ortak",
+        "description": "Label designating a public idea in the Idea Basket"
+    },
+    "ideaBasket_public_empty": {
+        "value": "{0} boş",
+        "description": "Text to display when public Idea Basket is empty"
+    },
+    "ideaBasket_public_publicRowLabel": {
+        "value": "(Ortak)",
+        "description": "Label designating a public idea row in the Idea Basket"
+    },
+    "ideaBasket_public_privateLabel": {
+        "value": "Özel",
+        "description": "Label designating a private idea in the Idea Basket"
+    },
+    "ideaBasket_public_origin": {
+        "value": "Başlangıç",
+        "description": "Header text for the column identifying the origin (source) of an idea (public or private) in the Idea Basket"
+    },
+    "ideaBasket_public_timesCopied": {
+        "value": "Kopyalama Sayısı",
+        "description": "Header text for the column identifying how many times an idea has been copied from the Public Idea Basket"
+    },
+    "ideaBasket_public_makePublic": {
+        "value": "Ortak Yap",
+        "description": "Text for button or link to make an idea public (add to the Public Idea Basket)"
+    },
+    "ideaBasket_public_makePrivate": {
+        "value": "Özel Yap",
+        "description": "Text for button or link to remove an idea from the Public Idea Basket"
+    },
+    "ideaBasket_public_copiedIdea": {
+        "value": "Kopyalandı",
+        "description": "Text identifying an idea that originated as a copy from the Public Idea Basket"
+    },
+    "ideaBasket_public_orignalIdea": {
+        "value": "Ben",
+        "description": "Text identifying an idea that was did not originate as a copy from the Public Idea Basket"
+    },
+    "ideaBasket_public_copySuccess": {
+        "value": "{1}'den {0}'a kopyalandı.",
+        "description": "Message to display when successfully copying an idea from the pubic Idea Basket"
+    },
+    "ideaBasket_public_loadFailure": {
+        "value": "Hata: {0}'ı alırken hata oluştu.",
+        "description": "Message to display when loading public Idea Basket fails"
+    },
+    "ideaBasket_public_copyOwnIdeaError": {
+        "value": "Hata: Kendi paylaşılan {0}'ını kopyalama yetkin yok.",
+        "description": "Error text to display when workgroup attempts to copy their own idea from the public Idea Basket."
+    },
+    "ideaBasket_public_alreadyCopiedError": {
+        "value": "Hata: {0}'ı zaten kopyaladın.",
+        "description": "Error text to display when workgroup attempts to copy an idea from the public Idea Basket they have already copied."
+    },
+    "ideaBasket_saveError": {
+        "value": "Hata: {0}'ı kaydederken hata oluştu.",
+        "description": "Error message to display when Idea Basket fails to save on the server"
+    },
+    "ideaBasket_loadError": {
+        "value": "Hata: {0}'ı alırken hata oluştu. Projeyi yeniden başlat ya da farklı bir adımı aç ve sonra bu adıma yeniden yüklemek için geri gel.",
+        "description": "Error message to display when Idea Basket fails to load"
+    },
+    "ideaManager_attributeSelectMultiple": {
+        "value": "(Uygulama için tümünü seç):",
+        "description": "Instructions text for idea attributes that permit multiple selections in the Idea Basket"
+    },
+    "ideaManager_attributeSelectOne": {
+        "value": "(Birini seç):",
+        "description": "Instructions text for idea attributes that permit a single selection in the Idea Basket"
+    },
+    "ideaManager_attributeSelectOneLabel": {
+        "value": "Birini Seç:",
+        "description": "Label text for idea attribute selectors that permit a single selection in the Idea Basket"
+    },
+    "ideaManager_noIconLabel": {
+        "value": "Hiçbiri",
+        "description": "Label for no icon option of the icon attribute selector in the Idea Manager"
+    },
+    "ideaManager_addIdea_textLabel": {
+        "value": "Senin {0}'ı buraya* yaz:",
+        "description": "Label for the idea text input field in add or edit idea forms in the Idea Manager tools"
+    },
+    "ideaManager_addIdea_title": {
+        "value": "Yeni {0} Ekle",
+        "description": "Title text for the add new idea dialog/form in Idea Manager tools"
+    },
+    "ideaManager_addIdea_required": {
+        "value": "Lütfen, en az bir (1) seç.",
+        "description": "Message to display when a field is required in add or edit idea forms in the Idea Manager tools"
+    },
+    "ideaManager_editIdea_title": {
+        "value": "Senin {0}'ı düzenle",
+        "description": "Title text for the edit idea dialog/form in Idea Manager tools"
+    },
+    "ideaManager_editIdea_changeConfirm": {
+        "value": "Bu {0}, devam eden adımlarda kullanılmaktadır: {1}  Eğer bu  {2}'yi değiştirirsen, diğer adımlardaki cevapların da değişecek.",
+        "description": "Text for the warning confirmation dialog that appears when users attempt to edit an idea that is being used in Explanation Builder steps"
+    },
+    "ideaManager_deleteIdea_title": {
+        "value": "Geri dönüşüm kutusuna taşı",
+        "description": "Title text for the delete idea dialog in Idea Manager tools"
+    },
+    "ideaManager_deleteIdea_confirm1": {
+        "value": " Bu {0}'ı silmek istediğine emin misin?",
+        "description": "Text for first part of confirmation delete idea confirmation dialog"
+    },
+    "ideaManager_deleteIdea_confirm2": {
+        "value": "Eğer fikrini değiştirirsen daha sonra geri dönüşüm kutusundan onu geri alabilirsin.",
+        "description": "Text for second part of confirmation delete idea confirmation dialog"
+    },
+    "explanation_builder": {
+        "value": "Açıklama Oluşturucu",
+        "description": "The default text for the 'Explanation Builder' tool."
+    },
+    "chat_room": {
+        "value": "Sohbet Odası",
+        "description": "The text 'Chat Room' in the Chat Room popup"
+    },
+    "grading_button_grade_by_step": {
+        "value": "Adıma göre Değerlendir",
+        "description": "GradingTool: Text in the grade-by-step button"
+    },
+    "grading_button_grade_by_team": {
+        "value": "Takıma göre Değerlendir",
+        "description": "GradingTool: Text in the grade-by-team button"
+    },
+    "grading_all_revisions": {
+        "value": "Tüm Düzeltmeler",
+        "description": "GradingTool: Text 'all revisions' to show all student revisions"
+    },
+    "grading_latest_work": {
+        "value": "Son Çalışma",
+        "description": "GradingTool: Text 'latest work' to show only the latest student work"
+    },
+    "grading_button_view_student_uploaded_files": {
+        "value": "Öğrencilerin Yüklediği Tüm Dosyaları Göster",
+        "description": "GradingTool: Text in the View Student Uploaded Files button"
+    },
+    "grading_button_export_latest_student_work": {
+        "value": "Son Öğrenci Çalışmalarını Dışarıya Aktar",
+        "description": "GradingTool: Text in the Export Latest Student Work button"
+    },
+    "grading_button_export_all_student_work": {
+        "value": "Tüm Öğrenci Çalışmalarını Dışarıya Aktar",
+        "description": "GradingTool: Text in the Export All Student Work button"
+    },
+    "grading_button_export_idea_baskets": {
+        "value": "Fikir Kutularını Dışarıya Çıkar",
+        "description": "GradingTool: Text in the Export Idea Baskets button"
+    },
+    "grading_button_export_explanation_builder_work": {
+        "value": "Açıklama Oluşturucu Çalışmasını Dışarıya Aktar",
+        "description": "GradingTool: Text in the Export Explanation Builder Work button"
+    },
+    "grading_button_export_custom_work": {
+        "value": "Özel Öğrenci Çalışmasını Dışarıya Aktar",
+        "description": "GradingTool: Text in the Export Custom Student Work button"
+    },
+    "grading_button_export_student_names": {
+        "value": "Öğrenci İsimlerini Dışarıya Aktar",
+        "description": "GradingTool: Text in the Export Student Names button"
+    },
+    "grading_button_special_export": {
+        "value": "Özel Dışarıya Aktar",
+        "description": "GradingTool: Text in the Special Export button"
+    },
+    "grading_button_export_latest_student_work_description": {
+        "value": "(Son öğrenci değişikliklerini dışarıya aktar)",
+        "description": "GradingTool: Description next the Export Student Names button"
+    },
+    "grading_button_export_all_student_work_description": {
+        "value": "(Tüm öğrenci değişikliklerini gezinti verileriyle birlikte dışarıya aktar)",
+        "description": "GradingTool: Description next the Export All Student Work button"
+    },
+    "grading_button_export_explanation_builder_work_description": {
+        "value": "(Tüm açıklama oluşturucu çalışma değişikliklerini dışarıya aktar)",
+        "description": "GradingTool: Description next the Export Explanation Builder Work button"
+    },
+    "grading_button_export_idea_baskets_description": {
+        "value": "(Tüm fikir kutusu değişikliklerini dışarıya aktar)",
+        "description": "GradingTool: Description next the Export Idea Baskets button"
+    },
+    "grading_button_export_custom_work_description": {
+        "value": "(Seçilen adım için tüm ya da son çalışmayı dışarıya aktar)",
+        "description": "GradingTool: Description next the Export Custom Student Work button"
+    },
+    "grading_button_export_student_names_description": {
+        "value": "(Öğrenci isimlerini periyodları, çalışma grubu ID'si, wise ID'si ve girişleri ile birlikte dışarıya aktar)",
+        "description": "GradingTool: Description next the Export Student Names button"
+    },
+    "grading_button_special_export_description": {
+        "value": "(Özel adımların çalışmalarını zip dosyası olarak dışarıya aktar)",
+        "description": "GradingTool: Description next the Special Export button"
+    },
+    "grading_button_explanation": {
+        "value": "Açıklama",
+        "description": "GradingTool: Text in the Explanation button"
+    },
+    "grading_button_teacher_run_notes": {
+        "value": "Benim Notlarım",
+        "description": "GradingTool: Text in the My Notes button to bring up teacher run notes"
+    },
+    "grading_button_check_for_new_student_work": {
+        "value": "Yeni Çalışma için kontrol et",
+        "description": "GradingTool: Text in the Check for New Student Work button"
+    },
+    "grading_button_save_changes": {
+        "value": "DEĞİŞİKLİKLERİ KAYDET",
+        "description": "GradingTool: Text in the Save Changes button"
+    },
+    "grading_grade_by_step_header": {
+        "value": "Puanlamaya başlamak için aşağıdan bir adım seç (Puan değerleri değiştirilebilir)",
+        "description": "GradingTool: grade by step page header, tell teacher to select a step below"
+    },
+    "grading_grade_by_step_point_value": {
+        "value": "Puan Değeri",
+        "description": "GradingTool: grade by step point value table column"
+    },
+    "grading_grade_by_step_editable": {
+        "value": "DEĞİŞTİRİLEBİLİR",
+        "description": "GradingTool: grade by step editable table column"
+    },
+    "grading_grade_by_step_items_to_review": {
+        "value": "Gözden geçirilecek öğeler",
+        "description": "GradingTool: grade by step Items to Review table column"
+    },
+    "grading_grade_by_step_average_class_score": {
+        "value": "Ort. Puan",
+        "description": "GradingTool: grade by step Avg Class Score table column"
+    },
+    "grading_grade_by_step_scored_items_only": {
+        "value": "Sadece puanlanan öğeler",
+        "description": "GradingTool: grade by step scored items only table column"
+    },
+    "grading_grade_by_step_percent_completed_step": {
+        "value": "Tamamlanan Adım % ",
+        "description": "GradingTool: grade by step % of Students Who Have Completed This Step table column"
+    },
+    "grading_grade_by_step_all_periods": {
+        "value": "Tüm Periyotlar",
+        "description": "GradingTool: grade by step All Periods select option when choosing whose work to filter by"
+    },
+    "grading_grade_by_team_header": {
+        "value": "Puanlamaya başlamak için aşağıdan bir öğrenci takımı seç",
+        "description": "GradingTool: grade by team page header"
+    },
+    "grading_grade_by_team_teacher_graded_score": {
+        "value": "Öğretmen tarafından verilen puan",
+        "description": "GradingTool: grade by team teacher-graded score"
+    },
+    "grading_grade_by_team_percentage_project_completed": {
+        "value": "Tamamlanan Proje %",
+        "description": "GradingTool: grade by team % of project completed table column"
+    },
+    "grading_question": {
+        "value": "Soru",
+        "description": "the text 'question', to be shown next to the question that was presented to the student"
+    },
+    "grading_hide_show_question": {
+        "value": "Soruyu Gizle/Göster",
+        "description": "'hide/show question' link that toggles the question's visibility in the grading tool"
+    },
+    "grading_current_step": {
+        "value": "Şu anki adım",
+        "description": "'Current Step' label in the grading tool that shows the title of the current step in the project"
+    },
+    "grading_previous_step": {
+        "value": "< Önceki",
+        "description": "'Previous Step' button in the grading tool that will show the previous step in the project"
+    },
+    "grading_previous_step_not_exist": {
+        "value": "Önceki Adım yok: Bu ilk puanlanabilir adım",
+        "description": "Text to show when previous step does not exist because this is the first gradable step in the project"
+    },
+    "grading_change_step": {
+        "value": "Adımı değiştir",
+        "description": "'Change Step' button in the grading tool that will show the select step page"
+    },
+    "grading_next_step": {
+        "value": "Sonraki >",
+        "description": "'Next Step' button in the grading tool that will show the next step in the project"
+    },
+    "grading_next_step_not_exist": {
+        "value": "Sonraki Adım yok: Bu son puanlanabilir adım",
+        "description": "Text to show when next step does not exist because this is the last gradable step in the project"
+    },
+    "grading_sort_by": {
+        "value": "Sırala",
+        "description": "Label 'Sort By' to let user choose which column to sort the view by"
+    },
+    "period": {
+        "value": "Periyot",
+        "description": "Period"
+    },
+    "workgroupId": {
+        "value": "Çalışma grubu ID",
+        "description": "Workgroup Id"
+    },
+    "team": {
+        "value": "Takım",
+        "description": "The label for the team"
+    },
+    "team_caps": {
+        "value": "TAKIM",
+        "description": "TEAM"
+    },
+    "student_work": {
+        "value": "ÖĞRENCİ ÇALIŞMASI",
+        "description": "student work column in the grading tool"
+    },
+    "teacher_comment_and_score": {
+        "value": "ÖĞRETMEN YORUMU / PUANI",
+        "description": "Teacher comments / score column in the grading tool"
+    },
+    "tools": {
+        "value": "ARAÇLAR",
+        "description": "Tools"
+    },
+    "score": {
+        "value": "Puan",
+        "description": "The column header for the score in Show My Work"
+    },
+    "comment": {
+        "value": "Yorum",
+        "description": "Comment"
+    },
+    "flag": {
+        "value": "Bayrak",
+        "description": "Flag, for flagging student's work using the flagging tool"
+    },
+    "flag_as_inappropriate": {
+        "value": "Bayrak uygun değil",
+        "description": "\\"Flag as inappropriate\\" text, for flagging inappropriate student's work using the flagging tool"
+    },
+    "timestamp": {
+        "value": "Zaman bilgisi",
+        "description": "timestamp"
+    },
+    "last_annotation": {
+        "value": "Son Yorum",
+        "description": "the text 'last annotation'"
+    },
+    "grading_open_premade_comments": {
+        "value": "Önceki Yorumları Aç",
+        "description": "the text 'open premade comments' that will open the premade comments window when clicked"
+    },
+    "not_available": {
+        "value": "mevcut değil",
+        "description": "the text 'not available'"
+    },
+    "grading_no_work_warning": {
+        "value": "Öğrenci bu adım için çalışmasını göndermedi, bu yüzden puanlama ve geribildirim aktive değil.",
+        "description": "text to show in grading cells that do not have students' work to display"
+    },
+    "grading_no_revisions": {
+        "value": "(Değişiklik yok)",
+        "description": "text to show in grading cells that do not have any revisions"
+    },
+    "grading_only_latest_revision_displayed": {
+        "value": "(Sadece Son Değişiklik Gösterildi)",
+        "description": "text to show in grading cells where only the latest revision is displayed"
+    },
+    "grading_hide_personal_info": {
+        "value": "Kişisel Bilgileri Gizle",
+        "description": "text to show next to the 'Hide Personal Info' checkbox in the grading tool"
+    },
+    "grading_show_flagged_items_only": {
+        "value": "Sadece Bayraklı Öğeler",
+        "description": "text to show next to the 'Show Flagged Items Only' checkbox in the grading tool"
+    },
+    "grading_show_smart_filtered_items_only": {
+        "value": "Sadece Filtrelenmiş Öğeler",
+        "description": "text to show next to the 'Show Smart-Filtered Items Only' checkbox in the grading tool"
+    },
+    "grading_enlarge_student_work_text": {
+        "value": "Öğrenci Çalışmasını Aç",
+        "description": "text to show next to the 'Enlarge Student Work Text' checkbox in the grading tool"
+    },
+    "grading_only_show_new_student_work": {
+        "value": "Sadece Yeni Çalışmayı Göster",
+        "description": "text to show next to the 'Only Show New Work' checkbox in the grading tool"
+    },
+    "grading_show_all_revisions": {
+        "value": "Tüm Değişiklikleri Göster",
+        "description": "text to show next to the 'Show All Revisions' checkbox in the grading tool"
+    },
+    "grading_sort_by_auto_graded_score_checkbox": {
+        "value": "Otomatik Puanlara göre Sırala",
+        "description": "text to show next to the 'Sort By Auto Graded Score' checkbox in the grading tool"
+    },
+    "grading_hide_show_revisions": {
+        "value": "Değişiklik(ler)",
+        "description": "text to show in the 'Hide/Show Revisions' link in the grading tool that toggles revisions visibility"
+    },
+    "grading_change_team": {
+        "value": "Takımı Değiştir",
+        "description": "text to show in the 'Change Team' button in the grading tool that brings up the grade-by-team page"
+    },
+    "welcome": {
+        "value": "Hoşgeldin",
+        "description": "Text for 'Welcome'"
+    },
+    "welcome_users_default": {
+        "value": "Hoşgeldin Test Kullanıcı!",
+        "description": "Text to display in VLE for user name in preview mode"
+    },
+    "note_title": {
+        "value": "Düşünce Notu",
+        "description": "Text to display in the title bar of a note dialog window"
+    },
+    "authoring_confirm_switch_authoring_mode": {
+        "value": "Yazarlık modunu değiştirmek üzeresin fakat değişiklikleri kaydetmedin. Eğer devam edersen, yaptığın değişiklikler kaybolacak. Devam etmek istiyor musun?",
+        "description": "Message displayed in the Authoring Tool to authors when trying to switch between simple/advanced modes but their changes have not been saved."
+    },
+    "authoring_hint_dialog_title": {
+        "value": "Bu adım için ipuçları ekle/düzenle",
+        "description": "Text to display as the title of the edit step hints dialog window."
+    },
+    "authoring_hint_new": {
+        "value": "Yeni İpucu",
+        "description": "Default text for a new step hint."
+    },
+    "authoring_hint_forceShow": {
+        "value": "Göstermeye Zorla:",
+        "description": "Text to display for the label of the \\"Force Show: \\" drop down in the step hint authoring panel"
+    },
+    "authoring_hint_option_never": {
+        "value": "Asla",
+        "description": "The text \\"Never\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
+    },
+    "authoring_hint_option_firstTimeOnly": {
+        "value": "Sadece İlk Girişte",
+        "description": "The text \\"First Time Only\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
+    },
+    "authoring_hint_option_always": {
+        "value": "Herzaman",
+        "description": "The text \\"Always\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
+    },
+    "authoring_hint_modal": {
+        "value": "Model Diyalog",
+        "description": "Text to display for the label of the \\"Modal Dialog\\" checkbox in the step hint authoring panel"
+    },
+    "authoring_hint_isMustViewAllPartsBeforeClosing": {
+        "value": "Kapamadan Önce Tüm Kısımları Göstermeli",
+        "description": "Text to display for the label of the \\"Must View All Parts Before Closing\\" checkbox in the step hint authoring panel"
+    },
+    "authoring_hint_options_label": {
+        "value": "Seçenekler",
+        "description": "The label for the 'Options' settings in the step hint authoring panel"
+    },
+    "authoring_hint_terminology_label": {
+        "value": "Etiketler/Terminoloji",
+        "description": "The label for the 'Labels/Terminology' settings in the step hint authoring panel"
+    },
+    "authoring_hint_terminology_instructions": {
+        "value": "Seçmeli: Bu adımdaki ipuçları için görüntü adını değiştir",
+        "description": "The instructions for the 'Labels/Terminology' settings in the step hint authoring panel"
+    },
+    "authoring_hint_term_label": {
+        "value": "\\"İpucu\\" için terim:",
+        "description": "The label for the 'hint' term input field in the step hint authoring panel"
+    },
+    "authoring_hint_term_plural_label": {
+        "value": "\\"İpucçları\\" için terim (çoğul):",
+        "description": "The label for the 'hints' term input field in the step hint authoring panel"
+    },
+    "authoring_hint_add": {
+        "value": "Yeni İpucu Ekle",
+        "description": "The label for the 'add new hint' button in the step hint authoring panel"
+    },
+    "authoring_hint_delete": {
+        "value": "İpucunu Sil",
+        "description": "The label for the 'delete current hint' button in the step hint authoring panel"
+    },
+    "authoring_imsettings_attribute_help": {
+        "value": "Yardım içeriği buraya gelecek",
+        "description": ""
+    },
+    "authoring_imsettings_terminology_help": {
+        "value": "Yardım içeriği buraya gelecek",
+        "description": ""
+    },
+    "authoring_imsettings_text_required": {
+        "value": "Metin özelliği her fikrin temel bileşeni ve silinemez.",
+        "description": "The help text in the Idea Manager settings for the lock icon on the 'text' idea attribute."
+    },
+    "project_error_has_no_steps": {
+        "value": "Hata: Bu proje bir adıma sahip değil. ",
+        "description": "The error text to be displayed when the project has no steps in it"
+    },
+    "preview_project_constraint_enabled_message": {
+        "value": "Öğrenci gezinti kısıtı aktif oldu. Projeyi kısıtsız önizlemek için,",
+        "description": "The message shown in preview project mode when student navigation constraints are enabled."
+    },
+    "preview_project_constraint_disabled_message": {
+        "value": "Öğrenci gezinti kısıtı pasif oldu. Projeyi kısıtlı önizlemek için,",
+        "description": "The message shown in preview project mode when student navigation constraints are enabled."
+    },
+    "common_click_here": {
+        "value": "buraya tıkla",
+        "description": "the common text 'click here'"
+    },
+    "teacher_score": {
+        "value": "Öğretmen Puanı",
+        "description": "The column header for the teacher score"
+    },
+    "computer_score": {
+        "value": "Bilgisayar Puanı",
+        "description": "The column header for the computer score"
+    },
+    "total_score": {
+        "value": "Toplam Puan",
+        "description": "The column header for the total score"
+    },
+    "percent_project_completed": {
+        "value": "Projenin %'i Tamamlandı",
+        "description": "The column header for the project completion percentage"
+    },
+    "my_work_with_teacher_feedback_and_scores": {
+        "value": "Benim Çalışmam (Öğretmen Geribildirimi ve Puanı ile)",
+        "description": "The title for the my work dialog popup"
+    },
+    "you_have_new_feedback_from_teacher": {
+        "value": "Öğretmeninden yenir bir geribildirimin var.",
+        "description": "The message that shows up when the student logs in and has new teacher feedback"
+    },
+    "new_feedback_labeled_as_new": {
+        "value": "Yeni geribildirim [Yeni] olarak etiketlendi.",
+        "description": "The message that shows up when the student logs in and has new teacher feedback"
+    },
+    "new_feedback": {
+        "value": "Yeni Geribildirim",
+        "description": "The header for the section that displays the student work that has new feedback"
+    },
+    "my_work": {
+        "value": "Benim Çalışmam",
+        "description": "The header for the section that displays all of the student work"
+    },
+    "new_text": {
+        "value": "Yeni",
+        "description": "The text 'New' used to label new feedback"
+    },
+    "teacher_feedback": {
+        "value": "Öğretmen Geribildirimi",
+        "description": "The label for the teacher feedback"
+    },
+    "your_teacher_hasnt_graded": {
+        "value": "Puanlama: Öğretmenin çalışmanı henüz değerlendirmedi.",
+        "description": "The text to show that there is no feedback from the teacher yet"
+    },
+    "last_visited_on": {
+        "value": "Son ziyaret",
+        "description": "The label to show when the student last visited the step"
+    },
+    "latest_work": {
+        "value": "Son Çalışma",
+        "description": "The label to show the latest work"
+    },
+    "you_havent_visited_this_step": {
+        "value": "Bu adımı henüz ziyaret etmedin.",
+        "description": "The text to show that the student hasn't visited the step yet"
+    },
+    "you_havent_submitted_work_for_this_step": {
+        "value": "Bu adım için henüz çalışma yüklemedin.",
+        "description": "The text to show that the student hasn't submitted work for the step yet"
+    },
+    "teacher_flagged_work": {
+        "value": "Öğretmen tarafından bayraklanmış çalışma",
+        "description": "The title for the flagged work window in the student vle"
+    },
+    "there_are_no_flagged_items": {
+        "value": "Bayraklanmış öğe yok.",
+        "description": "The message that says there are no flagged items"
+    },
+    "choose_a_step": {
+        "value": "Bir adım seç",
+        "description": "The label that tells the student to choose a step to view flagged work for in the flagged work window"
+    },
+    "question_instructions": {
+        "value": "Soru / Yönergeler",
+        "description": "The label for the step prompt when displaying flagged work for a step"
+    },
+    "sample_responses": {
+        "value": "Örnek Cevaplar",
+        "description": "The label for the student work that has been flagged for a step"
+    },
+    "anonymous": {
+        "value": "Anonim",
+        "description": "The label to specify that the team is anonymous"
+    },
+    "you_got_a_score_of": {
+        "value": "Puanın var",
+        "description": "The text to display the score in the feedback popup"
+    },
+    "out_of": {
+        "value": "üzerinden",
+        "description": "The text to display the score in the feedback popup"
+    },
+    "comments": {
+        "value": "Yorumlar",
+        "description": "The text to display the comments in the feedback popup"
+    },
+    "hints_viewAll": {
+        "value": "Kapamadan önce tüm {0} 'leri görmelisin.",
+        "description": "The message in the hints popup that says the student must view all hints before closing the hints popup"
+    },
+    "constraint_dialog_title": {
+        "value": "Öğe kilitlendi",
+        "description": "Title text for dialog alerting users about locked steps or activities (unable to visit because of navigation constraints)"
+    },
+    "constraint_allItems": {
+        "value": "(tüm öğeler)",
+        "description": "Text to add after activity name when a constraint requires user to satisfy a requirement for all items in an activity"
+    },
+    "constraint_message_mustCompleteStepBeforeAdvancing": {
+        "value": "Devam etmeden önce {0}'yı tamamlamalısın.",
+        "description": "The message shown to students telling them to complete work on the current step before moving on"
+    },
+    "constraint_message_mustCompleteActivityBeforeAdvancing": {
+        "value": "Devam etmeden önce {0}'daki tüm öğeleri  tamamlamalısın.",
+        "description": "The message shown to students telling them to complete work on the current activity before moving on"
+    },
+    "constraint_message_mustCompleteStepBeforeExiting": {
+        "value": "Çıkmadan önce {0}'yı tamamlamalısın.",
+        "description": "The message shown to students telling them to complete work on the current step before exiting"
+    },
+    "constraint_message_mustCompleteActivityBeforeExiting": {
+        "value": "Çıkmadan önce {0}'daki tüm öğeleri  tamamlamalısın.",
+        "description": "The message shown to students telling them to complete work on the current activity before exiting"
+    },
+    "constraint_message_mustCompleteXBeforeVisiting": {
+        "value": "Bu öğeyi görmeden önce sonrakini tamamlamalısın.",
+        "description": "The message shown to students telling them to complete work on previous items before working on the selected step or activity"
+    },
+    "constraint_message_mustVisitXBeforeVisiting": {
+        "value": "Bu öğeyi görmeden önce sonrakini ziyaret etmelisin.",
+        "description": "The message shown to students telling them to visit items before working on the selected step or activity"
+    },
+    "constraint_message_mustUnlockXBeforeVisiting": {
+        "value": "Bu öğeyi görmeden önce sonrakini açmalısın.",
+        "description": "The message shown to students telling them to unlock (make visitable) previous items before working on the selected step or activity"
+    },
+    "constraint_message_xMustHaveStatusY": {
+        "value": "Bu adımı görebilmen için sonraki '{0}', '{1}' olmalı.",
+        "description": "The message shown to students telling them that the steps shown below must have 'statusType' set to 'statusValue' before they can work on the selected step"
+    },
+    "session_timeout_warning": {
+        "value": "Uzun zamandır aktif değilsin. Eğer şuan oturumunu yenilemezsen, WISE'dan çıkış yapılacak.",
+        "description": "Warning text to display to users in the session timeout alert."
+    },
+    "session_timeout_confirm": {
+        "value": "OTURUM AÇIK KALSIN",
+        "description": "Text to display on button in the session timeout alert that users can press to renew session."
+    },
+    "session_timeout_message": {
+        "value": "Uzun süredir aktif değildin ve çıkış yapıldı. Devam etmek için yeniden giriş yap.",
+        "description": "Text to display to display to users when there session timed out and they have been logged out of WISE."
+    },
+    "session_timeout_title": {
+        "value": "Oturum zaman aşımına uğradı",
+        "description": "Title text for the session timeout alert."
+    },
+    "classroomMonitor_title": {
+        "value": "Yöneticiyi Çalıştır",
+        "description": "Title for the classroom monitor"
+    },
+    "classroomMonitor_run": {
+        "value": "#{0}",
+        "description": "Text displaying the ID of the current run in the classroom monitor ({0} will be replaced by ID number)"
+    },
+    "classroomMonitor_search": {
+        "value": "Ara",
+        "description": "Placeholder text for search inputs in the classroom monitor"
+    },
+    "classroomMonitor_save": {
+        "value": "Değişiklikleri Kaydet",
+        "description": "Text for save button in classroom monitor"
+    },
+    "classroomMonitor_viewProject": {
+        "value": "Projeyi Görüntüle",
+        "description": "Text for link to preview project in classroom monitor"
+    },
+    "classroomMonitor_workgroupsOnline": {
+        "value": "Çevrimiçi Çalışma grupları: {0}",
+        "description": "Text displaying number of workgroups currently online ({0} will be replaced with actual number)"
+    },
+    "classroomMonitor_progress": {
+        "value": "Proje",
+        "description": "Text for step progress link in classroom monitor"
+    },
+    "classroomMonitor_monitor": {
+        "value": "Öğrenciler",
+        "description": "Text for student progress link in classroom monitor"
+    },
+    "classroomMonitor_studentProgress_title": {
+        "value": "Öğrenci Ekranı",
+        "description": "Title text for student progress link and section in classroom monitor"
+    },
+    "classroomMonitor_stepProgress_title": {
+        "value": "Adım İlerlemesi",
+        "description": "Title text for step progress link and section in classroom monitor"
+    },
+    "classroomMonitor_gradebook": {
+        "value": "Karne",
+        "description": "Text for grade book link in classroom monitor"
+    },
+    "classroomMonitor_gradebook_title": {
+        "value": "Öğrenci Karnesi",
+        "description": "Title text for grade book link in classroom monitor"
+    },
+    "classroomMonitor_manage": {
+        "value": "Yönet",
+        "description": "Text for manage students link in classroom monitor"
+    },
+    "classroomMonitor_manage_title": {
+        "value": "Öğrencileri Yönet",
+        "description": "Title text for manage students link in classroom monitor"
+    },
+    "classroomMonitor_tools": {
+        "value": "Araçlar",
+        "description": "Text for tools button in classroom monitor"
+    },
+    "classroomMonitor_announcements": {
+        "value": "Duyurular",
+        "description": "Text for announcements link in classroom monitor"
+    },
+    "classroomMonitor_notes": {
+        "value": "Benim Notlarım",
+        "description": "Text for run notes link in classroom monitor"
+    },
+    "classroomMonitor_exportWork": {
+        "value": "Çalışmayı Dışarıya Aktar",
+        "description": "Text for export work link in classroom monitor"
+    },
+    "classroomMonitor_runSettings": {
+        "value": "Ayarları Çalıştır",
+        "description": "Text for run settings link in classroom monitor"
+    },
+    "classroomMonitor_showClassroom": {
+        "value": "Sınıfı Göster",
+        "description": "Text for show classroom link in classroom monitor"
+    },
+    "classroomMonitor_allPeriods": {
+        "value": "Tüm Periyotlar",
+        "description": "Text for select all periods option in a period select dropdown in the classroom monitor"
+    },
+    "classroomMonitor_periodLabel": {
+        "value": "Periyot {0}",
+        "description": "Text for period options ({0} will be replaced by period name) in a select dropdown in the classroom monitor"
+    },
+    "classroomMonitor_pause": {
+        "value": "Ekranlar",
+        "description": "Text for pause screens tool button in classroom monitor (will be preceded by 'pause' icon)"
+    },
+    "classroomMonitor_pause_on": {
+        "value": "Ekranlar: AÇIK",
+        "description": "Text for pause screens tool button (when pause is on) in classroom monitor (will be preceded by 'pause' icon)"
+    },
+    "classroomMonitor_pause_off": {
+        "value": "Ekranlar: KAPALI",
+        "description": "Text for pause screens tool button (when pause is off) in classroom monitor (will be preceded by 'pause' icon)"
+    },
+    "classroomMonitor_pause_title": {
+        "value": "Öğrenci Ekranlarını Duraklat",
+        "description": "Title text for pause screens tool button in classroom monitor"
+    },
+    "classroomMonitor_pause_selectPeriods": {
+        "value": "Periyot(lar)ı Seç",
+        "description": "Label text for pause screens select period control in classroom monitor"
+    },
+    "classroomMonitor_pause_message_label": {
+        "value": "Görüntülenecek Mesaj",
+        "description": "Label text for pause screens message to show students input field in classroom monitor"
+    },
+    "classroomMonitor_pause_message_default": {
+        "value": "Öğretmenin ekranını duraklattı.",
+        "description": "Default message to show students when teacher pauses their screens using the classroom monitor"
+    },
+    "classroomMonitor_pause_noneSelected": {
+        "value": "Hiçbiri seçilmedi",
+        "description": "Text to show when no periods are selected in the pause screens tool the classroom monitor"
+    },
+    "classroomMonitor_pause_periods": {
+        "value": "periyotlar",
+        "description": "Plural for the word 'periods' (will be preceded by number of select periods in the pause screens tool in the classroom monitor)"
+    },
+    "classroomMonitor_studentProgress_totalCompletion": {
+        "value": "Toplam Tamamlama:",
+        "description": "Label text for the total student completion display in the classroom monitor"
+    },
+    "classroomMonitor_studentProgress_workgroupOnline": {
+        "value": "Takım çevrimiçi",
+        "description": "Text indicating that workgroup is online in the classroom monitor (only shown to screen readers)"
+    },
+    "classroomMonitor_studentProgress_workgroupOffline": {
+        "value": "Takım çevrimdışı",
+        "description": "Text indicating that workgroup is offline in the classroom monitor (only shown to screen readers)"
+    },
+    "classroomMonitor_studentProgress_viewStudentWork": {
+        "value": "Öğrenci Çalışmasını Görüntüle",
+        "description": "Title text to show on links to view student work in the classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_online": {
+        "value": "Çevrimiçi",
+        "description": "Header text for the table column showing whether workgroup is online in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_period": {
+        "value": "Periyot",
+        "description": "Header text for the period table column in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_workgroup": {
+        "value": "Takım",
+        "description": "Header text for the workgroup column in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_currentStep": {
+        "value": "Son Adım",
+        "description": "Header text for the column showing current step a workgroup is on in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_timeSpent": {
+        "value": "Harcanan Zaman",
+        "description": "Header text for the column showing time spent on the current step in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_studentProgress_headers_projectCompletion": {
+        "value": "Proje Tamamlama",
+        "description": "Header text for the project completion column in the student progress table of classroom monitor"
+    },
+    "classroomMonitor_stepProgress_headers_nodeTitle": {
+        "value": "Başlık",
+        "description": "Header text for the step title column in the step progress table of classroom monitor"
+    },
+    "classroomMonitor_stepProgress_headers_studentsOnStep": {
+        "value": "Adımda",
+        "description": "Header text for the column column showing current number of students in the step progress table of classroom monitor"
+    },
+    "classroomMonitor_stepProgress_headers_stepCompletion": {
+        "value": "Adım tamamlama",
+        "description": "Header text for the step completion column in the step progress table of classroom monitor"
+    },
+    "classroomMonitor_stepProgress_totalCompletion": {
+        "value": "Toplam Tamamlama:",
+        "description": "Label text for the total step completion display in the classroom monitor"
+    },
+    "classroomMonitor_stepProgress_completionUnavaiable": {
+        "value": "Adımı tamamlama kullanılamıyor. Aşağıdakilerden biri sebebiyle olabilir:
+
+1. Hiçbir öğrenci projeyi çalıştırmadı; ya da
+2. WISE adım ilerlemeyi gözlemlemeye başlamadan önce kalan bir çalışma. ",
+        "description": "Tooltip text to show when step completion percentage is not available for a step that can't be graded in the classroom monitor"
+    },
+    "classroomMonitor_stepProgress_completionUnavaiable_gradable": {
+        "value": "Adımı tamamlama kullanılamıyor. Aşağıdakilerden biri sebebiyle olabilir:
+
+1. Hiçbir öğrenci projeyi çalıştırmadı; ya da
+2. WISE adım ilerlemeyi gözlemlemeye başlamadan önce kalan bir çalışma. 
+
+Adım başlığını seçerek hala öğrenci çalışmalarını görebilirsin.",
+        "description": "Tooltip text to show when step completion percentage is not available for a step that can be graded in the classroom monitor"
+    },
+    "classroomMonitor_stepProgress_viewStepWork": {
+        "value": "Adım Çalışmasını Görüntüle",
+        "description": "Title text to show on links to view step work in the classroom monitor"
+    },
+    "classroomMonitor_tableInfoText": {
+        "value": "{0} girişleri",
+        "description": "Text for the information display at the bottom of classroom monitor tables ({0} will be replaced with number of items currently being shown)"
+    },
+    "classroomMonitor_grading_search": {
+        "value": "Öğrenci Çalışmaları Ara",
+        "description": "Placeholder text for the search input in grade by step and grade by student tables of classroom monitor"
+    },
+    "classroomMonitor_grading_noResponse": {
+        "value": "Takım, bu adım için herhangi bir çalışma yüklemedi.",
+        "description": "Text to display when workgroup has not submitted any work for a step in the grading view of the classroom monitor"
+    },
+    "classroomMonitor_grading_latestWork": {
+        "value": "Son Yanıt",
+        "description": "Header text for student work that is the most recent revision in the classroom monitor"
+    },
+    "classroomMonitor_grading_workRevision": {
+        "value": "Yanıt #{0}",
+        "description": "Header text for student work that is not that most recent revision in the classroom monitor ({0} will be replaced with revision number)"
+    },
+    "classroomMonitor_grading_flag": {
+        "value": "Bayrak:",
+        "description": "Label for flag checkboxes in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_teacherComment": {
+        "value": "Yorum:",
+        "description": "Label for teacher comment inputs in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_teacherScore": {
+        "value": "Puan:",
+        "description": "Label for teacher score inputs in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_addPremadeComments": {
+        "value": "+ Önceki Yorumlar",
+        "description": "Text for link to add premade comments to teacher feedback inputs in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_revisionsCount": {
+        "value": "{0} değişiklik(ler)",
+        "description": "Text for the number of revisions in the grade by student and grade by step tables of classroom monitor ({0} will be replaced with number of student work submissions for a step)"
+    },
+    "classroomMonitor_grading_revisionDate": {
+        "value": "Yüklenen: {0}",
+        "description": "Text for student work timestamp displays in grading views of classroom monitor ({0} will be replaced by date/time)"
+    },
+    "classroomMonitor_grading_lastAnnotation": {
+        "value": "Son geribildirim: {0}",
+        "description": "Text for the latest teacher feedback (grade or comment) timestamp display in grading views of classroom monitor ({0} will be replaced by date/time)"
+    },
+    "classroomMonitor_grading_lastAnnotation_none": {
+        "value": "Son geribildirim: Mevcut değil",
+        "description": "Text for when there is no feedback (grade or comment) in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_flagOnly": {
+        "value": "Sadece Bayraklı Öğeler",
+        "description": "Text for option to only display flagged items in grading views of classroom monitor"
+    },
+    "classroomMonitor_grading_itemsToReview": {
+        "value": "Değerlendirilecek Öğeler: {0}",
+        "description": "Text for display showing number of new student work items to review in grading views of classroom monitor ({0} will be replaced with number of new items)"
+    },
+    "classroomMonitor_grading_options_select": {
+        "value": "Seç",
+        "description": "Text for grading display options dropdown when no options are selected in classroom monitor"
+    },
+    "classroomMonitor_grading_options_label": {
+        "value": "Görüntüleme Seçenekleri:",
+        "description": "Label text for grading display options dropdown in classroom monitor"
+    },
+    "classroomMonitor_grading_invalidScore": {
+        "value": "{0} geçersiz bir not. Tekrar deneyin.",
+        "description": "Text to display when user tries to enter an invalid score in grading views of the  classroom monitor ({0} will be replaced with the user's input)"
+    },
+    "classroomMonitor_gradeByStudent_title": {
+        "value": "Takıma göre puanla",
+        "description": "Title text for grade by student section in classroom monitor"
+    },
+    "classroomMonitor_gradeByStudent_headers_studentWork": {
+        "value": "Adım",
+        "description": "Header text for the student work column in the grade by student table of classroom monitor"
+    },
+    "classroomMonitor_gradeByStudent_headers_score": {
+        "value": "Puan",
+        "description": "Header text for the score column in the grade by student table of classroom monitor"
+    },
+    "classroomMonitor_gradeByStudent_headers_feedback": {
+        "value": "Puan & Geribildirim",
+        "description": "Header text for the teacher feedback column in the grade by student table of classroom monitor"
+    },
+    "classroomMonitor_gradeByStep_title": {
+        "value": "Adıma göre puanla",
+        "description": "Title text for grade by step section in classroom monitor"
+    },
+    "classroomMonitor_gradeByStep_headers_studentWork": {
+        "value": "Takım",
+        "description": "Header text for the student work column in the grade by step table of classroom monitor"
+    },
+    "classroomMonitor_gradeByStep_headers_score": {
+        "value": "Puan",
+        "description": "Header text for the score column in the grade by step table of classroom monitor"
+    },
+    "classroomMonitor_gradeByStep_headers_feedback": {
+        "value": "Puan & Geribildirim",
+        "description": "Header text for the teacher feedback column in the grade by step table of classroom monitor"
+    },
+    "classroomMonitor_hidePersonalInfo": {
+        "value": "Kişisel Bilgileri Gizle",
+        "description": "Text for option to hide personal info in classroom monitor"
+    },
+    "classroomMonitor_newItemsOnly": {
+        "value": "Sadece Yeni Çalışmalar",
+        "description": "Text for option to only show new work in classroom monitor"
+    },
+    "classroomMonitor_saveConfirmation": {
+        "value": "Değişiklikler kaydedildi!",
+        "description": "Notification to display when teacher changes (scores, feedback, etc.) have been saved in the classroom monitor"
+    },
+    "classroomMonitor_saving": {
+        "value": "Değişiklikler kaydediliyor...",
+        "description": "Notification to display when saving changes (scores, feedback, etc.) in the classroom monitor"
+    },
+    "student_aggregate_view_preview_mode_default_text": {
+        "value": "Sınıf modunu ayarladığınız takdirde {0} için öğrenci çalışmaları kümelenmiş olarak gözükecek.",
+        "description": "Default text to display for aggregate view when in preview mode."
     }
 }
