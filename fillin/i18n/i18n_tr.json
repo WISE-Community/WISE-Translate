@@ -44,23 +44,23 @@
         "description": "The message to display when student fills in an incorrect answer."
     },
     "successfully_filled_in_part1": {
-        "value": "Başarı bir şekilde doldurdun",
+        "value": "Başarı bir şekilde doldurdun:",
         "description": "'You successfully filled' part of 'You successfully filled x blanks in y tries'"
     },
     "successfully_filled_in_one_blank_in": {
-        "value": "içinde 1 boşluk",
+        "value": "1 boşluğu",
         "description": "'1 blank in' part of 'You successfully filled x blanks in y tries'"
     },
     "successfully_filled_in_x_blanks_in": {
-        "value": "içinde {0} boşluk",
+        "value": "{0} boşluğu",
         "description": "'x blanks in' part of 'You successfully filled x blanks in y tries'"
     },
     "successfully_filled_in_one_try": {
-        "value": "1 deneme",
+        "value": "1 denemede",
         "description": "'1 try' part of 'You successfully filled x blanks in y tries'"
     },
     "successfully_filled_in_y_tries": {
-        "value": "{0} deneme",
+        "value": "{0} denemede",
         "description": "'y tries' part of 'You successfully filled x blanks in y tries'"
     }
 }

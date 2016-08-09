@@ -8,7 +8,7 @@
         "description": "Text for the word 'Cancel'"
     },
     "revise": {
-        "value": "Gözden geçir",
+        "value": "Gözden Geçir",
         "description": "Text for link to revise a changed idea"
     },
     "keep": {
@@ -16,7 +16,7 @@
         "description": "Text for link to keep a changed idea"
     },
     "restoreAndRevise": {
-        "value": "Geri getir & Gözden geçir",
+        "value": "Geri Getir & Gözden Geçir",
         "description": "Text for link to restore and revise a deleted idea"
     },
     "remove": {
@@ -24,7 +24,7 @@
         "description": "Text for link to remove a deleted idea from the organizing space"
     },
     "readyToExplain": {
-        "value": "Açıklamaya hazır!",
+        "value": "Açıklamaya Hazır!",
         "description": "Text for the ready to explain button"
     },
     "saveResponse": {
@@ -32,31 +32,31 @@
         "description": "Text for the save explanation response button"
     },
     "undoChanges": {
-        "value": "Değişiklikleri geri al",
+        "value": "Değişiklikleri Geri Al",
         "description": "Text for the save explanation response button"
     },
     "organizingSpace_instructions": {
-        "value": "Bu düzenleme alanı. Yukarıdaki soruya ya da yönergeye yanıt oluşturmak için {0}'ı buraya sürükle.",
+        "value": "Bu senin Düzenleme Alanın. Yukarıdaki soruya ya da yönergeye vereceğin yanıta yardımcı olması için {0}i buraya sürükle.",
         "description": "Instructions to show when the idea organizing space is empty."
     },
     "organizingSpace_explainInstructions": {
-        "value": "Senin {0}'ı düzenlemeyi bitirdiğinde, \"{1}\"e tıkla.",
+        "value": "Senin {0}ini düzenlemeyi bitirdiğinde, \"{1}\"e tıkla.",
         "description": "Text to display in the organizing space when the explanation feature is enabled."
     },
     "constraint_mustCompleteExplainWarning": {
-        "value": "Devam etmeden önce {0} {1} için çalışmanı tamamlamalısın. Düzenleme alanındaki bazı {2} düzenle. Sonra, \"{3}\" seç ve cevabını yaz. Bittiğinde, \"{4}\"ü seç.",
+        "value": "Devam etmeden önce  {0} {1} için çalışmanı tamamlamalısın. Düzenleme Alanında bazı {2}i düzenle. Sonra, \"3\" seç ve cevabını yaz. Bitirdiğinde, \"{4}\" seç.",
         "description": "Text to display when user tries to advance in the project before completing this Explanation Builder step"
     },
     "constraint_mustCompleteWarning": {
-        "value": "Devam etmeden önce {0} {1} için çalışmanı tamamlamalısın. Düzenleme alanındaki bazı {2} düzenle. ",
+        "value": "Devam etmeden önce  {0} {1} için çalışmanı tamamlamalısın.Alanında bazı {2}i düzenle.",
         "description": "Text to display when user tries to advance in the project before completing this Explanation Builder step (with explanation feature enabled)"
     },
     "ideaBasket_empty": {
-        "value": "Senin {0} boş. {2} eklemek için {1}' tıkla.",
+        "value": "Senin {0}n boş. {2} eklemek için \"{1}\" butonuna tıkla.",
         "description": "Text to display when idea basket is empty"
     },
     "ideaTableHeader": {
-        "value": "Senin {0}",
+        "value": "Senin {0}n",
         "description": "Header text for the ideas table"
     },
     "addIdea_title": {
@@ -64,7 +64,7 @@
         "description": "Title text for the add new idea dialog/form"
     },
     "addIdea_textLabel": {
-        "value": "Senin {0} buraya* yaz:",
+        "value": "Senin {0} buraya yazılacak*:",
         "description": "Label for the idea text input field in add or edit idea forms"
     },
     "addIdea_required": {
@@ -72,48 +72,47 @@
         "description": "Message to display when a field is required in add or edit idea forms"
     },
     "editIdea_title": {
-        "value": "Senin {0} düzenle",
+        "value": "{0} Düzenle",
         "description": "Title text for the edit idea dialog/form"
     },
     "reviseIdea_title": {
-        "value": "Senin {0} gözden geçir",
+        "value": "{0} Gözden Geçir",
         "description": "Title text for the revise idea dialog/form"
     },
     "restoreIdea_title": {
-        "value": "Senin {0} geri getir",
+        "value": "{0} Geri Getir",
         "description": "Title text for the revise & restore idea dialog/form"
     },
     "saveConfirmation": {
-        "value": "Kaydedildi! Eğer bitirdiysen, bir sonraki {0}'ya gir.",
+        "value": "Kaydedildi! Bitirdiysen, sonraki {0}a geç.",
         "description": "Message to display when student has completed the step"
     },
     "unsavedChangesWarning": {
-        "value": "Uyarı, kaydedilmemiş değişikliklerin var! Cevabını kaydetmek istiyorsan, {0} seç ve {1} butonuna tıkla. Kaydetmeden decam etmek istiyor musun?",
+        "value": "Uyarı, kaydedilmemiş değişikliklerin var! Yanıtını kaydetmek istiyorsan {0}i seç ve {1} butonuna tıkla. Kaydetmeden devam etmek istiyor musun?",
         "description": "Warning to display in confirmation dialog when user attempts to leave step without saving response"
     },
     "error_failedToRetrieveBasket": {
-        "value": "Hata: {0} getirilemedi! {1} üzerinde çalışamayacaksın. {1}'i yeniden yükle ya da projeyi yeniden aç. ",
+        "value": "Hata: {0} getirilemedi! Bu {1} üzerinde değişiklik yapamayacaksın. {1} yeniden yüklenmeli ya da proje tekrar açılmalı.",
         "description": "Error text to display when system fails to retrieve the Idea Basket from the server"
     },
     "idea_title": {
-        "value": "Düzenleme alanına eklemek için tıkla ve sürükle
- Düzenlemek için çift tıkla",
+        "value": "düzenleme alanına eklemek için tıkla ve sürükle; Düzenlemek için çift tıkla",
         "description": "Title/tooltip to display for ideas listed in the Explanation Builder"
     },
     "usedIdea_title": {
-        "value": "Taşımak için tıkla ve sürükle; Rengi değiştirmek için tıkla",
+        "value": "taşımak için tıkla ve sürükle; Renk değiştirmek için tıkla",
         "description": "Title/tooltip to display for ideas used in the organizing space"
     },
     "editIdea_changeConfirm": {
-        "value": "{0] sonraki adımlarda kullanılıyor. {1} Eğer {2}'yi değiştirirsen, diğer adımlardaki de değişecek.",
+        "value": "Bu {0} şu adımda: {1} kullanılıyor. Eğer bu {2} değişirse, diğer tüm adımlarda da değişecek.",
         "description": "Text for the warning confirmation dialog that appears when users attempt to edit an idea that is being used in Explanation Builder steps"
     },
     "ideaChangedAlert": {
-        "value": "Düzenleme alanına eklediğin için {0} değişti. Ne yapmak istiyorsun?",
+        "value": "Düzenleme alanına eklediğinden bu {0} değişti.",
         "description": "Text for alert box that appears when an idea being used in this Explanation Builder step has been modified in some way"
     },
     "ideaDeletedAlert": {
-        "value": "{0} silindi. Ne yapmak istiyorsun?",
+        "value": "Bu {0} silindi. Ne yapmak istiyorsun.",
         "description": "Text for alert box that appears when an idea being used in this Explanation Builder step has been deleted"
     }
 }

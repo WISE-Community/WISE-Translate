@@ -32,7 +32,7 @@
         "description": "Title text for the stamp tool button"
     },
     "eraseDrawing_button": {
-        "value": "Şu anki çizimi sil",
+        "value": "Şu Anki Çizimi Sil",
         "description": "Title for the erase drawing tool button"
     },
     "eraseDrawing_dialog_title": {
@@ -40,11 +40,11 @@
         "description": "Title for the erase drawing dialog"
     },
     "eraseDrawing_dialog_warning": {
-        "value": "Uyarı! Bu şu anki çizimi silecek ve varsayılan ile değiştirilecek.",
+        "value": "Uyarı! Bu şu anki çizimi silecek ve varsayılan ile değiştirecek.",
         "description": "Warning text for the erase drawing dialog"
     },
     "eraseDrawing_dialog_instructions": {
-        "value": "Eğer devam etmek isterseniz, 'Tamam'a tıklayın.",
+        "value": "Eğer devam etmek istersen, 'Tamam'a tıkla.",
         "description": "Instructions text for the erase drawing dialog"
     },
     "description_header_add": {
@@ -64,7 +64,7 @@
         "description": "Label text for the header of the description input block when snapshots (frames) are enabled"
     },
     "description_header_maximized": {
-        "value": "(Aşağıdaki kutuya metni girin)",
+        "value": "(Aşağıdaki kutuya metni gir)",
         "description": "Instructions text for the header of the description input block"
     },
     "description_edit_link": {
@@ -112,7 +112,7 @@
         "description": "Warning text for dialog alerting users that the drawing has exceeded the allowed file size"
     },
     "sizeLimit_instructions": {
-        "value": "Bu çizimi kaydetmek istiyorsan, lütfen bazı öğeleri sil.Teşekkürler!",
+        "value": "Bu çizimi kaydetmek istiyorsan, lütfen bazı öğeleri sil. Teşekkürler!",
         "description": "Instructions text for dialog alerting users that the drawing has exceeded the allowed file size"
     },
     "snapshots_header": {
@@ -156,11 +156,11 @@
         "description": "Title/tooltip text for the link to toggle snapshots (frames) panel opened and closed"
     },
     "snapshots_toggle_link": {
-        "value": "Kareler (şipşak)",
+        "value": "Kareler (Şipşak)",
         "description": "Text for the link to toggle snapshots (frames) panel opened and closed"
     },
     "snapshots_dialog_delete_title": {
-        "value": "Kareyi sil",
+        "value": "Kareyi Sil",
         "description": "Title for the delete snapshot (frame) dialog"
     },
     "snapshots_dialog_delete_warning": {
@@ -172,11 +172,11 @@
         "description": "Confirmation text users will see when they attempt to delete a snapshot"
     },
     "snapshots_dialog_tooMany_title": {
-        "value": "Çok fazla kare",
+        "value": "Çok Fazla Kare",
         "description": "Title for the dialog alerting users when they attempt to add a snapshot but have reached the maximum number allowed"
     },
     "snapshots_dialog_tooMany_warning": {
-        "value": "Üzgünüm! Sadece {0} kareleri için izniniz var.",
+        "value": "Üzgünüm! Sadece {0} kareleri için iznin var.",
         "description": "Warning for alerting users when they attempt to add a snapshot but have reached the maximum number allowed"
     },
     "snapshots_dialog_tooMany_instructions": {

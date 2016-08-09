@@ -20,7 +20,7 @@
         "description": "The text for the button to reset the axis limits"
     },
     "show_starter_sentence": {
-        "value": "Başlangıç Cümlesi Göster",
+        "value": "Başlangıç Cümlesini Göster",
         "description": "The text for the button to show the starter sentence"
     },
     "save": {
@@ -56,15 +56,15 @@
         "description": "The word 'prediction' used for labels"
     },
     "you_must_make_a_prediction": {
-        "value": "Bu adım üzerine çalışmaya başlamadan önce",
+        "value": "Bu adımda çalışmaya başlamadan önce",
         "description": "The beginning of the text that says you must make a prediction in a previous step before you can work on this step"
     },
     "before_you_can_work": {
-        "value": "tahminde bulunmalısın.",
+        "value": "adımda tahminde bulunmalısın",
         "description": "The end of the text that says you must make a prediction in a previous step before you can work on this step"
     },
     "are_you_sure": {
-        "value": "Veri toplamaya başlamak istediğine emin misin? Bir kere başlayınca tahmininde değişiklik yapamazsın.",
+        "value": "Veri toplamaya başlamak istediğine hazır mısın? Başladıktan sonra tahminini değiştiremezsin. ",
         "description": "The text that asks the student if they are sure they want to start collecting data because they won't be able to change their prediction after they start"
     },
     "loading": {
@@ -72,11 +72,11 @@
         "description": "The loading message to display when the applet is loading"
     },
     "click_allow_run_trust": {
-        "value": "(Eğer açılır bir pencere görürsen (popup) \"İzin Ver\", \"Çalıştır\" ya da \"Güven\"e tıkla. Eğer 1 dakika içince bu mesaj değişmezse, tarayıcıyı kapat, yeniden aç ve tekrar dene.",
+        "value": "(Eğer açılır pencere (popup) görürsen, \"İzin ver\", \"Çalıştır\" ya da \"Güven\"e tıkla. Bu mesaj 1 dakika içinde değişmezse, tarayıcıyı kapat, yeniden aç ve tekrar dene.)",
         "description": "Part of the loading message that informs the user to click allow, run, or trust when prompted to allow Java to run"
     },
     "error_applets_are_disabled": {
-        "value": "Hata: Uygulama, bu tarayıcıda pasif.  Uygulamayı aktif yapmak için ",
+        "value": "Hata: Uygulama bu tarayıcıda kullanılamaz. Lütfen, tarayıcıda uygulamayı aktif yapmak için",
         "description": "The error message to display when applets are disabled in the browser"
     },
     "here": {
@@ -100,7 +100,7 @@
         "description": "The error message to display to the student when they enter a non number into the y min field"
     },
     "error_y_max_is_not_a_number": {
-        "value": "Hata: x max bir numara değil",
+        "value": "Hata: y max bir numara değil",
         "description": "The error message to display to the student when they enter a non number into the y max field"
     },
     "error_x_min_greater_than_x_max": {
@@ -126,5 +126,9 @@
     "delete": {
         "value": "Sil",
         "description": "The label for the delete button for graph point annotations"
+    },
+    "you_must_make_a_prediction_in_steps": {
+        "value": "Aşağıdaki adımlarda tahminde bulunmalısın.",
+        "description": "The beginning of the text that says you must make a prediction in the steps below before you can work on this step"
     }
 }

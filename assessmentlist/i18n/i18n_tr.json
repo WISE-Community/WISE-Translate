@@ -56,11 +56,11 @@
         "description": "The text to notify the student that more of their classmates need to submit work to this peer review sequence step"
     },
     "you_will_then_be_assigned_a_response": {
-        "value": "Sonra gözden geçirmek için bir yanıt size gösterilecek.",
+        "value": "Sonra gözden geçirmen için bir yanıt sana gönderilecek.",
         "description": "The text to notify the student that they will be assigned to review one of their classmate's work"
     },
     "please_return_to_this_step_again": {
-        "value": "Bir kaç dakika içinde bu adıma tekrar dönün.",
+        "value": "Bir kaç dakika içinde bu adıma tekrar dön.",
         "description": "The text to notify the student to try coming back to this step later"
     },
     "instructions": {
@@ -68,7 +68,7 @@
         "description": "The text 'instructions'"
     },
     "your_feedback_for": {
-        "value": "için geribildirimin",
+        "value": "geribildirimin",
         "description": "The text 'your feedback for'"
     },
     "team_anonymous": {
@@ -116,7 +116,7 @@
         "description": "The text that notifies the user that they have completed this step"
     },
     "grading_item_part_number": {
-        "value": "Kısım {0}",
+        "value": "Kısım {0}:",
         "description": "'Part X:' to show in the grading view for each item part"
     }
 }
