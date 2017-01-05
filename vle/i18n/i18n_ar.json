@@ -1,0 +1,10 @@
+{
+    "file_button_text": {
+        "value": "test",
+        "description": "Text on the File Manager button for Student VLE"
+    },
+    "ideas_button_text": {
+        "value": "test2",
+        "description": "Text on the Idea Manager button for Student VLE"
+    }
+}

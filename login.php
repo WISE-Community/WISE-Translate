@@ -11,7 +11,7 @@
 <html>
 <head>
 <script type="text/javascript">
-var supportedLocales = [ "en_US","zh_TW","zh_CN","nl","fr","de","he","it","ja","ko","pt","es","th","tr"];
+    var supportedLocales = [ "en_US","ar","zh_TW","zh_CN","nl","fr","de","he","it","ja","ko","pt","es","th","tr"];
 </script>
 <script type="text/javascript" src="common/js/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="common/js/common.js"></script>

@@ -132,13 +132,15 @@ $(".stats5").each(function() {
 <li>If you need help, please check out and post to the <a href="https://wise-discuss.berkeley.edu/t/wise-in-other-languages" target=_blank>WISE-Translation Discussion Forum</a> or email WISE staff (telsportal at gmail dot com).</li>
 </ul>
 <h1>WISE5</h1>
-<h3>Translate WISE5 by following the steps on this page: <a href="https://github.com/WISE-Community/WISE/wiki/Translating-WISE#translate-wise5">https://github.com/WISE-Community/WISE/wiki/Translating-WISE#translate-wise5</a></h3>
 <!--
+<h3>Translate WISE5 by following the steps on this page: <a href="https://github.com/WISE-Community/WISE/wiki/Translating-WISE#translate-wise5">https://github.com/WISE-Community/WISE/wiki/Translating-WISE#translate-wise5</a></h3>
+-->
+
 <h3><a href="translate.php?projectType=common5">Translate common elements <span class='stats5' projectType='common5'></span></a></h3>
 <h3><a href="translate.php?projectType=vle5">Translate the Virtual Learning Environment (VLE) <span class='stats5' projectType='vle5'></span></a></h3>
 <h3><a href="translate.php?projectType=authoringTool5">Translate the Authoring Tool <span class='stats5' projectType='authoringTool5'></span></a></h3>
 <h3><a href="translate.php?projectType=classroomMonitor5">Translate the Classroom Monitor <span class='stats5' projectType='classroomMonitor5'></span></a></h3>
--->
+
 <h1>WISE4</h1>
 <h3><a href="translate.php?projectType=vle">Translate the Virtual Learning Environment (VLE) <span class='stats' projectType='vle'></span></a></h3>
 <p>The VLE includes the Student VLE, Authoring Tool, Grading Tool, and Researcher Tool.</p>

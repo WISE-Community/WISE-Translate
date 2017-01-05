@@ -3,6 +3,7 @@ var currentLanguage = "";  // language that is currently being translated
 var isDirty = false;       // has user made any changes that need to be saved?
 
 var localeToHumanReadableLanguageMap = {
+        "ar":"Arabic",
 	"en_US":"English (US)",
 	"zh_TW":"Chinese - Traditional",
 	"zh_CN":"Chinese - Simplified",

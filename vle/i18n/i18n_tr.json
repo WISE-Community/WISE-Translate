@@ -789,27 +789,27 @@
     },
     "authoring_hint_forceShow": {
         "value": "Göstermeye Zorla:",
-        "description": "Text to display for the label of the \\\"Force Show: \\\" drop down in the step hint authoring panel"
+        "description": "Text to display for the label of the \\"Force Show: \\" drop down in the step hint authoring panel"
     },
     "authoring_hint_option_never": {
         "value": "Asla",
-        "description": "The text \\\"Never\\\" to display in \\\"force show:\\\" drop down in the step hint authoring panel"
+        "description": "The text \\"Never\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
     },
     "authoring_hint_option_firstTimeOnly": {
         "value": "Sadece İlk Ziyarette",
-        "description": "The text \\\"First Time Only\\\" to display in \\\"force show:\\\" drop down in the step hint authoring panel"
+        "description": "The text \\"First Time Only\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
     },
     "authoring_hint_option_always": {
         "value": "Her Zaman",
-        "description": "The text \\\"Always\\\" to display in \\\"force show:\\\" drop down in the step hint authoring panel"
+        "description": "The text \\"Always\\" to display in \\"force show:\\" drop down in the step hint authoring panel"
     },
     "authoring_hint_modal": {
         "value": "Model Diyaloğu",
-        "description": "Text to display for the label of the \\\"Modal Dialog\\\" checkbox in the step hint authoring panel"
+        "description": "Text to display for the label of the \\"Modal Dialog\\" checkbox in the step hint authoring panel"
     },
     "authoring_hint_isMustViewAllPartsBeforeClosing": {
         "value": "Kapamadan Tüm Kısımlar Görülmeli",
-        "description": "Text to display for the label of the \\\"Must View All Parts Before Closing\\\" checkbox in the step hint authoring panel"
+        "description": "Text to display for the label of the \\"Must View All Parts Before Closing\\" checkbox in the step hint authoring panel"
     },
     "authoring_hint_options_label": {
         "value": "Seçenekler",
@@ -820,15 +820,15 @@
         "description": "The label for the 'Labels/Terminology' settings in the step hint authoring panel"
     },
     "authoring_hint_terminology_instructions": {
-        "value": "Opsiyonel: Bu adımdaki \\\"ipuçları\\\" için görüntülenecek ismi değiştir.",
+        "value": "Opsiyonel: Bu adımdaki \\"ipuçları\\" için görüntülenecek ismi değiştir.",
         "description": "The instructions for the 'Labels/Terminology' settings in the step hint authoring panel"
     },
     "authoring_hint_term_label": {
-        "value": "\\\"İpucu\\\" için terim:",
+        "value": "\\"İpucu\\" için terim:",
         "description": "The label for the 'hint' term input field in the step hint authoring panel"
     },
     "authoring_hint_term_plural_label": {
-        "value": "\\\"İpuçları\\\" (çoğul) için terim:",
+        "value": "\\"İpuçları\\" (çoğul) için terim:",
         "description": "The label for the 'hints' term input field in the step hint authoring panel"
     },
     "authoring_hint_add": {
@@ -1332,11 +1332,19 @@
         "description": "Notification to display when saving changes (scores, feedback, etc.) in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable": {
-        "value": "Adım tamamlama yapılamıyor çünkü: \n1. Hiçbir öğrenci projeyi kullanmadı; ya da \n2. WISE'ın adım ilerleyişini görüntülemek için başlattığı eski bir uygulama",
+        "value": "Adım tamamlama yapılamıyor çünkü: 
+
+1. Hiçbir öğrenci projeyi kullanmadı; ya da 
+2. Bu WISE'ın adım ilerleyişini görüntülemek için başlattığı eski bir uygulama",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can't be graded in the classroom monitor"
     },
     "classroomMonitor_stepProgress_completionUnavaiable_gradable": {
-        "value": "Adım tamamlama yapılamıyor çünkü:\n1. Hiçbir öğrenci projeyi kullanmadı; ya da\n2. WISE'ın adım ilerleyişini görüntülemek için başlattığı eski bir uygulama\nAdım başlığını seçerek hala öğrenci çalışmasını görüntüleyebilirsin.",
+        "value": "Adım tamamlama yapılamıyor çünkü:
+
+1. Hiçbir öğrenci projeyi kullanmadı; ya da
+2. Bu WISE'ın adım ilerleyişini görüntülemek için başlattığı eski bir uygulama
+
+Adım başlığını seçerek hala öğrenci çalışmasını görüntüleyebilirsin.",
         "description": "Tooltip text to show when step completion percentage is not available for a step that can be graded in the classroom monitor"
     }
 }
